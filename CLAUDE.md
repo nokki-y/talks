@@ -1,2 +1,5 @@
-このリポジトリは、Slidevを使用してプレゼンテーションを作成するためのリポジトリです。
-→　Slidevの公式ドキュメントはこちらです: https://sli.dev/guide/why
+- このリポジトリは、Slidevを使用してプレゼンテーションを作成するためのリポジトリです。
+  - Slidevの公式ドキュメントはこちらです: https://sli.dev/guide/why
+- スタイリングには、UnoCSSを使用しています。
+  - UnoCSSの公式ドキュメントはこちらです: https://unocss.dev/
+  - Slidevのカスタム設定: https://sli.dev/custom/config-unocss
