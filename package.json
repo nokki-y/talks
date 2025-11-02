@@ -1,0 +1,13 @@
+{
+  "name": "talks",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@10.19.0",
+  "dependencies": {
+    "@slidev/cli": "catalog:",
+    "@slidev/client": "catalog:",
+    "@slidev/theme-default": "catalog:",
+    "@slidev/theme-seriph": "catalog:",
+    "vue": "catalog:"
+  }
+}

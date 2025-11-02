@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(pnpm install:*)",
+      "Bash(node --version)",
+      "Bash(ln:*)",
+      "Bash(rm:*)",
+      "Bash(/Users/yoshihide-unoki/dev/talks/layouts/test-layout.vue)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
