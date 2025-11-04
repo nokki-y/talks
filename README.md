@@ -28,10 +28,17 @@ pnpm format:check
 
 以下のタイミングで自動的にフォーマットが実行されます:
 
+- **ファイル保存時（VS Code）**: ファイルを保存すると自動的にフォーマットされます
 - **コミット時**: `git commit` を実行すると、ステージングされたファイルが自動的にフォーマットされます
 - **マージ時**: マージコミットが作成される際に、変更されたファイルが自動的にフォーマットされます
 
-この仕組みは [husky](https://typicode.github.io/husky/) と [lint-staged](https://github.com/okonet/lint-staged) によって実現されています。
+Git連携は [husky](https://typicode.github.io/husky/) と [lint-staged](https://github.com/okonet/lint-staged) によって実現されています。
+
+VS Codeでの保存時フォーマットを有効にするには、以下の拡張機能をインストールしてください:
+
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+プロジェクトを開くと、推奨される拡張機能として自動的に提案されます。
 
 #### フォーマット設定
 
