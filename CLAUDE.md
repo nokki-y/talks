@@ -3,3 +3,10 @@
 - スタイリングには、UnoCSSを使用しています。
   - UnoCSSの公式ドキュメントはこちらです: https://unocss.dev/
   - Slidevのカスタム設定: https://sli.dev/custom/config-unocss
+- コードフォーマッターには、Prettierを使用しています。
+  - Prettierの公式ドキュメント: https://prettier.io/docs/en/
+  - 設定ファイル: `.prettierrc`
+  - 自動フォーマットのタイミング:
+    - ファイル保存時（VS Code）
+    - コミット時（huskyとlint-stagedによる自動実行）
+    - マージ時（huskyのpre-merge-commitフックによる自動実行）
