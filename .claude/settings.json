@@ -1,7 +1,5 @@
 {
-    "permissions": {
-      "deny": [
-        "Read(./*/src/layouts/*)"
-      ]
-    }
+  "permissions": {
+    "deny": ["Read(./*/src/layouts/*)"]
   }
+}
