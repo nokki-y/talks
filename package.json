@@ -3,11 +3,26 @@
   "type": "module",
   "private": true,
   "packageManager": "pnpm@10.19.0",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
   "dependencies": {
     "@slidev/cli": "catalog:",
     "@slidev/client": "catalog:",
     "@slidev/theme-default": "catalog:",
     "@slidev/theme-seriph": "catalog:",
     "vue": "catalog:"
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "^3.4.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
+    "prettier-plugin-slidev": "^1.0.5"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,md,json,yml,yaml}": "prettier --write"
   }
 }
