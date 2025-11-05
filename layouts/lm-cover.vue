@@ -29,7 +29,7 @@
       </div>
     </div>
     <!-- 左下のコピーライト -->
-    <div z-10 h-10 flex text-3 items-end pb-2 pl-4 c-coolgray>
+    <div z-10 h-10 flex text-2 items-end pb-2 pl-4 c-coolgray>
       <span>© Link and Motivation Group</span>
     </div>
   </div>

@@ -8,3 +8,4 @@ components.d.ts
 
 # Claude Code
 .claude/settings.local.json
+.claude/local-instructions.md
