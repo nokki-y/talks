@@ -1,9 +1,6 @@
 ---
 # try also 'default' to start simple
 highlighter: shiki
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: 丸3年やってみたけど、Vue Fes Japan運営スタッフはいいぞー！
 info: |
@@ -17,7 +14,7 @@ class: text-center
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
+transition: fade-out
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # duration of the presentation
@@ -33,6 +30,7 @@ css: unocss
 
 ---
 layout: lm-cover
+transition: lm-cover-transition
 ---
 
 ::title::
@@ -45,6 +43,23 @@ SRE・イネーブリンググループ
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
+
+---
+layout: lm-profile
+transition: slide-up
+---
+
+# 自己紹介
+
+<div text-white text-xl space-y-6>
+
+## 鵜木 義秀 (Yoshihide Unoki)
+
+- 株式会社リンクアンドモチベーション
+- SRE・イネーブリンググループ
+- Vue Fes Japan 運営スタッフ（3年目）
+
+</div>
 
 ---
 transition: fade-out

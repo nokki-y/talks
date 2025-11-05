@@ -1,5 +1,5 @@
 <template>
-  <div h-full w-full relative p-0 flex flex-col>
+  <div h-full w-full relative p-0 flex flex-col class="slidev-layout lm-cover">
     <img src="./lm-cover/background.png" alt="background" absolute top-0 left-0 w-full h-full />
 
     <div flex-1 w-full grid z-10 class="grid-cols-[1fr_3fr]">
@@ -13,12 +13,12 @@
         <!-- 白い縦線 -->
         <div absolute left-0 bg-white class="top-[42%] h-[86px] w-[1px]"></div>
 
-        <div text-2xl font-bold line-height-8 mb-8>
+        <div text-2xl font-bold line-height-8>
           <slot name="title" />
         </div>
 
         <div>
-          <div text-3 mb-1>
+          <div text-3>
             <slot name="subtitle" />
           </div>
 
@@ -29,7 +29,7 @@
       </div>
     </div>
     <!-- 左下のコピーライト -->
-    <div z-10 h-10 flex text-2 items-end pb-2 pl-4 c-coolgray>
+    <div z-10 h-10 flex text-2 items-end pb-2 pl-4 c-coolgray class="lm-cover-content">
       <span>© Link and Motivation Group</span>
     </div>
   </div>
@@ -37,4 +37,8 @@
 
 <script setup></script>
 
-<style></style>
+<style>
+.slidev-layout.lm-cover p {
+  line-height: 1.5;
+}
+</style>
