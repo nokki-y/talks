@@ -22,18 +22,25 @@ transition: slide-left
 mdc: true
 # duration of the presentation
 duration: 35min
+# font settings
+fonts:
+  sans: 'Kosugi,Hiragino Sans,Hiragino Kaku Gothic ProN,Noto Sans JP,sans-serif'
+  serif: 'Hiragino Mincho ProN,Yu Mincho,YuMincho,serif'
+  mono: 'Menlo,Monaco,Courier New,monospace'
+# custom css
+css: unocss
 ---
 
 ---
 layout: lm-cover
-class: h-full
 ---
 
-<h1>丸3年やってみたけど、<br />Vue Fes Japan運営スタッフは<br />いいぞー！</h1>
+::title::
+丸3年やってみたけど、<br>Vue Fes Japan運営スタッフはいいぞー！
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Spaceキーで次のページへ <carbon:arrow-right />
-</div>
+::subtitle::
+株式会社リンクアンドモチベーション<br>
+SRE・イネーブリンググループ
 
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -54,8 +61,8 @@ Slidevは開発者向けに設計されたスライド作成・プレゼンテ�
 - 🎥 **録画機能** - 録画機能とカメラビューを内蔵
 - 📤 **ポータブル** - PDF、PPTX、PNG、またはホスティング可能なSPAへエクスポート
 - 🛠 **高いカスタマイズ性** - Webページで可能なことはSlidevでも実現可能
-<br>
-<br>
+  <br>
+  <br>
 
 詳細は [Why Slidev?](https://sli.dev/guide/why) をご覧ください
 
@@ -91,20 +98,22 @@ level: 2
 
 ## キーボードショートカット
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | 次のアニメーションまたはスライド     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | 前のアニメーションまたはスライド |
-| <kbd>up</kbd>                                       | 前のスライド              |
-| <kbd>down</kbd>                                     | 次のスライド                  |
+|                                                    |                                  |
+| -------------------------------------------------- | -------------------------------- |
+| <kbd>right</kbd> / <kbd>space</kbd>                | 次のアニメーションまたはスライド |
+| <kbd>left</kbd> / <kbd>shift</kbd><kbd>space</kbd> | 前のアニメーションまたはスライド |
+| <kbd>up</kbd>                                      | 前のスライド                     |
+| <kbd>down</kbd>                                    | 次のスライド                     |
 
 <!-- https://sli.dev/guide/animations.html#click-animation -->
+
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
   alt=""
 />
+
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">ここ！</p>
 
 ---
@@ -150,6 +159,7 @@ doubled.value = 2
 <arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
 
 <!-- This allow you to embed external code blocks -->
+
 <<< @/snippets/external.ts#snippet
 
 <!-- Footer -->
@@ -194,11 +204,7 @@ level: 2
 // step 1
 const author = reactive({
   name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
+  books: ['Vue 2 - Advanced Guide', 'Vue 3 - Basic Guide', 'Vue 4 - The Mystery'],
 })
 ```
 
@@ -209,14 +215,10 @@ export default {
     return {
       author: {
         name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
+        books: ['Vue 2 - Advanced Guide', 'Vue 3 - Basic Guide', 'Vue 4 - The Mystery'],
+      },
     }
-  }
+  },
 }
 ```
 
@@ -226,13 +228,9 @@ export default {
   data: () => ({
     author: {
       name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
+      books: ['Vue 2 - Advanced Guide', 'Vue 3 - Basic Guide', 'Vue 4 - The Mystery'],
+    },
+  }),
 }
 ```
 
@@ -243,11 +241,7 @@ Non-code blocks are ignored.
 <script setup>
 const author = {
   name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
+  books: ['Vue 2 - Advanced Guide', 'Vue 3 - Basic Guide', 'Vue 4 - The Mystery'],
 }
 </script>
 ```
@@ -369,13 +363,7 @@ theme: seriph
 モーションアニメーションは [@vueuse/motion](https://motion.vueuse.org/) を利用しており、`v-motion` ディレクティブでトリガーされます。
 
 ```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
+<div v-motion :initial="{ x: -80 }" :enter="{ x: 0 }" :click-3="{ x: 80 }" :leave="{ x: 1000 }">
   Slidev
 </div>
 ```
@@ -453,7 +441,9 @@ LaTeXは標準でサポートされています。[KaTeX](https://katex.org/) �
 インライン数式 $\sqrt{3x-1}+(1+x)^2$
 
 ブロック数式
-$$ {1|3|all}
+
+$$
+{1|3|all}
 \begin{aligned}
 \nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
 \nabla \cdot \vec{B} &= 0 \\
@@ -615,7 +605,7 @@ import { emptyArray, sayHello } from './external'
 
 sayHello()
 console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
+console.log(emptyArray<number>(10).reduce((fib) => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
 ```
 
 ---

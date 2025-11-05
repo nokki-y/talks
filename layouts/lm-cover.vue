@@ -1,34 +1,35 @@
 <template>
-  <div class="slidev-layout h-full w-full relative p-0">
-    <img
-      src="./lm-cover/background.png"
-      alt="background"
-      class="absolute top-0 left-0 w-full h-full"
-    />
+  <div h-full w-full relative p-0 flex flex-col>
+    <img src="./lm-cover/background.png" alt="background" absolute top-0 left-0 w-full h-full />
 
-    <div class="flex-1 w-full grid grid-cols-2 h-[calc(100%-2.5rem)]">
-      <!-- 左上のロゴエリア -->
-      <div class="z-10">
-        <img src="./lm-cover/logo.png" alt="logo" class="lm-cover-logo-image" />
+    <div flex-1 w-full grid z-10 class="grid-cols-[1fr_3fr]">
+      <!-- 左側のロゴエリア -->
+      <div flex items-center justify-center>
+        <img src="./lm-cover/logo.png" alt="logo" />
       </div>
 
       <!-- 中央のコンテンツエリア -->
-      <div class="z-10">
-        <div class="lm-cover-title">
+      <div relative flex flex-col justify-center pl-10>
+        <!-- 白い縦線 -->
+        <div absolute left-0 bg-white class="top-[42%] h-[86px] w-[1px]"></div>
+
+        <div text-2xl font-bold line-height-8 mb-8>
           <slot name="title" />
         </div>
 
-        <div class="z-10">
-          <slot name="subtitle" />
-        </div>
+        <div>
+          <div text-3 mb-1>
+            <slot name="subtitle" />
+          </div>
 
-        <div class="z-10">
-          <slot name="author" />
+          <div text-4>
+            <p>鵜木 義秀 (Yoshihide Unoki)</p>
+          </div>
         </div>
       </div>
     </div>
     <!-- 左下のコピーライト -->
-    <div class="z-10 h-10">
+    <div z-10 h-10 flex text-3 items-end pb-2 pl-4 c-coolgray>
       <span>© Link and Motivation Group</span>
     </div>
   </div>
