@@ -1,8 +1,8 @@
 <template>
-  <div h-full w-full relative p-0 flex flex-col>
+  <div h-full w-full relative p-0 flex flex-col class="slidev-layout lm-profile">
     <!-- ぼかしをかけた背景画像 -->
     <div absolute top-0 left-0 w-full h-full>
-      <img src="./lm-cover/background.png" alt="background" w-full h-full object-cover blur-md />
+      <img src="../assets/background.png" alt="background" w-full h-full object-cover blur-sm />
     </div>
 
     <!-- コンテンツエリア -->

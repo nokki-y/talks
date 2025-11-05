@@ -1,11 +1,20 @@
 <template>
   <div h-full w-full relative p-0 flex flex-col class="slidev-layout lm-cover">
-    <img src="./lm-cover/background.png" alt="background" absolute top-0 left-0 w-full h-full />
+    <img
+      class="lm-cover__bg"
+      src="../assets/background.png"
+      alt="background"
+      absolute
+      top-0
+      left-0
+      w-full
+      h-full
+    />
 
-    <div flex-1 w-full grid z-10 class="grid-cols-[1fr_3fr]">
+    <div flex-1 w-full grid z-10 class="lm-cover__overlay grid-cols-[1fr_3fr]">
       <!-- 左側のロゴエリア -->
       <div flex items-center justify-center>
-        <img src="./lm-cover/logo.png" alt="logo" />
+        <img src="../assets/logo.png" alt="logo" />
       </div>
 
       <!-- 中央のコンテンツエリア -->
@@ -29,7 +38,17 @@
       </div>
     </div>
     <!-- 左下のコピーライト -->
-    <div z-10 h-10 flex text-2 items-end pb-2 pl-4 c-coolgray class="lm-cover-content">
+    <div
+      z-10
+      h-10
+      flex
+      text-2
+      items-end
+      pb-2
+      pl-4
+      c-coolgray
+      class="lm-cover-content lm-cover__overlay"
+    >
       <span>© Link and Motivation Group</span>
     </div>
   </div>

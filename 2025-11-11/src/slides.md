@@ -1,7 +1,6 @@
 ---
 # try also 'default' to start simple
 highlighter: shiki
-# some information about your slides (markdown enabled)
 title: 丸3年やってみたけど、Vue Fes Japan運営スタッフはいいぞー！
 info: |
   ## Slidev スターターテンプレート
@@ -14,7 +13,7 @@ class: text-center
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: fade-out
+transition: fade
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # duration of the presentation
@@ -28,9 +27,11 @@ fonts:
 css: unocss
 ---
 
+<LmSplash />
+
 ---
 layout: lm-cover
-transition: lm-cover-transition
+# transition: lm-cover-transition
 ---
 
 ::title::
@@ -46,7 +47,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 layout: lm-profile
-transition: slide-up
+# transition: slide-up
 ---
 
 # 自己紹介
