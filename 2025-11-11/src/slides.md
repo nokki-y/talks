@@ -31,7 +31,6 @@ css: unocss
 
 ---
 layout: lm-cover
-# transition: lm-cover-transition
 ---
 
 ::title::
@@ -42,23 +41,22 @@ layout: lm-cover
 SRE・イネーブリンググループ
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+TODO:
 -->
 
 ---
-layout: lm-profile
-# transition: slide-up
+layout: lm-base
 ---
 
-# 自己紹介
+<div text-3xl >鵜木 義秀 (Yoshihide Unoki)</div>
+<div op50 tracking-wide text-xl mt1>nokki-y</div>
 
-<div text-white text-xl space-y-6>
+<div class="[&>*]:important-leading-10 opacity-80 mt5">
 
-## 鵜木 義秀 (Yoshihide Unoki)
-
-- 株式会社リンクアンドモチベーション
-- SRE・イネーブリンググループ
-- Vue Fes Japan 運営スタッフ（3年目）
+Core Team {Vite} {Vue} {Nuxt}<br>
+Creator {Vitest} {Slidev} {UnoCSS} {Type Challenges} {Elk}<br>
+Maintainer {ESLint Stylistic} {Shiki} {Twoslash}<br>
+Working at {NuxtLabs} / {Vercel}<br>
 
 </div>
 

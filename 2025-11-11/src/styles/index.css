@@ -1,4 +1,11 @@
 .slidev-layout.cover {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(./assets/background.png);
+  background-image: url(./assets/background-cover.png);
+  background-position: center;
+  padding: 0;
+}
+
+.slidev-layout {
+  background-image: url(./assets/background.png);
+  background-position: center;
+  padding: 0;
 }
