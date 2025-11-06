@@ -1,5 +1,5 @@
 {
   "permissions": {
-    "deny": ["Read(./*/src/layouts/*)"]
+    "deny": ["Read(./*/src/layouts/*)", "Bash(git push:*)"]
   }
 }
