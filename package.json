@@ -4,6 +4,7 @@
   "private": true,
   "packageManager": "pnpm@10.19.0",
   "scripts": {
+    "build": "rimraf dist && pnpm -r run build",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"
@@ -20,7 +21,8 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.2.11",
     "prettier": "^3.4.2",
-    "prettier-plugin-slidev": "^1.0.5"
+    "prettier-plugin-slidev": "^1.0.5",
+    "rimraf": "^6.0.1"
   },
   "lint-staged": {
     "*.{js,ts,vue,md,json,yml,yaml}": "prettier --write"

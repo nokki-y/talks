@@ -1,6 +1,28 @@
 # talks
 
-Slides & code for my talks
+Slides & code for my talks, using Slidev
+
+## デプロイ
+
+このリポジトリはNetlifyでホストされています。
+
+### Netlifyへのデプロイ設定
+
+1. [Netlify](https://app.netlify.com/)にログイン
+2. 「Add new site」→「Import an existing project」を選択
+3. GitHubリポジトリ `nokki-y/talks` を接続
+4. ビルド設定を確認（netlify.tomlから自動読み込み）
+   - Build command: `pnpm run build`
+   - Publish directory: `dist`
+5. 「Deploy site」をクリック
+
+### カスタムドメインの設定（オプション）
+
+Netlifyの管理画面で、カスタムドメインを設定できます：
+
+1. Site settings → Domain management
+2. 「Add custom domain」をクリック
+3. ドメインを入力（例: `talks.example.com`）
 
 ## 開発環境のセットアップ
 

@@ -1,16 +1,19 @@
 [build]
 publish = "dist"
-command = "npm run build"
+command = "pnpm run build"
 
 [build.environment]
 NODE_VERSION = "20"
+PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
 
+# 2025-11-11 スライド
 [[redirects]]
-from = "/.well-known/*"
-to = "/.well-known/:splat"
+from = "/2025-11-11/*"
+to = "/2025-11-11/index.html"
 status = 200
 
+# ルートへのアクセスを最新のスライドにリダイレクト
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+from = "/"
+to = "/2025-11-11"
+status = 302
