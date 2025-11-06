@@ -3,10 +3,11 @@
 highlighter: shiki
 title: 丸3年やってみたけど、Vue Fes Japan運営スタッフはいいぞー！
 info: |
-  ## Slidev スターターテンプレート
-  開発者のためのプレゼンテーションスライド
-
-  詳細は [Sli.dev](https://sli.dev) をご覧ください
+  ## セッション概要
+  運営スタッフを丸3年やって見えたこと・得たことを共有します。
+  技術の深掘りではなく、運営/コミュニティに関する学びが中心です。
+  - 対象: コミュニティ参加や運営に興味がある人
+  - 持ち帰り: コミュニティ参加により得られること、関わり方のヒント
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
