@@ -44,10 +44,21 @@ TODO:
 layout: lm-base
 ---
 
-<div text-3xl >鵜木 義秀 (Yoshihide Unoki)</div>
-<div op50 tracking-wide text-xl mt1>nokki-y</div>
-
-TODO: 自己紹介
+<div grid h-full class="grid-cols-[1fr_320px]">
+  <div pl-20 pt-30>
+    <div text-3xl >鵜木 義秀 (Yoshihide Unoki)</div>
+    <div op50 tracking-wide text-xl mt1>nokki-y</div>
+  </div>
+  <div flex justify-center pt-30>
+    <div relative>
+      <!-- 影 -->
+      <div absolute rounded-full bg-white op30  w-40 h-40 class="top-[10px] left-[16px]"></div>
+      <div overflow-hidden rounded-full w-40 h-40 relative>
+        <img src="../assets/sns.jpg" alt="icon" />
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--
 TODO: 自己紹介
@@ -84,6 +95,15 @@ layout: lm-base
 ---
 layout: lm-base
 ---
+
+<!-- 白線 -->
+<div absolute top-0 h-full bg-white class="w-[12px] left-[50px]"></div>
+
+<!-- 影 -->
+<div absolute top-0 h-full bg-white op20 class="w-[12px] left-[70px]"></div>
+
+<!-- ポイント -->
+<!-- <div absolute rounded-full bg-white class="top-[270px] left-[41px] w-[24px] h-[10px]"></div> -->
 
 運営スタッフ3年間での出来事
 
@@ -367,12 +387,13 @@ layout: lm-base
     w-full
     h-full
   />
-  <div z-10 op65 bg-black absolute top-0 left-0 w-full h-full></div>
-
+  <div z-10 absolute h-20 w-20 class="top-[-16px] right-[-10px]">
+    <img src="../assets/logo.png" alt="logo" />
+  </div>
   <div z-10 px-20 py-10 >
     <div text-4xl font-bold w-full text-center mt-10 mb-10>全職種、積極採用中です！</div>
-    <div grid grid-cols-2 bg-white rounded-2xl color-black op80 pl-20 pr-5 py-12>
-      <div text-xl flex items-center>
+    <div grid grid-cols-2 bg-white rounded-md color-black op80 pl-20 pr-5 py-12>
+      <div text-xl flex items-center font-bold>
         <ul>
           <li>サーバーサイドエンジニア</li>
           <li>フロントエンドエンジニア</li>
