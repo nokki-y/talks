@@ -354,3 +354,69 @@ layout: lm-base
 - 「一緒にやりたいです」と一言伝えるだけでも十分
 締め：ご清聴ありがとうございました！ 会場/オンラインでも気軽に話しかけてください。
 -->
+
+---
+
+<div h-full w-full relative p-0 flex flex-col>
+  <img
+    src="../assets/office-01.png"
+    alt="background"
+    absolute
+    top-0
+    left-0
+    w-full
+    h-full
+  />
+  <div z-10 op65 bg-black absolute top-0 left-0 w-full h-full></div>
+
+  <div z-10 px-20 py-10 >
+    <div text-4xl font-bold w-full text-center mt-10 mb-10>全職種、積極採用中です！</div>
+    <div grid grid-cols-2 bg-white rounded-2xl color-black op80 pl-20 pr-5 py-12>
+      <div text-xl flex items-center>
+        <ul>
+          <li>サーバーサイドエンジニア</li>
+          <li>フロントエンドエンジニア</li>
+          <li>SRE</li>
+          <li>エンジニアリングマネージャー</li>
+          <li>テックリード</li>
+          <li>データエンジニア</li>
+        </ul>
+      </div>
+      <div>
+        <div text-center mb-8>
+          <div text-xl font-bold mb-2 pr-5>技術広報</div>
+          <div text-xl font-bold>公式X発信強化中です！</div>
+        </div>
+        <div flex justify-center>
+          <img
+            src="../assets/../assets/recruitment-qr-code.png"
+            alt="recruitment-qr-code"
+            w-40
+            h-40
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 左下のコピーライト -->
+  <div absolute bottom-1 left-2 z-10 text-2 op50>
+    <span>© Link and Motivation Group</span>
+  </div>
+</div>
+
+---
+
+<div h-full w-full relative p-0 flex flex-col>
+  <img
+    src="../assets/background-cover.png"
+    alt="background"
+    absolute
+    top-0
+    left-0
+    w-full
+    h-full
+  />
+  <div flex-1 flex items-center justify-center z-10 px-20>
+    <LmSplash />
+  </div>
+</div>
