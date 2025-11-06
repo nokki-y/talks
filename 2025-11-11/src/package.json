@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev --open",
-    "build": "slidev build",
+    "build": "slidev build --base /talks/2025-11-11/",
     "export": "slidev export"
   }
 }
