@@ -58,13 +58,18 @@ jobs:
           cd 2025-11-11/src
           pnpm build
 
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p deploy/2025-11-11
+          cp -r 2025-11-11/src/dist/* deploy/2025-11-11/
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '2025-11-11/src/dist'
+          path: 'deploy'
 
       - name: Deploy to GitHub Pages
         id: deployment
