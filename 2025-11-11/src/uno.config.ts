@@ -6,7 +6,7 @@ export default mergeConfigs([
   {
     theme: {
       fontFamily: {
-        main: 'Kosugi, sans-serif',
+        sans: 'Kosugi, Hiragino Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, sans-serif',
       },
     },
   },

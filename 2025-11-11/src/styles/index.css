@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+
+body {
+  letter-spacing: 0.05em;
+}
+
 .slidev-layout {
   background-position: center;
   padding: 0;
@@ -10,5 +16,11 @@
 }
 
 .slidev-layout p {
+  margin: 0;
+}
+
+.slidev-layout h1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
   margin: 0;
 }
