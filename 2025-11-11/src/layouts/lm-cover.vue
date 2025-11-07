@@ -1,5 +1,5 @@
 <template>
-  <div h-full w-full relative p-0 flex flex-col class="slidev-layout lm-cover relative">
+  <div h-full w-full relative p-0 flex flex-col class="slidev-layout lm-cover">
     <img
       src="../assets/background-cover.png"
       alt="background"

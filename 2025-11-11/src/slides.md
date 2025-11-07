@@ -30,11 +30,16 @@ layout: lm-cover
 ---
 
 ::title::
-丸3年やってみたけど、<br>Vue Fes Japan運営スタッフはいいぞー！
+
+<div mb-6 line-height-10>
+  <div>丸3年やってみたけど、</div><div>Vue Fes Japan運営スタッフはいいぞー！</div>
+</div>
 
 ::subtitle::
-株式会社リンクアンドモチベーション<br>
-SRE・イネーブリンググループ
+
+<div mb-1 line-height-relaxed>
+  <div>株式会社リンクアンドモチベーション</div><div>SRE・イネーブリンググループ</div>
+</div>
 
 <!--
 TODO:
@@ -46,13 +51,20 @@ layout: lm-base
 
 <div grid h-full class="grid-cols-[1fr_320px]">
   <div pl-20 pt-30>
-    <div text-3xl >鵜木 義秀 (Yoshihide Unoki)</div>
-    <div op50 tracking-wide text-xl mt1>nokki-y</div>
+    <div mb-10>
+      <div text-3xl >鵜木 義秀 (Yoshihide Unoki)</div>
+      <div op50 tracking-wide text-xl mt1>nokki-y</div>
+    </div>
+    <div>
+      <div>
+        株式会社リンクアンドモチベーション<br>SRE・イネーブリンググループ<br>
+      </div>
+    </div>
   </div>
   <div flex justify-center pt-30>
     <div relative>
       <!-- 影 -->
-      <div absolute rounded-full bg-white op30  w-40 h-40 class="top-[10px] left-[16px]"></div>
+      <div absolute rounded-full bg-white op30  w-20 h-20 blur-sm class="top-[100px] left-[100px]"></div>
       <div overflow-hidden rounded-full w-40 h-40 relative>
         <img src="../assets/sns.jpg" alt="icon" />
       </div>

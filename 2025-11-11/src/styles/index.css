@@ -1,11 +1,14 @@
+.slidev-layout {
+  background-position: center;
+  padding: 0;
+}
+
 .slidev-layout.cover {
   background-image: url(../assets/background-cover.png);
   background-position: center;
   padding: 0;
 }
 
-.slidev-layout {
-  background-image: url(../assets/background.png);
-  background-position: center;
-  padding: 0;
+.slidev-layout p {
+  margin: 0;
 }
