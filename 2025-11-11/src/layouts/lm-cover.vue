@@ -23,13 +23,13 @@
           </div>
 
           <div text-4>
-            <p>鵜木 義秀 (Yoshihide Unoki)</p>
+            <p>鵜木 義秀 <span font-en>(Yoshihide Unoki)</span></p>
           </div>
         </div>
       </div>
     </div>
     <!-- 左下のコピーライト -->
-    <div absolute bottom-1 left-2 z-10 text-2 op50>
+    <div absolute bottom-1 left-2 z-10 text-2 op50 font-en>
       <span>© Link and Motivation Group</span>
     </div>
   </div>

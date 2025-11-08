@@ -5,7 +5,7 @@
     </div>
 
     <!-- 左下のコピーライト -->
-    <div absolute bottom-1 left-2 z-10 text-2 op50>
+    <div absolute bottom-1 left-2 z-10 text-2 op50 font-en>
       <span>© Link and Motivation Group</span>
     </div>
 

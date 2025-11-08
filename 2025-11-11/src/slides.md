@@ -28,14 +28,20 @@ layout: lm-cover
 
 ::title::
 
-<div mb-6 line-height-10>
-  <div>丸3年やってみたけど、</div><div>Vue Fes Japan運営スタッフはいいぞー！</div>
+<div mb-6 line-height-10 flex flex-col>
+  <div>
+    <span>丸<span font-en class="text-[26px]"> 3 </span>年やってみたけど、</span>
+  </div>
+  <div>
+    <span font-en>Vue Fes Japan </span><span>運営スタッフはいいぞー！</span>
+  </div>
 </div>
 
 ::subtitle::
 
-<div mb-1 line-height-relaxed>
-  <div>株式会社リンクアンドモチベーション</div><div>SRE・イネーブリンググループ</div>
+<div mb-2 line-height-5>
+  <div>株式会社リンクアンドモチベーション</div>
+  <div><span font-en class="text-[14px]">SRE</span>・イネーブリンググループ</div>
 </div>
 
 <!--
@@ -49,12 +55,12 @@ layout: lm-base
 <div grid h-full class="grid-cols-[1fr_320px]">
   <div pl-20 pt-30>
     <div mb-10>
-      <div text-3xl >鵜木 義秀 (Yoshihide Unoki)</div>
+      <div text-3xl >鵜木 義秀 <span font-en>(Yoshihide Unoki)</span></div>
       <div op50 tracking-wide text-xl mt1>nokki-y</div>
     </div>
     <div>
       <div>
-        株式会社リンクアンドモチベーション<br>SRE・イネーブリンググループ<br>
+        株式会社リンクアンドモチベーション<br><span font-en>SRE</span>・イネーブリンググループ<br>
       </div>
     </div>
   </div>
@@ -104,6 +110,8 @@ layout: lm-base
 ---
 layout: lm-agenda
 ---
+
+あああ
 
 ---
 layout: lm-base
@@ -460,7 +468,7 @@ layout: lm-base
     </div>
   </div>
   <!-- 左下のコピーライト -->
-  <div absolute bottom-1 left-2 z-10 text-2 op50>
+  <div absolute bottom-1 left-2 z-10 text-2 op50 font-en>
     <span>© Link and Motivation Group</span>
   </div>
 </div>
