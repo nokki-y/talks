@@ -111,7 +111,56 @@ layout: lm-base
 layout: lm-agenda
 ---
 
-あああ
+<div grid grid-cols-2 gap-10>
+  <div grid gap-4 items-center class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
+    <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
+      <span font-bold text-gradient>1</span>
+    </div>
+    <div pl-2 flex-1 font-bold>
+      <div>コミュニティってなにするの？</div>
+    </div>
+    <!-- 線 -->
+    <div border-gradient size-full></div>
+    <!-- 線 -->
+    <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+  </div>
+  <div grid gap-4 items-center class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
+    <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
+      <span font-bold text-gradient>2</span>
+    </div>
+    <div pl-2 flex-1 font-bold>
+      <div>なにか良いことあるの？</div>
+    </div>
+    <!-- 線 -->
+    <div border-gradient size-full></div>
+    <!-- 線 -->
+    <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+  </div>
+  <div grid gap-4 items-center class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
+    <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
+      <span font-bold text-gradient>3</span>
+    </div>
+    <div pl-2 flex-1 font-bold>
+      <div>忙しくても大丈夫？</div>
+    </div>
+    <!-- 線 -->
+    <div border-gradient size-full></div>
+    <!-- 線 -->
+    <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+  </div>
+  <div grid gap-4 items-center class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
+    <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
+      <span font-bold text-gradient>4</span>
+    </div>
+    <div pl-2 flex-1 font-bold>
+      <div>3年間やってみてよかったの？</div>
+    </div>
+    <!-- 線 -->
+    <div border-gradient size-full></div>
+    <!-- 線 -->
+    <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+  </div>
+</div>
 
 ---
 layout: lm-base
