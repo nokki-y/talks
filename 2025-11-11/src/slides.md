@@ -14,11 +14,8 @@ transition: fade
 mdc: true
 # duration of the presentation
 duration: 35min
-# font settings
-fonts:
-  sans: 'Kosugi,Hiragino Sans,Hiragino Kaku Gothic ProN,Noto Sans JP,sans-serif'
-  serif: 'Hiragino Mincho ProN,Yu Mincho,YuMincho,serif'
-  mono: 'Menlo,Monaco,Courier New,monospace'
+# color schema: light or dark
+colorSchema: light
 # custom css
 css: unocss
 ---
@@ -66,7 +63,7 @@ layout: lm-base
       <!-- 影 -->
       <div absolute rounded-full bg-white op30  w-20 h-20 blur-sm class="top-[100px] left-[100px]"></div>
       <div overflow-hidden rounded-full w-40 h-40 relative>
-        <img src="../assets/sns.jpg" alt="icon" />
+        <img src="/sns.jpg" alt="icon" />
       </div>
     </div>
   </div>
@@ -105,19 +102,27 @@ layout: lm-base
 - 自分たちの影響力を再認識してこれからの活動に活かしてほしいです
 
 ---
+layout: lm-agenda
+---
+
+---
 layout: lm-base
 ---
 
 <!-- 白線 -->
-<div absolute top-0 h-full bg-white class="w-[12px] left-[50px]"></div>
+<!-- <div absolute top-0 h-full bg-white class="w-[12px] left-[50px]"></div> -->
 
 <!-- 影 -->
-<div absolute top-0 h-full bg-white op20 class="w-[12px] left-[70px]"></div>
+<!-- <div absolute top-0 h-full bg-white op20 class="w-[12px] left-[70px]"></div> -->
 
 <!-- ポイント -->
 <!-- <div absolute rounded-full bg-white class="top-[270px] left-[41px] w-[24px] h-[10px]"></div> -->
 
-運営スタッフ3年間での出来事
+::title::
+運営スタッフ 3年間での出来事
+
+::content::
+aaa
 
 <!--
 まずは、運営スタッフ3年間での出来事を簡単に話します。
@@ -127,12 +132,31 @@ layout: lm-base
 layout: lm-base
 ---
 
-コアフタッフに入ったきっかけ（後続のスライドと統合する可能性あり）
+::title::
+運営スタッフ 3年間での出来事
 
-1. 2023年1月: 開発組織のプレゼンス向上という打算的な目的で外部コミュニティへの参加を開始
+::content::
+
+<!-- 時系列棒 -->
+<!-- <div bg-black absolute class="w-[662px] h-[10px] top-[100px] left-[100px]"></div> -->
+
+<!-- <Bar
+  absolute
+  class="top-[100px] left-[420px]"
+  height="60px" />
+
+<ArrowLabel
+  class="top-[80px] left-[320px]"
+  absolute
+  fontSize="1.5rem"
+  borderWidth="4">
+
+  <div>運営スタッフになったきっかけ</div>
+</ArrowLabel> -->
+<!-- 1. 2023年1月: 開発組織のプレゼンス向上という打算的な目的で外部コミュニティへの参加を開始
    - Frontend領域を専門としていたので、最も理解のあるVue.jsコミュニティに参加することにした
 2. 2023年2月: [Vue.js v-tokyo Meetup #16](https://vuejs-meetup.connpass.com/event/271298/) に参加
-   - 懇親会で当時の運営メンバーに声をかけて頂き、運営スタッフになる
+   - 懇親会で当時の運営メンバーに声をかけて頂き、運営スタッフになる -->
 
 <!--
 そもそも、僕が運営に入ったきっかけは結構打算的でした。
@@ -142,6 +166,10 @@ layout: lm-base
 layout: lm-base
 ---
 
+::title::
+運営スタッフ 3年間での出来事
+
+::content::
 時系列（時系列に沿って話すので全体感を示す）
 
 →　図にする想定
@@ -391,7 +419,7 @@ layout: lm-base
 
 <div h-full w-full relative p-0 flex flex-col>
   <img
-    src="../assets/office-01.png"
+    src="/office-01.png"
     alt="background"
     absolute
     top-0
@@ -400,7 +428,7 @@ layout: lm-base
     h-full
   />
   <div z-10 absolute h-20 w-20 class="top-[-16px] right-[-10px]">
-    <img src="../assets/logo.png" alt="logo" />
+    <img src="/logo.png" alt="logo" />
   </div>
   <div z-10 px-20 py-10 >
     <div text-4xl font-bold w-full text-center mt-10 mb-10>全職種、積極採用中です！</div>
@@ -422,7 +450,7 @@ layout: lm-base
         </div>
         <div flex justify-center>
           <img
-            src="../assets/../assets/recruitment-qr-code.png"
+            src="//recruitment-qr-code.png"
             alt="recruitment-qr-code"
             w-40
             h-40
@@ -441,7 +469,7 @@ layout: lm-base
 
 <div h-full w-full relative p-0 flex flex-col>
   <img
-    src="../assets/background-cover.png"
+    src="/background-cover.png"
     alt="background"
     absolute
     top-0

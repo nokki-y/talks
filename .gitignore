@@ -5,6 +5,7 @@ dist
 .vite-inspect
 .remote-assets
 components.d.ts
+tmp
 
 # Claude Code
 .claude/settings.local.json
