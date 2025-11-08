@@ -10,7 +10,10 @@ export default defineConfig({
         'border-color': 'var(--box-contents-border-color)',
       },
     ],
-    ['font-en', { 'font-family': 'Barlow Condensed', 'letter-spacing': '0.125em' }],
+    [
+      'font-en',
+      { 'font-family': 'Barlow Condensed', 'letter-spacing': '0.125em', 'padding-left': '0.1em' },
+    ],
     [
       'text-gradient',
       {
