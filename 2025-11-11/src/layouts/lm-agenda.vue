@@ -37,7 +37,7 @@
       flex
       justify-center
       items-center
-      class="w-[201px] pl-[2px]"
+      class="w-[201px] pl-[3.5px]"
     >
       <div text-4xl font-bold mx-1 font-en text-center>A G E N D A</div>
     </div>

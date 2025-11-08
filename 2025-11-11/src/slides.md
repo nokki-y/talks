@@ -116,8 +116,9 @@ layout: lm-agenda
     <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
       <span font-bold text-gradient>1</span>
     </div>
-    <div pl-2 flex-1 font-bold>
-      <div>コミュニティってなにするの？</div>
+    <div pl-2 flex-1 class="pt-[4px]">
+      <div mb-1 font-bold>コアスタッフってなにするの？</div>
+      <div op50 text-xs font-500 class="pl-[1px]">前段となる3年間の活動を簡単にお話します</div>
     </div>
     <!-- 線 -->
     <div border-gradient size-full></div>
@@ -133,8 +134,9 @@ layout: lm-agenda
     <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
       <span font-bold text-gradient>2</span>
     </div>
-    <div pl-2 flex-1 font-bold>
-      <div>なにか良いことあるの？</div>
+    <div pl-2 flex-1 class="pt-[4px]">
+      <div mb-1 font-bold>なにか良いことあるの？</div>
+      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を簡単にお話します</div>
     </div>
     <!-- 線 -->
     <div border-gradient size-full></div>
@@ -150,8 +152,9 @@ layout: lm-agenda
     <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
       <span font-bold text-gradient>3</span>
     </div>
-    <div pl-2 flex-1 font-bold>
-      <div>忙しくても大丈夫？</div>
+    <div pl-2 flex-1 class="pt-[4px]" >
+      <div mb-1 font-bold>忙しくても大丈夫？</div>
+      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を簡単にお話します</div>
     </div>
     <!-- 線 -->
     <div border-gradient size-full></div>
@@ -167,8 +170,9 @@ layout: lm-agenda
     <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
       <span font-bold text-gradient>4</span>
     </div>
-    <div pl-2 flex-1 font-bold>
-      <div>3年間やってみてよかったの？</div>
+    <div pl-2 flex-1 class="pt-[4px]">
+      <div mb-1 font-bold>3年間やってみてよかったの？</div>
+      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を簡単にお話します</div>
     </div>
     <!-- 線 -->
     <div border-gradient size-full></div>
