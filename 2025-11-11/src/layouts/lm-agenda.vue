@@ -10,7 +10,7 @@
       flex
       items-center
       justify-center
-      class="bottom-[-25px] left-[548px]"
+      class="bottom-[-25px] left-[540px]"
     >
       <img src="/logo.png" alt="logo" />
     </div>
@@ -28,8 +28,18 @@
       <img src="/vue-fes-japan-2025.svg" alt="logo" />
     </div>
 
-    <div z-10 mb-11 border-b-2 border-white tracking-widest>
-      <span text-4xl font-bold mx-1 font-en>A G E N D A</span>
+    <div
+      z-10
+      mb-11
+      border-b-2
+      border-white
+      tracking-widest
+      flex
+      justify-center
+      items-center
+      class="w-[201px] pl-[2px]"
+    >
+      <div text-4xl font-bold mx-1 font-en text-center>A G E N D A</div>
     </div>
 
     <!-- コンテンツエリア -->
