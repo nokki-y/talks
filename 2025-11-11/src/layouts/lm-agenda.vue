@@ -21,23 +21,13 @@
     </div>
 
     <!-- 左下のコピーライト -->
-    <div absolute bottom-1 left-10 z-20 text-2 op30 c-black>
+    <div absolute bottom-1 left-10 z-20 text-2 op30>
       <span>© Link and Motivation Group</span>
     </div>
 
     <!-- コンテンツエリア -->
-    <div
-      flex
-      z-10
-      rounded-tr-xl
-      rounded-tl-xl
-      overflow-hidden
-      px-10
-      py-5
-      relative
-      c-black
-      class="h-[calc(100%-100px)] w-[calc(100%-64px)] bg-[#D8DDE1]"
-    >
+    <div z-10 rounded-md overflow-hidden p-5 box-contents>
+      aaaaaaaaaa
       <slot name="content" />
     </div>
   </div>

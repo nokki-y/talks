@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
 
-body {
-  letter-spacing: 0.05em;
-}
-
 .slidev-layout {
-  background-position: center;
   padding: 0;
+  letter-spacing: 0.05em;
+  font-family: 'Kosugi', sans-serif;
+  color: #ffffff;
 }
 
 .slidev-layout.cover {
-  background-image: url(../assets/background-cover.png);
+  background-image: url(/background-cover.png);
   background-position: center;
-  padding: 0;
 }
 
 .slidev-layout p {

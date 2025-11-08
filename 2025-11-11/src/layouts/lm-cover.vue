@@ -1,19 +1,11 @@
 <template>
   <div h-full w-full relative p-0 flex flex-col class="slidev-layout lm-cover">
-    <img
-      src="../assets/background-cover.png"
-      alt="background"
-      absolute
-      top-0
-      left-0
-      w-full
-      h-full
-    />
+    <img src="/background-cover.png" alt="background" absolute top-0 left-0 w-full h-full />
 
     <div flex-1 w-full grid z-10 class="grid-cols-[1fr_3fr]">
       <!-- 左側のロゴエリア -->
       <div flex items-center justify-center>
-        <img src="../assets/logo.png" alt="logo" />
+        <img src="/logo.png" alt="logo" />
       </div>
 
       <!-- 中央のコンテンツエリア -->
