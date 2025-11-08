@@ -1,6 +1,19 @@
 <template>
   <div h-full w-full relative p-0 flex flex-col class="slidev-layout lm-cover">
-    <img src="/background-cover.png" alt="background" absolute top-0 left-0 w-full h-full />
+    <img
+      src="/background-cover.png"
+      alt="background"
+      absolute
+      top-0
+      left-0
+      bottom-0
+      right-0
+      :style="{
+        'object-fit': 'cover',
+        width: '100%',
+        height: '101%', // 画像のアスペクト比を考慮して1%余分に設定。本来なら画像のアスペクト比を修正すべき。
+      }"
+    />
 
     <div flex-1 w-full grid z-10 class="grid-cols-[1fr_3fr]">
       <!-- 左側のロゴエリア -->
