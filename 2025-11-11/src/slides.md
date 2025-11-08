@@ -112,7 +112,7 @@ layout: lm-agenda
 ---
 
 <div grid grid-cols-2 gap-10>
-  <div grid gap-4 items-center class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
+  <div grid gap-4 items-center relative class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
     <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
       <span font-bold text-gradient>1</span>
     </div>
@@ -123,8 +123,13 @@ layout: lm-agenda
     <div border-gradient size-full></div>
     <!-- 線 -->
     <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+    <!-- ピリオド -->
+    <div absolute flex justify-between class="w-[4px] h-auto bottom-[-1px] right-[6px]">
+      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+    </div>
   </div>
-  <div grid gap-4 items-center class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
+  <div grid gap-4 items-center relative class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
     <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
       <span font-bold text-gradient>2</span>
     </div>
@@ -135,8 +140,13 @@ layout: lm-agenda
     <div border-gradient size-full></div>
     <!-- 線 -->
     <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+    <!-- ピリオド -->
+    <div absolute flex justify-between class="w-[4px] h-auto bottom-[-1px] right-[6px]">
+      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+    </div>
   </div>
-  <div grid gap-4 items-center class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
+  <div grid gap-4 items-center relative class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
     <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
       <span font-bold text-gradient>3</span>
     </div>
@@ -147,8 +157,13 @@ layout: lm-agenda
     <div border-gradient size-full></div>
     <!-- 線 -->
     <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+    <!-- ピリオド -->
+    <div absolute flex justify-between class="w-[4px] h-auto bottom-[-1px] right-[6px]">
+      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+    </div>
   </div>
-  <div grid gap-4 items-center class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
+  <div grid gap-4 items-center relative class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
     <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
       <span font-bold text-gradient>4</span>
     </div>
@@ -159,6 +174,11 @@ layout: lm-agenda
     <div border-gradient size-full></div>
     <!-- 線 -->
     <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+    <!-- ピリオド -->
+    <div absolute flex justify-between class="w-[4px] h-auto bottom-[-1px] right-[6px]">
+      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+    </div>
   </div>
 </div>
 
