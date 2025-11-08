@@ -12,10 +12,6 @@
   >
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
 
-    <h1 z-10 flex-1 w-full px-8 flex items-center>
-      <slot name="title" />
-    </h1>
-
     <div absolute h-30 w-30 z-20 class="top-[-14px] right-[-10px]">
       <img src="/logo.png" alt="logo" />
     </div>
@@ -26,19 +22,12 @@
     </div>
 
     <!-- コンテンツエリア -->
-    <div
-      flex
-      z-10
-      rounded-tr-xl
-      rounded-tl-xl
-      overflow-hidden
-      px-10
-      py-5
-      relative
-      c-black
-      class="h-[calc(100%-100px)] w-[calc(100%-64px)] bg-[#D8DDE1]"
-    >
-      <slot name="content" />
+    <div z-10 size-full relative>
+      <slot>
+        <div flex justify-center items-center size-full>
+          <div>CONTENT</div>
+        </div>
+      </slot>
     </div>
   </div>
 </template>
