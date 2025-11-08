@@ -199,11 +199,68 @@ layout: lm-base
 <!-- ポイント -->
 <!-- <div absolute rounded-full bg-white class="top-[270px] left-[41px] w-[24px] h-[10px]"></div> -->
 
-::title::
-運営スタッフ 3年間での出来事
+<div class="content-container">
+  <!-- 背景色 -->
+  <div class="background-color"></div>
+</div>
 
-::content::
-aaa
+<!-- タイトル -->
+<div class="h1-container">
+  <h1>打算的な理由から始まったコミュニティ活動</h1>
+</div>
+
+<!-- v-tokyo #16　画像 -->
+<div class="image-container top-[60px] left-[0px] w-[550px]">
+  <img src="/v-tokyo-16.png" alt="v-tokyo #16" />
+  <!-- 色彩が強いのでさりげない白マスク -->
+  <div absolute top-0 left-0 w-full h-full bg-white op15></div>
+</div>
+
+<div absolute text-xs class="top-[140px] right-[26px]" >
+  <span> ↓ 打算と本音のあいだで生まれた投稿たち。</span>
+</div>
+
+<!-- v-tokyo #16　画像-x 1 -->
+<div class="image-container bottom-[278px] right-[15px] w-[280px]">
+  <img src="/v-tokyo-16-x-1.png" alt="v-tokyo #16" />
+  <!-- 色彩が強いのでさりげない白マスク -->
+  <div absolute top-0 left-0 w-full h-full bg-white op10></div>
+</div>
+
+<!-- v-tokyo #16　画像-x 2 -->
+<div class="image-container bottom-[176px] right-[24px] w-[280px]">
+  <img src="/v-tokyo-16-x-2.png" alt="v-tokyo #16" />
+  <!-- 色彩が強いのでさりげない白マスク -->
+  <div absolute top-0 left-0 w-full h-full bg-white op10></div>
+</div>
+
+<!-- v-tokyo #16　画像-x 3 -->
+<div class="image-container bottom-[83px] right-[40px] w-[280px]">
+  <img src="/v-tokyo-16-x-3.png" alt="v-tokyo #16" />
+  <!-- 色彩が強いのでさりげない白マスク -->
+  <div absolute top-0 left-0 w-full h-full bg-white op10></div>
+</div>
+
+<!-- v-tokyo #16　画像-x 4 -->
+<div class="image-container bottom-[-10px] right-[15px] w-[280px]">
+  <img src="/v-tokyo-16-x-4.png" alt="v-tokyo #16" />
+  <!-- 色彩が強いのでさりげない白マスク -->
+  <div absolute top-0 left-0 w-full h-full bg-white op10></div>
+</div>
+
+<!-- 詳細 -->
+<div class="detail-container bottom-[90px] left-[40px] w-[400px]">
+  <!-- <div class="detail-title bottom-[-40px] left-[-40px]">「外部へのプライオリティを高める」という目的で <span font-en>`v-tokyo Meetup #16`</span></div> -->
+  <div class="detail-content">
+    <div mb-4>「外部へのプライオリティを高める」という目的で参加した<a href="https://vuejs-meetup.connpass.com/event/271298/" target="_blank" font-en> `v-tokyo Meetup #16`</a>。</div>
+    <div>懇親会で わたさん に声をかけてもらってコアスタッフに参加することになりました。</div>
+  </div>
+</div>
+
+<!-- サブタイトル -->
+<div class="sub-title-container bottom-[60px] right-[260px]">
+  <span font-en class="sub-title">"Not contribution, just work."</span>
+</div>
 
 <!--
 まずは、運営スタッフ3年間での出来事を簡単に話します。
