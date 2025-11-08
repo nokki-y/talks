@@ -41,7 +41,7 @@ layout: lm-cover
 
 <div mb-2 line-height-5>
   <div>株式会社リンクアンドモチベーション</div>
-  <div><span font-en class="text-[14px]">SRE</span>・イネーブリンググループ</div>
+  <div><span font-en class="text-[13px]">SRE</span>・イネーブリンググループ</div>
 </div>
 
 <!--
