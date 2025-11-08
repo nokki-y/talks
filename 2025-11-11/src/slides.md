@@ -118,7 +118,7 @@ layout: lm-agenda
     </div>
     <div pl-2 flex-1 class="pt-[4px]">
       <div mb-1 font-bold>コアスタッフってなにするの？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">前段となる3年間の活動を簡単にお話します</div>
+      <div op50 text-xs font-500 class="pl-[1px]">前段となる3年間の活動</div>
     </div>
     <!-- 線 -->
     <div border-gradient size-full></div>
@@ -136,7 +136,7 @@ layout: lm-agenda
     </div>
     <div pl-2 flex-1 class="pt-[4px]">
       <div mb-1 font-bold>なにか良いことあるの？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を簡単にお話します</div>
+      <div op50 text-xs font-500 class="pl-[1px]">活動をしていて得られたこと</div>
     </div>
     <!-- 線 -->
     <div border-gradient size-full></div>
@@ -154,7 +154,7 @@ layout: lm-agenda
     </div>
     <div pl-2 flex-1 class="pt-[4px]" >
       <div mb-1 font-bold>忙しくても大丈夫？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を簡単にお話します</div>
+      <div op50 text-xs font-500 class="pl-[1px]">忙しかった2025年の出来事</div>
     </div>
     <!-- 線 -->
     <div border-gradient size-full></div>
