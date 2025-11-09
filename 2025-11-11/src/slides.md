@@ -207,7 +207,7 @@ aaa
 -->
 
 ---
-layout: lm-sub-cover
+layout: lm-base
 partNumber: '1'
 ---
 
@@ -217,7 +217,10 @@ partNumber: '1'
 ::sub-title::
 Not contribution, just work.
 
-::content::
+::left-content::
+あああ
+
+::right-content::
 
 <!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
 <History :active="0" />

@@ -58,14 +58,7 @@
     </div>
 
     <!-- コンテンツエリア -->
-    <div
-      z-10
-      absolute
-      box-contents
-      p-2
-      pr-3
-      class="content-container top-[0px] right-[0px] w-[60%] h-[100%]"
-    >
+    <div z-10 absolute p-2 pr-3 class="content-container top-[0px] right-[0px] w-[60%] h-[100%]">
       <slot name="content">
         <div flex justify-center items-center size-full>CONTENT</div>
       </slot>

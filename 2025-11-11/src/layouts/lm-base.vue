@@ -35,39 +35,29 @@
       </div>
     </div>
 
-    <!-- パート番号 -->
+    <!-- 左側コンテンツエリア -->
     <div
       z-10
       absolute
-      op50
-      flex
-      items-end
-      justify-center
-      font-bold
-      class="part-number bottom-[10px] left-[10px]"
+      p-2
+      pl-3
+      class="left-content-container bottom-[0px] left-[0px] w-[40%] h-[60%]"
     >
-      <span
-        font-bold
-        font-en
-        class="text-[160px] part-number"
-        :style="{ transform: 'scale(1, 1.6)' }"
-        >{{ partNumber }}</span
-      >
-      <!-- 飾りハイフン -->
-      <div class="hyphen w-[100px] h-[10px] bg-white mb-[17.5px] rounded-sm"></div>
+      <slot name="left-content">
+        <div flex justify-center items-center size-full>LEFT CONTENT</div>
+      </slot>
     </div>
 
-    <!-- コンテンツエリア -->
+    <!-- 右側コンテンツエリア -->
     <div
       z-10
       absolute
-      box-contents
       p-2
       pr-3
-      class="content-container top-[0px] right-[0px] w-[60%] h-[100%]"
+      class="right-content-container top-[0px] right-[0px] w-[60%] h-[100%]"
     >
-      <slot name="content">
-        <div flex justify-center items-center size-full>CONTENT</div>
+      <slot name="right-content">
+        <div flex justify-center items-center size-full>RIGHT CONTENT</div>
       </slot>
     </div>
   </div>
@@ -91,34 +81,6 @@ const props = defineProps({
 </script>
 
 <style>
-.slidev-layout.lm-sub-cover .part-number {
-  background: linear-gradient(
-    135deg,
-    #b3002d 0%,
-    #c21c46 15%,
-    #e4dbdd 35%,
-    #f2ecee 55%,
-    #c85273 75%,
-    #f48fa7 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.slidev-layout.lm-sub-cover .hyphen {
-  background: linear-gradient(
-    135deg,
-    #b3002d 0%,
-    #c21c46 2%,
-    #e4dbdd 45%,
-    #f2ecee 55%,
-    #c85273 87%,
-    #f48fa7 100%
-  );
-}
-
 .slidev-layout.lm-sub-cover .title-container {
   clip-path: polygon(0% 0%, 100% 0%, 100% 74%, 96% 100%, 0% 100%);
 }
@@ -127,7 +89,7 @@ const props = defineProps({
   clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 95% 100%, 0% 100%);
 }
 
-.slidev-layout.lm-sub-cover .content-container {
+.slidev-layout.lm-sub-cover .right-content-container {
   background-color: rgba(var(--box-contents-background-color-rgb), 0.7);
 }
 </style>
