@@ -199,74 +199,74 @@ partNumber: '1'
 
 ::content::
 
-<div absolute top-17rem right-1.5rem>
-  <!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
-  <div>
-    <div grid gap-3 border-y py-1 pl-1 pr-1.5 border-gray-200 class="grid-cols-[100px_1fr]">
-      <div flex items-baseline>
+<!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
+<div absolute top-15rem right-1.5rem>
+  <div text-lg>
+    <div grid gap-3 border-y items-center py-1 pl-1 pr-1.5 box-contents-border-color class="grid-cols-[120px_1fr]">
+      <div flex items-baseline font-bold>
         <span font-en>2023</span>
         <span text-xs mr-1 class="ml-[0.1rem]">年</span>
         <span font-en>2</span>
         <span text-xs class="ml-[0.1rem]">月</span>
       </div>
-      <div text-sm grid py-1 class="grid-cols-[140px_1fr]">
-        <div>
-          <div font-en class="mr-[0.5rem]">v-tokyo #16</div>
+      <div grid py-1 class="grid-cols-[120px_1fr]">
+        <div flex items-center>
+          <div font-en font-bold line-height-4.5 class="mr-[0.5rem]">v-tokyo #16</div>
         </div>
         <div>
-          <div>オフライン開催</div>
-          <div>初参加</div>
+          <div>・オフライン開催</div>
+          <div>・v-tokyo 初参加</div>
         </div>
       </div>
     </div>
-    <div grid gap-3 border-b py-1 pl-1 pr-1.5 border-gray-200 class="grid-cols-[100px_1fr]">
-      <div flex items-baseline>
+    <div grid gap-3 border-b items-center py-1 pl-1 pr-1.5 box-contents-border-color class="grid-cols-[120px_1fr]">
+      <div flex items-baseline font-bold>
         <span font-en>2023</span>
         <span text-xs mr-1 class="ml-[0.1rem]">年</span>
         <span font-en>3</span>
         <span text-xs class="ml-[0.1rem]">月</span>
       </div>
-      <div text-sm grid py-1 class="grid-cols-[140px_1fr]">
-        <div>
-          <div font-en class="mr-[0.5rem]">Vue Fes Japan 2023</div>
+      <div grid py-1 class="grid-cols-[120px_1fr]">
+        <div flex items-center>
+          <div font-en font-bold line-height-4.5 class="mr-[0.5rem]">Vue Fes Japan 2023</div>
         </div>
         <div>
-          <div>コアフタッフ初参画</div>
-          <div>企画運営チームリーダー</div>
+          <div>・コアフタッフ初参画</div>
+          <div>・企画運営チームリーダー</div>
         </div>
       </div>
     </div>
-    <div grid gap-3 border-b py-1 pl-1 pr-1.5 border-gray-200 class="grid-cols-[100px_1fr]">
-      <div flex items-baseline>
+    <div grid gap-3 border-b items-center py-1 pl-1 pr-1.5 box-contents-border-color class="grid-cols-[120px_1fr]">
+      <div flex items-baseline font-bold>
         <span font-en>2024</span>
         <span text-xs mr-1 class="ml-[0.1rem]">年</span>
         <span font-en>2</span>
         <span text-xs class="ml-[0.1rem]">月</span>
       </div>
-      <div text-sm grid py-1 class="grid-cols-[140px_1fr]">
-        <div>
-          <div font-en class="mr-[0.5rem]">Vue Fes Japan 2024</div>
+      <div grid py-1 class="grid-cols-[120px_1fr]">
+        <div flex items-center>
+          <div font-en font-bold line-height-4.5 class="mr-[0.5rem]">Vue Fes Japan 2024</div>
         </div>
         <div>
-          <div>コアスタッフ継続</div>
-          <div>企画運営チームリーダー</div>
+          <div>・コアスタッフ継続</div>
+          <div>・企画運営チームリーダー</div>
         </div>
       </div>
     </div>
-    <div grid gap-3 border-b py-1 pl-1 pr-1.5 border-gray-200 class="grid-cols-[100px_1fr]">
-      <div flex items-baseline>
+    <div grid gap-3 border-b items-center py-1 pl-1 pr-1.5 box-contents-border-color class="grid-cols-[120px_1fr]">
+      <div flex items-baseline font-bold>
         <span font-en>2025</span>
         <span text-xs mr-1 class="ml-[0.1rem]">年</span>
         <span font-en>2</span>
         <span text-xs class="ml-[0.1rem]">月</span>
       </div>
-      <div text-sm grid py-1 class="grid-cols-[140px_1fr]">
-        <div>
-          <div font-en class="mr-[0.5rem]">Vue Fes Japan 2025</div>
+      <div grid py-1 class="grid-cols-[120px_1fr]">
+        <div flex items-center>
+          <div font-en font-bold line-height-4.5 class="mr-[0.5rem]">Vue Fes Japan 2025</div>
         </div>
         <div>
-          <div>コアスタッフ継続</div>
-          <div>企画チームサブリーダー</div>
+          <div>・コアスタッフ継続</div>
+          <div>・ 企画チームサブリーダー</div>
         </div>
       </div>
     </div>

@@ -24,35 +24,42 @@
       font-bold
       class="part-number bottom-[36px] left-[10px]"
     >
-      <span font-en class="text-[140px] mb-[-28px]">
+      <!-- <span font-en class="text-[140px] mb-[-28px]">
         <span class="mr-[-11px]">P</span>
         <span>art.</span>
-      </span>
+      </span> -->
       <span
         font-bold
         font-en
         class="text-[140px] part-number"
-        :style="{ transform: 'scale(1, 1.5)' }"
+        :style="{ transform: 'scale(1, 1.6)' }"
         >{{ partNumber }}</span
       >
     </div>
 
     <!-- タイトル -->
-    <div z-10 absolute box-contents p-2 pr-3 class="title-container top-[50px] left-[20px]">
+    <div z-30 absolute box-contents p-2 pr-3 class="title-container top-[50px] left-[20px]">
       <div text-3xl font-bold>
         <slot name="title">TITLE</slot>
       </div>
     </div>
 
     <!-- サブタイトル -->
-    <div z-10 absolute box-contents p-2 pr-4 class="sub-title-container top-[140px] left-[20px]">
+    <div z-30 absolute box-contents p-2 pr-4 class="sub-title-container top-[140px] left-[20px]">
       <div text-2xl font-bold op50>
         <slot name="sub-title">SUB TITLE</slot>
       </div>
     </div>
 
     <!-- コンテンツエリア -->
-    <div z-10 absolute class="top-[0px] right-[0px] w-[50%] h-[100%]">
+    <div
+      z-10
+      absolute
+      box-contents
+      p-2
+      pr-3
+      class="content-container top-[0px] right-[0px] w-[60%] h-[100%]"
+    >
       <slot name="content">
         <div flex justify-center items-center size-full>CONTENT</div>
       </slot>
@@ -100,5 +107,9 @@ const props = defineProps({
 
 .slidev-layout.lm-sub-cover .sub-title-container {
   clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 95% 100%, 0% 100%);
+}
+
+.slidev-layout.lm-sub-cover .content-container {
+  background-color: rgba(var(--box-contents-background-color-rgb), 0.7);
 }
 </style>
