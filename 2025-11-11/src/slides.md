@@ -203,11 +203,10 @@ aaa
 
 ---
 layout: lm-base
-partNumber: '1'
 ---
 
 ::title::
-打算的なイベント参加
+3年間の主な出来事
 
 ::sub-title::
 Not contribution, just work.
@@ -215,34 +214,81 @@ Not contribution, just work.
 ::left-content::
 
 <!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
-<History :active="0" position="{ top: '100px', left: '100px' }" />
+<History :position="{ bottom: '10px', left: '0px' }" />
 
 ::right-content::
 
+<div>
+  <!-- 2023年のv-tokyo参加がきっかけだったことを指す線 -->
+  <div>
+    <div bg-white absolute rounded-tl-xl rounded-bl-xl class="h-[2px] w-[54px] top-[146px] left-[-54px]"></div>
+    <div bg-white absolute rounded-tr-xl rounded-br-xl class="h-[1.5px] w-[45px] top-[128px] left-[-10px] rotate-[-55deg]"></div>
+  </div>
+  <!-- 企画運営チームを3年間やっていたことを指すための線 -->
+  <div>
+    <div bg-white absolute rounded-tl-xl rounded-bl-xl class="h-[1.5px] w-[32px] top-[206px] left-[-54px] rotate-[45deg]"></div>
+    <div bg-white absolute class="h-[1.5px] w-[156px] top-[295px] left-[-104.5px] rotate-[90deg]"></div>
+    <div bg-white absolute rounded-tl-xl rounded-bl-xl class="h-[1.5px] w-[32px] top-[384px] left-[-54px] rotate-[-45deg]"></div>
+    <div bg-white absolute rounded-tr-xl rounded-br-xl class="h-[2px] w-[13px] top-[294px] left-[-27px]"></div>
+  </div>
+  <!-- 2023年のv-tokyo参加がきっかけだったことの説明 -->
+  <div absolute flex flex-col box-contents py-2 px-4 rounded-md class="top-[36px] left-[0px]" :style="{ backgroundColor: 'rgba(var(--box-contents-background-color-rgb), 0.9)' }">
+    <span>コロナ禍の終わり頃</span>
+    <span>オフライン開催のv-tokyoに初参加</span>
+  </div>
+  <!-- 企画運営チームを3年間やっていたことの説明 -->
+  <div absolute flex flex-col box-contents py-2 px-4 rounded-md class="top-[260px] left-[-10px]" :style="{ backgroundColor: 'rgba(var(--box-contents-background-color-rgb), 0.9)' }">
+    <span>コアスタッフ参画後は</span>
+    <span>主に企画運営チームのリーダー役を担う</span>
+  </div>
+</div>
+
 <!--
-aaa
+コロナ禍が終わりを迎えようとしていた2023年に、Vue.jsコミュニティでもオフラインイベントを再開。v-tokyo #16。
+私はこの時に初めてv-tokyoに参加しました。
+
+以降の3年間は、企画運営チームのリーダーロールを担ってきました。
 -->
 
 ---
-layout: lm-base
-partNumber: '1'
+layout: lm-three-columns
 ---
 
 ::title::
-打算的なイベント参加
-
-::sub-title::
-Not contribution, just work.
+企画運営チームのお仕事
 
 ::left-content::
 
-<!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
-<History :active="0" position="{ top: '100px', left: '100px' }" />
+<img src="/event-sticker-rally.jpg" alt="event-sticker-rally" />
+
+::center-content::
+
+<img src="/event-cocktail.jpg" alt="event-sticker-rally" />
 
 ::right-content::
 
+<img src="/event-panel-discussion.jpg" alt="event-sticker-rally" />
+
+::description::
+
+<div w-full h-6rem flex justify-end items-end>
+  <div flex flex-col gap-1 text-sm items-end>
+    <span>「Vue.js クリニック」, 「Vue.jsコミュニティにようこそ！」</span>
+    <span>フリードリンク & スナック, フォトラリー, 縁日</span>
+    <span>..etc.</span>
+  </div>
+</div>
+
 <!--
-aaa
+企画運営チームは2025年から一部のタスクが他チームに移管されたため、厳密には現状と異なりますが、
+私が関わってきた企画をご紹介すると、
+
+- スポンサーブースラリー
+- Vue cocktail
+- セッション系
+
+パネルディスカッションや知らない人もいるかもせ知れませんが、23年の「Vue.jsクリニック」24年の「Vue.jsコミュニティにようこそ！」。
+後は、今年の縁日なども企画運営チームの担当でした。
 -->
 
 ---

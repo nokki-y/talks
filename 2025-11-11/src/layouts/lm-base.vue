@@ -2,10 +2,14 @@
   <div h-full w-full relative class="slidev-layout lm-base">
     <!-- 背景画像 -->
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
+    <div absolute top-0 left-0 bottom-0 right-0 size-full bg-black op10></div>
 
     <!-- 右上のロゴ -->
-    <div absolute h-12 w-12 z-20 class="top-[48px] right-[22px]">
+    <!-- <div absolute h-12 w-12 z-20 class="top-[48px] right-[22px]">
       <img src="/logo-red.png" alt="logo" />
+    </div> -->
+    <div absolute h-30 w-30 z-20 class="top-[-7px] right-[-15px]">
+      <img src="/logo.png" alt="logo" />
     </div>
 
     <!-- 左下のコピーライト -->
@@ -14,7 +18,7 @@
     </div>
 
     <!-- タイトル -->
-    <div z-20 absolute p-2 pl-4 pr-6 class="title-container top-[20px] left-[20px]">
+    <div z-20 absolute class="title-container top-[20px] left-[20px]">
       <div text-3xl font-bold>
         <slot name="title">TITLE</slot>
       </div>
@@ -41,8 +45,7 @@
       absolute
       p-2
       pl-3
-      rounded-md
-      class="left-content-container bottom-[30px] left-[20px] w-[55%] h-[75%]"
+      class="left-content-container top-[120px] left-[20px] w-[55%] h-[calc(100%-120px-20px)]"
     >
       <slot name="left-content">
         <div flex justify-center items-center size-full>LEFT CONTENT</div>
@@ -53,9 +56,7 @@
     <div
       z-10
       absolute
-      p-2
-      pr-3
-      class="right-content-container top-[0px] right-[0px] w-[40%] h-[100%]"
+      class="right-content-container top-[120px] right-[20px] w-[40%] h-[calc(100%-120px-20px)]"
     >
       <slot name="right-content">
         <div flex justify-center items-center size-full>RIGHT CONTENT</div>
@@ -81,20 +82,4 @@ const props = defineProps({
 })
 </script>
 
-<style>
-/* .slidev-layout.lm-sub-cover .title-container {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 74%, 96% 100%, 0% 100%);
-}
-
-.slidev-layout.lm-sub-cover .sub-title-container {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 95% 100%, 0% 100%);
-} */
-
-.slidev-layout.lm-sub-cover .left-content-container {
-  background-color: rgba(var(--box-contents-background-color-rgb), 0.7);
-}
-
-.slidev-layout.lm-base .left-content-container {
-  background-color: rgba(var(--box-contents-background-color-rgb), 1);
-}
-</style>
+<style></style>

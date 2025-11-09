@@ -1,25 +1,15 @@
 <template>
-  <div absolute border-t box-contents-border-color>
+  <div class="history" border-t>
     <div
       text-lg
       :class="item.isActive ? 'background-gradient' : 'bg-transparent'"
       :style="{
-        color: item.isActive ? 'var(--base-text-color)' : 'var(--box-contents-text-color)',
+        color: item.isActive ? 'var(--base-text-color)' : 'var(--base-text-color)',
       }"
       v-for="item in items"
       :key="item.id"
     >
-      <div
-        grid
-        gap-3
-        border-b
-        items-center
-        py-1
-        pl-1
-        pr-1.5
-        box-contents-border-color
-        class="grid-cols-[120px_1fr]"
-      >
+      <div grid gap-3 border-b items-center py-1 pl-1 pr-1.5 class="grid-cols-[120px_1fr]">
         <div flex items-baseline font-bold>
           <span font-en>{{ item.year }}</span>
           <span text-xs mr-1 class="ml-[0.1rem]">年</span>
@@ -106,5 +96,7 @@ const items = computed(() => [
   left: v-bind(left);
   bottom: v-bind(bottom);
   right: v-bind(right);
+
+  position: absolute;
 }
 </style>
