@@ -1,19 +1,11 @@
 <template>
-  <div
-    h-full
-    w-full
-    relative
-    p-0
-    flex
-    flex-col
-    justify-between
-    items-center
-    class="slidev-layout lm-base"
-  >
+  <div h-full w-full relative class="slidev-layout lm-sub-cover">
+    <!-- 背景画像 -->
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
 
-    <div absolute h-30 w-30 z-20 class="top-[8px] right-[-10px]">
-      <img src="/logo.png" alt="logo" />
+    <!-- 右上のロゴ -->
+    <div absolute h-12 w-12 z-20 class="top-[48px] right-[22px]">
+      <img src="/logo-red.png" alt="logo" />
     </div>
 
     <!-- 左下のコピーライト -->
@@ -21,102 +13,121 @@
       <span>© Link and Motivation Group</span>
     </div>
 
+    <!-- タイトル -->
+    <div z-20 absolute box-contents p-2 pl-4 pr-6 class="title-container top-[50px] left-[20px]">
+      <div text-3xl font-bold>
+        <slot name="title">TITLE</slot>
+      </div>
+    </div>
+
+    <!-- サブタイトル -->
+    <div
+      z-30
+      absolute
+      box-contents
+      p-2
+      pl-4
+      pr-6
+      class="sub-title-container top-[140px] left-[20px]"
+    >
+      <div text-2xl font-bold op50>
+        <slot name="sub-title">SUB TITLE</slot>
+      </div>
+    </div>
+
+    <!-- パート番号 -->
+    <div
+      z-10
+      absolute
+      op50
+      flex
+      items-end
+      justify-center
+      font-bold
+      class="part-number bottom-[10px] left-[10px]"
+    >
+      <span
+        font-bold
+        font-en
+        class="text-[160px] part-number"
+        :style="{ transform: 'scale(1, 1.6)' }"
+        >{{ partNumber }}</span
+      >
+      <!-- 飾りハイフン -->
+      <div class="hyphen w-[100px] h-[10px] bg-white mb-[17.5px] rounded-sm"></div>
+    </div>
+
     <!-- コンテンツエリア -->
-    <div z-10 size-full relative>
-      <slot>
-        <div flex justify-center items-center size-full>
-          <div>CONTENT</div>
-        </div>
+    <div
+      z-10
+      absolute
+      box-contents
+      p-2
+      pr-3
+      class="content-container top-[0px] right-[0px] w-[60%] h-[100%]"
+    >
+      <slot name="content">
+        <div flex justify-center items-center size-full>CONTENT</div>
       </slot>
     </div>
   </div>
 </template>
 
-<script></script>
+<script setup>
+const props = defineProps({
+  partNumber: {
+    type: String,
+    required: true,
+  },
+  partTitle: {
+    type: String,
+    required: true,
+  },
+  partSubtitle: {
+    type: String,
+    required: true,
+  },
+})
+</script>
 
 <style>
-.slidev-layout.lm-base .h1-container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  display: inline-flex;
-  flex-direction: column;
-  background-color: #54805e;
-  padding: 1rem;
-  /* clip-path: polygon(2% 0%, 100% 0%, 100% 80%, 98% 100%, -7% 100%); */
-  width: max-content;
-  border-radius: 0.1rem;
-  z-index: 50;
-}
-
-.slidev-layout.lm-base .h1-container h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1;
-  margin: 0;
-  /* color: var(--box-contents-border-color); */
-}
-
-/* .slidev-layout.lm-base .content-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  display: inline-flex;
-  flex-direction: column;
-  background-color: none;
-  padding: 1rem;
-  /* clip-path: polygon(6% 0%, 100% 0%, 100% 94%, 94% 100%, -94% 100%); */
-/* border-radius: 0.1rem; */
-/* } */
-
-.slidev-layout.lm-base .sub-title-container {
-  position: absolute;
-  display: inline-flex;
-  flex-direction: column;
-  background-color: rgba(186, 94, 116, 0.8);
-  padding: 0.6rem;
-  z-index: 40;
-  border: 10px solid rgba(var(--box-contents-background-color-rgb), 0.6);
+.slidev-layout.lm-sub-cover .part-number {
   background: linear-gradient(
     135deg,
     #b3002d 0%,
     #c21c46 15%,
-    #d13b60 35%,
-    #e0527a 55%,
-    #ec6b8f 75%,
+    #e4dbdd 35%,
+    #f2ecee 55%,
+    #c85273 75%,
     #f48fa7 100%
   );
-  /* clip-path: polygon(2.5% 0%, 100% 0%, 100% 75%, 97% 100%, -7% 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.slidev-layout.lm-base .sub-title-container .sub-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1;
-  opacity: 0.8;
+.slidev-layout.lm-sub-cover .hyphen {
+  background: linear-gradient(
+    135deg,
+    #b3002d 0%,
+    #c21c46 2%,
+    #e4dbdd 45%,
+    #f2ecee 55%,
+    #c85273 87%,
+    #f48fa7 100%
+  );
 }
 
-.slidev-layout.lm-base .image-container {
-  position: absolute;
-  display: inline-flex;
-  flex-direction: column;
-  overflow: hidden;
-  z-index: 40;
-  border-radius: 0.1rem;
+.slidev-layout.lm-sub-cover .title-container {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 74%, 96% 100%, 0% 100%);
 }
 
-.slidev-layout.lm-base .detail-container {
-  position: absolute;
-  display: inline-flex;
-  flex-direction: column;
-  background-color: rgba(186, 94, 116, 0.8);
-  padding: 1rem 0.7rem;
-  border-radius: 0.1rem;
+.slidev-layout.lm-sub-cover .sub-title-container {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 95% 100%, 0% 100%);
 }
 
-.slidev-layout.lm-base .detail-container .detail-content {
-  opacity: 0.8;
+.slidev-layout.lm-sub-cover .content-container {
+  background-color: rgba(var(--box-contents-background-color-rgb), 0.7);
 }
 </style>

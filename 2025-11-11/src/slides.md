@@ -200,88 +200,30 @@ partNumber: '1'
 ::content::
 
 <!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
-<div absolute top-14.5rem right-1.5rem>
-  <div text-lg>
-    <div grid gap-3 border-y items-center py-1 pl-1 pr-1.5 box-contents-border-color class="grid-cols-[120px_1fr]">
-      <div flex items-baseline font-bold>
-        <span font-en>2023</span>
-        <span text-xs mr-1 class="ml-[0.1rem]">年</span>
-        <span font-en>2</span>
-        <span text-xs class="ml-[0.1rem]">月</span>
-      </div>
-      <div grid py-1 class="grid-cols-[120px_1fr]">
-        <div flex items-center>
-          <div font-en font-bold line-height-4.5 class="mr-[0.5rem]">v-tokyo #16</div>
-        </div>
-        <div>
-          <div>・オフライン開催</div>
-          <div>・v-tokyo 初参加</div>
-        </div>
-      </div>
-    </div>
-    <div grid gap-3 border-b items-center py-1 pl-1 pr-1.5 box-contents-border-color class="grid-cols-[120px_1fr]">
-      <div flex items-baseline font-bold>
-        <span font-en>2023</span>
-        <span text-xs mr-1 class="ml-[0.1rem]">年</span>
-        <span font-en>3</span>
-        <span text-xs class="ml-[0.1rem]">月</span>
-      </div>
-      <div grid py-1 class="grid-cols-[120px_1fr]">
-        <div flex items-center>
-          <div font-en font-bold line-height-4.5 class="mr-[0.5rem]">Vue Fes Japan 2023</div>
-        </div>
-        <div>
-          <div>・コアフタッフ初参画</div>
-          <div>・企画運営チームリーダー</div>
-        </div>
-      </div>
-    </div>
-    <div grid gap-3 border-b items-center py-1 pl-1 pr-1.5 box-contents-border-color class="grid-cols-[120px_1fr]">
-      <div flex items-baseline font-bold>
-        <span font-en>2024</span>
-        <span text-xs mr-1 class="ml-[0.1rem]">年</span>
-        <span font-en>2</span>
-        <span text-xs class="ml-[0.1rem]">月</span>
-      </div>
-      <div grid py-1 class="grid-cols-[120px_1fr]">
-        <div flex items-center>
-          <div font-en font-bold line-height-4.5 class="mr-[0.5rem]">Vue Fes Japan 2024</div>
-        </div>
-        <div>
-          <div>・コアスタッフ継続</div>
-          <div>・企画運営チームリーダー</div>
-        </div>
-      </div>
-    </div>
-    <div grid gap-3 border-b items-center py-1 pl-1 pr-1.5 box-contents-border-color class="grid-cols-[120px_1fr]">
-      <div flex items-baseline font-bold>
-        <span font-en>2025</span>
-        <span text-xs mr-1 class="ml-[0.1rem]">年</span>
-        <span font-en>2</span>
-        <span text-xs class="ml-[0.1rem]">月</span>
-      </div>
-      <div grid py-1 class="grid-cols-[120px_1fr]">
-        <div flex items-center>
-          <div font-en font-bold line-height-4.5 class="mr-[0.5rem]">Vue Fes Japan 2025</div>
-        </div>
-        <div>
-          <div>・コアスタッフ継続</div>
-          <div>・ 企画チームサブリーダー</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<History />
 
 <!--
-1. 2023年2月: v-tokyo #16に参加
-1. 2023年3月: Vue Fes Japan 2023 コアフタッフに参画
-   - 企画運営チームのリーダーとなる
-1. 2023年10月: Vue Fes Japan 2023 のスポンサー枠で登壇
-1. 2024年2月: Vue Fes Japan 2024 のコアスタッフに再び参画
-   - 引き続き企画運営チームのリーダーを担う
-1. 2025年2月: Vue Fes Japan 2025 のコアスタッフに参画
-   - 業務が忙しく企画運営チームのリーダーを引き継ぐ
+aaa
+-->
+
+---
+layout: lm-sub-cover
+partNumber: '1'
+---
+
+::title::
+打算的な理由から始まったコミュニティ活動
+
+::sub-title::
+Not contribution, just work.
+
+::content::
+
+<!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
+<History :active="0" />
+
+<!--
+aaa
 -->
 
 ---

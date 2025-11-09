@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700&display=swap');
 
 .slidev-layout {
+  --base-text-color: #ffffff;
   --box-contents-background-color: rgb(var(--box-contents-background-color-rgb));
   --box-contents-background-color-rgb: 216, 221, 225;
   --box-contents-text-color: #1b1465;
@@ -10,7 +11,7 @@
   padding: 0;
   letter-spacing: 0.05em;
   font-family: 'M PLUS 1p', sans-serif;
-  color: #ffffff;
+  color: var(--base-text-color);
 }
 
 .slidev-layout.cover {

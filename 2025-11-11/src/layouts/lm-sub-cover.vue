@@ -13,6 +13,28 @@
       <span>© Link and Motivation Group</span>
     </div>
 
+    <!-- タイトル -->
+    <div z-20 absolute box-contents p-2 pl-4 pr-6 class="title-container top-[50px] left-[20px]">
+      <div text-3xl font-bold>
+        <slot name="title">TITLE</slot>
+      </div>
+    </div>
+
+    <!-- サブタイトル -->
+    <div
+      z-30
+      absolute
+      box-contents
+      p-2
+      pl-4
+      pr-6
+      class="sub-title-container top-[140px] left-[20px]"
+    >
+      <div text-2xl font-bold op50>
+        <slot name="sub-title">SUB TITLE</slot>
+      </div>
+    </div>
+
     <!-- パート番号 -->
     <div
       z-10
@@ -33,20 +55,6 @@
       >
       <!-- 飾りハイフン -->
       <div class="hyphen w-[100px] h-[10px] bg-white mb-[17.5px] rounded-sm"></div>
-    </div>
-
-    <!-- タイトル -->
-    <div z-30 absolute box-contents p-2 pr-3 class="title-container top-[50px] left-[20px]">
-      <div text-3xl font-bold>
-        <slot name="title">TITLE</slot>
-      </div>
-    </div>
-
-    <!-- サブタイトル -->
-    <div z-30 absolute box-contents p-2 pr-4 class="sub-title-container top-[140px] left-[20px]">
-      <div text-2xl font-bold op50>
-        <slot name="sub-title">SUB TITLE</slot>
-      </div>
     </div>
 
     <!-- コンテンツエリア -->
