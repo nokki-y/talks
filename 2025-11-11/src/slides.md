@@ -197,10 +197,27 @@ partNumber: '1'
 ::sub-title::
 3年間の活動を例に
 
-::content::
+<!--
+aaa
+-->
+
+---
+layout: lm-base
+partNumber: '1'
+---
+
+::title::
+打算的なイベント参加
+
+::sub-title::
+Not contribution, just work.
+
+::left-content::
 
 <!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
-<History />
+<History :active="0" position="{ top: '100px', left: '100px' }" />
+
+::right-content::
 
 <!--
 aaa
@@ -212,18 +229,17 @@ partNumber: '1'
 ---
 
 ::title::
-打算的な理由から始まったコミュニティ活動
+打算的なイベント参加
 
 ::sub-title::
 Not contribution, just work.
 
 ::left-content::
-あああ
-
-::right-content::
 
 <!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
-<History :active="0" />
+<History :active="0" position="{ top: '100px', left: '100px' }" />
+
+::right-content::
 
 <!--
 aaa
@@ -628,7 +644,7 @@ layout: lm-base
         </div>
         <div flex justify-center>
           <img
-            src="//recruitment-qr-code.png"
+            src="/recruitment-qr-code.png"
             alt="recruitment-qr-code"
             w-40
             h-40

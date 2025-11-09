@@ -1,5 +1,5 @@
 <template>
-  <div absolute top-14.5rem right-1.5rem border-t box-contents-border-color>
+  <div absolute border-t box-contents-border-color>
     <div
       text-lg
       :class="item.isActive ? 'background-gradient' : 'bg-transparent'"
@@ -48,7 +48,21 @@ const props = defineProps({
     type: Number,
     required: true,
   },
+  position: {
+    type: {
+      top: String,
+      left: String,
+      bottom: String,
+      right: String,
+    },
+    required: true,
+  },
 })
+
+const top = computed(() => props.position?.top ?? 'auto')
+const left = computed(() => props.position?.left ?? 'auto')
+const bottom = computed(() => props.position?.bottom ?? 'auto')
+const right = computed(() => props.position?.right ?? 'auto')
 
 const items = computed(() => [
   {
@@ -86,4 +100,11 @@ const items = computed(() => [
 ])
 </script>
 
-<style scoped></style>
+<style scoped>
+.slidev-layout .history {
+  top: v-bind(top);
+  left: v-bind(left);
+  bottom: v-bind(bottom);
+  right: v-bind(right);
+}
+</style>

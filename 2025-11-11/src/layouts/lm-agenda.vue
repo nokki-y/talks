@@ -1,5 +1,15 @@
 <template>
-  <div h-full w-full relative py-20 px-15 flex flex-col items-center class="slidev-layout lm-base">
+  <div
+    h-full
+    w-full
+    relative
+    py-20
+    px-15
+    flex
+    flex-col
+    items-center
+    class="slidev-layout lm-agenda"
+  >
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
 
     <div
