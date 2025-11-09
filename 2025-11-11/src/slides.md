@@ -121,7 +121,7 @@ layout: lm-agenda
       <div op50 text-xs font-500 class="pl-[1px]">前段となる3年間の活動</div>
     </div>
     <!-- 線 -->
-    <div border-gradient size-full></div>
+    <div background-gradient size-full></div>
     <!-- 線 -->
     <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
     <!-- ピリオド -->
@@ -139,7 +139,7 @@ layout: lm-agenda
       <div op50 text-xs font-500 class="pl-[1px]">活動をしていて得られたこと</div>
     </div>
     <!-- 線 -->
-    <div border-gradient size-full></div>
+    <div background-gradient size-full></div>
     <!-- 線 -->
     <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
     <!-- ピリオド -->
@@ -157,7 +157,7 @@ layout: lm-agenda
       <div op50 text-xs font-500 class="pl-[1px]">忙しかった2025年の出来事</div>
     </div>
     <!-- 線 -->
-    <div border-gradient size-full></div>
+    <div background-gradient size-full></div>
     <!-- 線 -->
     <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
     <!-- ピリオド -->
@@ -175,7 +175,7 @@ layout: lm-agenda
       <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を簡単にお話します</div>
     </div>
     <!-- 線 -->
-    <div border-gradient size-full></div>
+    <div background-gradient size-full></div>
     <!-- 線 -->
     <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
     <!-- ピリオド -->
@@ -185,6 +185,104 @@ layout: lm-agenda
     </div>
   </div>
 </div>
+
+---
+layout: lm-sub-cover
+partNumber: '1'
+---
+
+::title::
+コアスタッフってなにするの？
+
+::sub-title::
+前段となる3年間の活動
+
+::content::
+
+<div absolute top-17rem right-1.5rem>
+  <!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
+  <div>
+    <div grid gap-3 border-y py-1 pl-1 pr-1.5 border-gray-200 class="grid-cols-[100px_1fr]">
+      <div flex items-baseline>
+        <span font-en>2023</span>
+        <span text-xs mr-1 class="ml-[0.1rem]">年</span>
+        <span font-en>2</span>
+        <span text-xs class="ml-[0.1rem]">月</span>
+      </div>
+      <div text-sm grid py-1 class="grid-cols-[140px_1fr]">
+        <div>
+          <div font-en class="mr-[0.5rem]">v-tokyo #16</div>
+        </div>
+        <div>
+          <div>オフライン開催</div>
+          <div>初参加</div>
+        </div>
+      </div>
+    </div>
+    <div grid gap-3 border-b py-1 pl-1 pr-1.5 border-gray-200 class="grid-cols-[100px_1fr]">
+      <div flex items-baseline>
+        <span font-en>2023</span>
+        <span text-xs mr-1 class="ml-[0.1rem]">年</span>
+        <span font-en>3</span>
+        <span text-xs class="ml-[0.1rem]">月</span>
+      </div>
+      <div text-sm grid py-1 class="grid-cols-[140px_1fr]">
+        <div>
+          <div font-en class="mr-[0.5rem]">Vue Fes Japan 2023</div>
+        </div>
+        <div>
+          <div>コアフタッフ初参画</div>
+          <div>企画運営チームリーダー</div>
+        </div>
+      </div>
+    </div>
+    <div grid gap-3 border-b py-1 pl-1 pr-1.5 border-gray-200 class="grid-cols-[100px_1fr]">
+      <div flex items-baseline>
+        <span font-en>2024</span>
+        <span text-xs mr-1 class="ml-[0.1rem]">年</span>
+        <span font-en>2</span>
+        <span text-xs class="ml-[0.1rem]">月</span>
+      </div>
+      <div text-sm grid py-1 class="grid-cols-[140px_1fr]">
+        <div>
+          <div font-en class="mr-[0.5rem]">Vue Fes Japan 2024</div>
+        </div>
+        <div>
+          <div>コアスタッフ継続</div>
+          <div>企画運営チームリーダー</div>
+        </div>
+      </div>
+    </div>
+    <div grid gap-3 border-b py-1 pl-1 pr-1.5 border-gray-200 class="grid-cols-[100px_1fr]">
+      <div flex items-baseline>
+        <span font-en>2025</span>
+        <span text-xs mr-1 class="ml-[0.1rem]">年</span>
+        <span font-en>2</span>
+        <span text-xs class="ml-[0.1rem]">月</span>
+      </div>
+      <div text-sm grid py-1 class="grid-cols-[140px_1fr]">
+        <div>
+          <div font-en class="mr-[0.5rem]">Vue Fes Japan 2025</div>
+        </div>
+        <div>
+          <div>コアスタッフ継続</div>
+          <div>企画チームサブリーダー</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+1. 2023年2月: v-tokyo #16に参加
+1. 2023年3月: Vue Fes Japan 2023 コアフタッフに参画
+   - 企画運営チームのリーダーとなる
+1. 2023年10月: Vue Fes Japan 2023 のスポンサー枠で登壇
+1. 2024年2月: Vue Fes Japan 2024 のコアスタッフに再び参画
+   - 引き続き企画運営チームのリーダーを担う
+1. 2025年2月: Vue Fes Japan 2025 のコアスタッフに参画
+   - 業務が忙しく企画運営チームのリーダーを引き継ぐ
+-->
 
 ---
 layout: lm-base
@@ -199,36 +297,42 @@ layout: lm-base
 <!-- ポイント -->
 <!-- <div absolute rounded-full bg-white class="top-[270px] left-[41px] w-[24px] h-[10px]"></div> -->
 
-<div class="content-container">
-  <!-- 背景色 -->
-  <div class="background-color"></div>
-</div>
-
 <!-- タイトル -->
 <div class="h1-container">
   <h1>打算的な理由から始まったコミュニティ活動</h1>
 </div>
 
 <!-- v-tokyo #16　画像 -->
-<div class="image-container top-[60px] left-[0px] w-[550px]">
+<div class="image-container top-[180px] right-[0px] w-[500px]">
   <img src="/v-tokyo-16.png" alt="v-tokyo #16" />
   <!-- 色彩が強いのでさりげない白マスク -->
   <div absolute top-0 left-0 w-full h-full bg-white op15></div>
 </div>
 
-<div absolute text-xs class="top-[140px] right-[26px]" >
+<div absolute text-xs class="top-[0px] right-[20px]" >
   <span> ↓ 打算と本音のあいだで生まれた投稿たち。</span>
 </div>
 
+<!-- 詳細 -->
+<div class="detail-container top-[80px] left-[20px] w-[420px]">
+  <!-- <div class="detail-title bottom-[-40px] left-[-40px]">「外部へのプライオリティを高める」という目的で <span font-en>`v-tokyo Meetup #16`</span></div> -->
+  <div class="detail-content">
+    <div>「外部へのプライオリティを高める」</div>
+    <div mb-4>という目的で参加した <a href="https://vuejs-meetup.connpass.com/event/271298/" target="_blank" font-en>`v-tokyo Meetup #16`</a> 。</div>
+    <div>イベント終了後、運営スタッフに相談。</div>
+    <div>後日、正式にコアスタッフに参加することに。</div>
+  </div>
+</div>
+
 <!-- v-tokyo #16　画像-x 1 -->
-<div class="image-container bottom-[278px] right-[15px] w-[280px]">
+<div class="image-container bottom-[278px] right-[25px] w-[280px]">
   <img src="/v-tokyo-16-x-1.png" alt="v-tokyo #16" />
   <!-- 色彩が強いのでさりげない白マスク -->
   <div absolute top-0 left-0 w-full h-full bg-white op10></div>
 </div>
 
 <!-- v-tokyo #16　画像-x 2 -->
-<div class="image-container bottom-[176px] right-[24px] w-[280px]">
+<div class="image-container bottom-[176px] right-[14px] w-[280px]">
   <img src="/v-tokyo-16-x-2.png" alt="v-tokyo #16" />
   <!-- 色彩が強いのでさりげない白マスク -->
   <div absolute top-0 left-0 w-full h-full bg-white op10></div>
@@ -242,23 +346,14 @@ layout: lm-base
 </div>
 
 <!-- v-tokyo #16　画像-x 4 -->
-<div class="image-container bottom-[-10px] right-[15px] w-[280px]">
+<div class="image-container bottom-[-10px] right-[10px] w-[280px]">
   <img src="/v-tokyo-16-x-4.png" alt="v-tokyo #16" />
   <!-- 色彩が強いのでさりげない白マスク -->
   <div absolute top-0 left-0 w-full h-full bg-white op10></div>
 </div>
 
-<!-- 詳細 -->
-<div class="detail-container bottom-[90px] left-[40px] w-[400px]">
-  <!-- <div class="detail-title bottom-[-40px] left-[-40px]">「外部へのプライオリティを高める」という目的で <span font-en>`v-tokyo Meetup #16`</span></div> -->
-  <div class="detail-content">
-    <div mb-4>「外部へのプライオリティを高める」という目的で参加した<a href="https://vuejs-meetup.connpass.com/event/271298/" target="_blank" font-en> `v-tokyo Meetup #16`</a>。</div>
-    <div>懇親会で わたさん に声をかけてもらってコアスタッフに参加することになりました。</div>
-  </div>
-</div>
-
 <!-- サブタイトル -->
-<div class="sub-title-container bottom-[60px] right-[260px]">
+<div class="sub-title-container bottom-[30px] right-[260px]">
   <span font-en class="sub-title">"Not contribution, just work."</span>
 </div>
 

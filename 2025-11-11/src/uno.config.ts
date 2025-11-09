@@ -5,8 +5,8 @@ export default defineConfig({
     [
       'box-contents',
       {
-        'background-color': '#d8dde1',
-        color: '#1B1465',
+        'background-color': 'var(--box-contents-background-color)',
+        color: 'var(--box-contents-text-color)',
         'border-color': 'var(--box-contents-border-color)',
       },
     ],
@@ -33,7 +33,7 @@ export default defineConfig({
       },
     ],
     [
-      'border-gradient',
+      'background-gradient',
       {
         background: `linear-gradient(
           90deg,
@@ -44,6 +44,20 @@ export default defineConfig({
           #ec6b8f 80%,
           #f48fa7 100%
         )`,
+      },
+    ],
+    [
+      'border-gradient',
+      {
+        'border-image': `linear-gradient(
+          90deg,
+          #b3002d 0%,
+          #c21c46 20%,
+          #d13b60 40%,
+          #e0527a 60%,
+          #ec6b8f 80%,
+          #f48fa7 100%
+        ) 1`,
       },
     ],
   ],

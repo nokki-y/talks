@@ -12,7 +12,7 @@
   >
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
 
-    <div absolute h-30 w-30 z-20 class="top-[12px] right-[-10px]">
+    <div absolute h-30 w-30 z-20 class="top-[8px] right-[-10px]">
       <img src="/logo.png" alt="logo" />
     </div>
 
@@ -35,36 +35,10 @@
 <script></script>
 
 <style>
-.slidev-layout.lm-base .content-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  display: inline-flex;
-  flex-direction: column;
-  background-color: none;
-  padding: 1rem;
-  /* clip-path: polygon(6% 0%, 100% 0%, 100% 94%, 94% 100%, -94% 100%); */
-  border-radius: 0.1rem;
-}
-
-.slidev-layout.lm-base .background-color {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border-top: 40px solid rgba(var(--box-contents-background-color-rgb), 0.6);
-  border-right: 12px solid rgba(var(--box-contents-background-color-rgb), 0.6);
-  border-bottom: 40px solid rgba(var(--box-contents-background-color-rgb), 0.6);
-  border-left: 12px solid rgba(var(--box-contents-background-color-rgb), 0.6);
-  /* background-color: rgba(0, 0, 0, 0.2); */
-}
 .slidev-layout.lm-base .h1-container {
   position: absolute;
   top: 20px;
-  left: 52px;
+  left: 20px;
   display: inline-flex;
   flex-direction: column;
   background-color: #54805e;
@@ -82,6 +56,20 @@
   margin: 0;
   /* color: var(--box-contents-border-color); */
 }
+
+/* .slidev-layout.lm-base .content-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: none;
+  padding: 1rem;
+  /* clip-path: polygon(6% 0%, 100% 0%, 100% 94%, 94% 100%, -94% 100%); */
+/* border-radius: 0.1rem; */
+/* } */
 
 .slidev-layout.lm-base .sub-title-container {
   position: absolute;
@@ -124,29 +112,11 @@
   display: inline-flex;
   flex-direction: column;
   background-color: rgba(186, 94, 116, 0.8);
-  padding: 1rem;
+  padding: 1rem 0.7rem;
   border-radius: 0.1rem;
 }
 
-/* .slidev-layout.lm-base .detail-container:after {
-  content: '';
-  position: absolute;
-  top: -40px;
-  left: -20px;
-  width: calc(100% + 20px);
-  height: calc(100% + 40px);
-  border: 2px solid rgba(var(--box-contents-background-color-rgb), 0.6);
-} */
-
-.slidev-layout.lm-base .detail-container .detail-title {
-  position: absolute;
-  background-color: rgba(var(--box-contents-background-color-rgb), 1);
-  z-index: 1;
-}
-
 .slidev-layout.lm-base .detail-container .detail-content {
-  /* color: var(--section-contents-color); */
-  /* font-weight: 500; */
   opacity: 0.8;
 }
 </style>

@@ -28,7 +28,7 @@
       <img src="/vue-fes-japan-2025.svg" alt="logo" />
     </div>
 
-    <div z-10 mb-11 border-b-2 border-white tracking-widest flex justify-center items-center>
+    <div z-10 mb-11 border-b-2 border-white>
       <div text-4xl font-bold font-en>
         <span mx-1>A</span>
         <span mx-1>G</span>
