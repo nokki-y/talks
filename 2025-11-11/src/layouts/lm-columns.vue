@@ -1,29 +1,19 @@
 <template>
-  <div
-    h-full
-    w-full
-    relative
-    py-6
-    px-8
-    flex
-    flex-col
-    items-center
-    class="slidev-layout lm-one-columns"
-  >
+  <div h-full w-full relative py-6 px-8 flex flex-col items-center class="slidev-layout lm-columns">
     <!-- 背景画像 -->
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
 
     <div
       absolute
       h-30
-      w-36
+      w-30
       z-20
       flex
       items-center
       justify-center
-      class="bottom-[-25px] right-[20px]"
+      class="bottom-[-30px] right-[-5px]"
     >
-      <img src="/vue-fes-japan-2025.svg" alt="logo" />
+      <img src="/logo.png" alt="logo" />
     </div>
 
     <!-- 左下のコピーライト -->
@@ -32,23 +22,26 @@
     </div>
 
     <!-- タイトル -->
-    <div z-10 mb-18 border-b-2 border-white>
+    <div z-10 mb-18 border-b-2 border-white pb-1>
       <div text-2xl font-bold font-en flex justify-center>
         <slot name="title">TITLE</slot>
       </div>
     </div>
 
-    <!-- 3つのCONTENTエリア -->
-    <div z-10 grid grid-cols-3 gap-4>
-      <div rounded-md overflow-hidden>
-        <slot name="left-content">LEFT CONTENT</slot>
-      </div>
-      <div rounded-md overflow-hidden>
-        <slot name="center-content">CENTER CONTENT</slot>
-      </div>
-      <div rounded-md overflow-hidden>
-        <slot name="right-content">RIGHT CONTENT</slot>
-      </div>
+    <!-- CONTENTエリア -->
+    <div
+      z-10
+      grid
+      gap-4
+      overflow-hidden
+      class="max-h-[320px]"
+      :style="{ gridTemplateColumns: `repeat(${columnCount}, minmax(0, 1fr))` }"
+    >
+      <template v-for="i in columnCount" :key="i">
+        <div rounded-md overflow-hidden>
+          <slot :name="`content-${i}`">CONTENT {{ i }}</slot>
+        </div>
+      </template>
     </div>
 
     <!-- Descriptionエリア (デフォルトでは非表示。slotにdescriptionを追加すると表示される) -->
@@ -58,10 +51,13 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps({
+  columnCount: {
+    type: Number,
+    required: true,
+  },
+})
+</script>
 
-<style>
-.slidev-layout .lm-one-columns .content-item {
-  width: 33.33%;
-}
-</style>
+<style></style>

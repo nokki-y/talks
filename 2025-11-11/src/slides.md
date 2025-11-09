@@ -251,21 +251,22 @@ Not contribution, just work.
 -->
 
 ---
-layout: lm-three-columns
+layout: lm-columns
+columnCount: 3
 ---
 
 ::title::
 企画運営チームのお仕事
 
-::left-content::
+::content-1::
 
 <img src="/event-sticker-rally.jpg" alt="event-sticker-rally" />
 
-::center-content::
+::content-2::
 
 <img src="/event-cocktail.jpg" alt="event-sticker-rally" />
 
-::right-content::
+::content-3::
 
 <img src="/event-panel-discussion.jpg" alt="event-sticker-rally" />
 
@@ -292,33 +293,79 @@ layout: lm-three-columns
 -->
 
 ---
-layout: lm-one-columns
+layout: lm-columns
+columnCount: 2
 ---
 
 ::title::
-v-tokyoの運営
+<span font-en>v-tokyo </span>の運営
 
-::left-content::
+::content-1::
 
-<img src="/event-sticker-rally.jpg" alt="event-sticker-rally" />
+<img src="/v-tokyo-events.png" alt="v-tokyo events" />
 
-::center-content::
+::content-2::
 
-<img src="/event-cocktail.jpg" alt="event-sticker-rally" />
-
-::right-content::
-
-<img src="/event-panel-discussion.jpg" alt="event-sticker-rally" />
-
-::description::
-
-<div w-full h-6rem flex justify-end items-end>
-  <div flex flex-col gap-1 text-sm items-end>
-    <span>「Vue.js クリニック」, 「Vue.jsコミュニティにようこそ！」</span>
-    <span>フリードリンク & スナック, フォトラリー, 縁日</span>
-    <span>..etc.</span>
+<div flex flex-col justify-between size-full pt-1 pl-4>
+  <div flex flex-col>
+    <span><span font-en>Vue Fes Japan</span>の準備が始まってから<span font-en>10月</span>まで</span>
+    <span mb-4>約月に一回の実施。</span>
+    <span><span font-en>2025</span>年は他イベントとの合同開催も多数。</span>
+    <span>コアスタッフは<span font-en> v-tokyo </span>の運営にも携わる。</span>
+  </div>
+  <div relative>
+    <span z-40 text-xs absolute class="top-[-20px] right-0">↓ <span font-en>2024</span>年は<span font-en>Yappli</span>さんのオフィスで合同開催も実施</span>
+    <div rounded-md overflow-hidden>
+      <img src="/v-tokyo-events-yappli.png" alt="v-tokyo events yappli" />
+    </div>
   </div>
 </div>
+
+<!--
+また、コアスタッフは月に1度実施されるv-tokyoの運営にも携わります。
+最近は、Vue Fes Japanの認知度が復活し、他イベントとの合同開催も多数実施されています。
+
+2024年はYappliさんのオフィスでもTSKaigiとの合同開催を実施しました。
+いつもありがとうございます。
+-->
+
+---
+layout: lm-columns
+columnCount: 2
+---
+
+::title::
+コアスタッフってなにするの？
+
+::content-1::
+
+<div flex flex-col justify-between items-center size-full>
+  <div rounded-md overflow-hidden h-full mb-5>
+    <img src="/vue-fes-japan-operation.jpg" alt="vue fes japan operation" />
+  </div>
+  <div box-contents py-1 px-4 rounded-md>
+    <span>チームで<span font-en font-bold> Vue Fes Japan </span>の準備</span>
+  </div>
+</div>
+
+::content-2::
+
+<div flex flex-col justify-between items-center size-full>
+  <div rounded-md overflow-hidden h-full mb-5>
+    <img h-full src="/v-tokyo-operation.png" alt="v-tokyo operation" />
+  </div>
+  <div box-contents py-1 px-4 rounded-md>
+    <span><span font-en font-bold>v-tokyo </span>の運営</span>
+  </div>
+</div>
+
+<!--
+また、コアスタッフは月に1度実施されるv-tokyoの運営にも携わります。
+最近は、Vue Fes Japanの認知度が復活し、他イベントとの合同開催も多数実施されています。
+
+2024年はYappliさんのオフィスでもTSKaigiとの合同開催を実施しました。
+いつもありがとうございます。
+-->
 
 ---
 layout: lm-base
