@@ -118,7 +118,7 @@ layout: lm-agenda
     </div>
     <div pl-2 flex-1 class="pt-[4px]">
       <div mb-1 font-bold>コアスタッフってなにするの？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">前段となる3年間の活動</div>
+      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を例に</div>
     </div>
     <!-- 線 -->
     <div background-gradient size-full></div>
@@ -136,7 +136,7 @@ layout: lm-agenda
     </div>
     <div pl-2 flex-1 class="pt-[4px]">
       <div mb-1 font-bold>なにか良いことあるの？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">活動をしていて得られたこと</div>
+      <div op50 text-xs font-500 class="pl-[1px]">活動をしていて得られたことを例に</div>
     </div>
     <!-- 線 -->
     <div background-gradient size-full></div>
@@ -154,7 +154,7 @@ layout: lm-agenda
     </div>
     <div pl-2 flex-1 class="pt-[4px]" >
       <div mb-1 font-bold>忙しくても大丈夫？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">忙しかった2025年の出来事</div>
+      <div op50 text-xs font-500 class="pl-[1px]">忙しかった2025年の出来事を例に</div>
     </div>
     <!-- 線 -->
     <div background-gradient size-full></div>
@@ -172,7 +172,7 @@ layout: lm-agenda
     </div>
     <div pl-2 flex-1 class="pt-[4px]">
       <div mb-1 font-bold>3年間やってみてよかったの？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を簡単にお話します</div>
+      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を簡単にお話しますを例に</div>
     </div>
     <!-- 線 -->
     <div background-gradient size-full></div>
@@ -195,12 +195,12 @@ partNumber: '1'
 コアスタッフってなにするの？
 
 ::sub-title::
-前段となる3年間の活動
+3年間の活動を例に
 
 ::content::
 
 <!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
-<div absolute top-15rem right-1.5rem>
+<div absolute top-14.5rem right-1.5rem>
   <div text-lg>
     <div grid gap-3 border-y items-center py-1 pl-1 pr-1.5 box-contents-border-color class="grid-cols-[120px_1fr]">
       <div flex items-baseline font-bold>

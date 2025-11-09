@@ -4,8 +4,8 @@
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
 
     <!-- 右上のロゴ -->
-    <div absolute h-30 w-30 z-20 class="top-[8px] right-[-10px]">
-      <img src="/logo.png" alt="logo" />
+    <div absolute h-12 w-12 z-20 class="top-[48px] right-[22px]">
+      <img src="/logo-red.png" alt="logo" />
     </div>
 
     <!-- 左下のコピーライト -->
@@ -22,19 +22,17 @@
       items-end
       justify-center
       font-bold
-      class="part-number bottom-[36px] left-[10px]"
+      class="part-number bottom-[10px] left-[10px]"
     >
-      <!-- <span font-en class="text-[140px] mb-[-28px]">
-        <span class="mr-[-11px]">P</span>
-        <span>art.</span>
-      </span> -->
       <span
         font-bold
         font-en
-        class="text-[140px] part-number"
+        class="text-[160px] part-number"
         :style="{ transform: 'scale(1, 1.6)' }"
         >{{ partNumber }}</span
       >
+      <!-- 飾りハイフン -->
+      <div class="hyphen w-[100px] h-[10px] bg-white mb-[17.5px] rounded-sm"></div>
     </div>
 
     <!-- タイトル -->
@@ -99,6 +97,18 @@ const props = defineProps({
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+
+.slidev-layout.lm-sub-cover .hyphen {
+  background: linear-gradient(
+    135deg,
+    #b3002d 0%,
+    #c21c46 2%,
+    #e4dbdd 45%,
+    #f2ecee 55%,
+    #c85273 87%,
+    #f48fa7 100%
+  );
 }
 
 .slidev-layout.lm-sub-cover .title-container {
