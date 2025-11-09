@@ -38,14 +38,14 @@
     </div>
 
     <!-- タイトル -->
-    <div z-10 absolute box-contents p-2 class="title-container top-[50px] left-[20px]">
+    <div z-10 absolute box-contents p-2 pr-3 class="title-container top-[50px] left-[20px]">
       <div text-3xl font-bold>
         <slot name="title">TITLE</slot>
       </div>
     </div>
 
     <!-- サブタイトル -->
-    <div z-10 absolute box-contents p-2 class="sub-title-container top-[140px] left-[20px]">
+    <div z-10 absolute box-contents p-2 pr-4 class="sub-title-container top-[140px] left-[20px]">
       <div text-2xl font-bold op50>
         <slot name="sub-title">SUB TITLE</slot>
       </div>
