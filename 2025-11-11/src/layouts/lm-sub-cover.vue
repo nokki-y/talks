@@ -64,14 +64,6 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  partTitle: {
-    type: String,
-    required: true,
-  },
-  partSubtitle: {
-    type: String,
-    required: true,
-  },
 })
 </script>
 

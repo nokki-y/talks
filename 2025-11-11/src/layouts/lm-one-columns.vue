@@ -8,7 +8,7 @@
     flex
     flex-col
     items-center
-    class="slidev-layout lm-three-columns"
+    class="slidev-layout lm-one-columns"
   >
     <!-- 背景画像 -->
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
@@ -58,25 +58,10 @@
   </div>
 </template>
 
-<script setup>
-const props = defineProps({
-  partNumber: {
-    type: String,
-    required: true,
-  },
-  partTitle: {
-    type: String,
-    required: true,
-  },
-  partSubtitle: {
-    type: String,
-    required: true,
-  },
-})
-</script>
+<script setup></script>
 
 <style>
-.slidev-layout .lm-three-columns .content-item {
+.slidev-layout .lm-one-columns .content-item {
   width: 33.33%;
 }
 </style>

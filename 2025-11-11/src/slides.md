@@ -292,6 +292,35 @@ layout: lm-three-columns
 -->
 
 ---
+layout: lm-one-columns
+---
+
+::title::
+v-tokyoの運営
+
+::left-content::
+
+<img src="/event-sticker-rally.jpg" alt="event-sticker-rally" />
+
+::center-content::
+
+<img src="/event-cocktail.jpg" alt="event-sticker-rally" />
+
+::right-content::
+
+<img src="/event-panel-discussion.jpg" alt="event-sticker-rally" />
+
+::description::
+
+<div w-full h-6rem flex justify-end items-end>
+  <div flex flex-col gap-1 text-sm items-end>
+    <span>「Vue.js クリニック」, 「Vue.jsコミュニティにようこそ！」</span>
+    <span>フリードリンク & スナック, フォトラリー, 縁日</span>
+    <span>..etc.</span>
+  </div>
+</div>
+
+---
 layout: lm-base
 ---
 

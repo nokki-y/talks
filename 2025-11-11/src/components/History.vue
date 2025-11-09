@@ -36,7 +36,7 @@ import { computed } from 'vue'
 const props = defineProps({
   active: {
     type: Number,
-    required: true,
+    required: false,
   },
   position: {
     type: {

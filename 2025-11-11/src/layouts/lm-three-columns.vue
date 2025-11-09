@@ -58,22 +58,7 @@
   </div>
 </template>
 
-<script setup>
-const props = defineProps({
-  partNumber: {
-    type: String,
-    required: true,
-  },
-  partTitle: {
-    type: String,
-    required: true,
-  },
-  partSubtitle: {
-    type: String,
-    required: true,
-  },
-})
-</script>
+<script setup></script>
 
 <style>
 .slidev-layout .lm-three-columns .content-item {
