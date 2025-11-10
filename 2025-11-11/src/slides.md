@@ -99,20 +99,20 @@ layout: lm-plain
   <!-- マスク -->
   <div z-30 absolute top-0 left-0 size-full bg-black op-70></div>
   <!-- キーワード -->
-  <div z-30 size-full flex flex-col justify-center pb-10 px-25>
+  <div z-30 size-full flex flex-col pt-34 pb-10 px-25>
     <div text-4xl font-bold mb-14 relative flex items-end>
       <span font-en>KEYWORD</span>
       <span text-5xl font-bold ml-4 class="pb-[4px]">「出会い」</span>
       <!-- 飾り線 -->
       <span absolute op-80 :style="{ backgroundColor: '#5850a9' }" class="h-[14px] w-[202px] top-[42px] left-[198px]"></span>
     </div>
-    <div text-4xl font-bold mb-3>
+    <div text-4xl font-bold mb-3 ml-1>
       <span>--  技術との出会い</span>
     </div>
-    <div text-4xl font-bold mb-3>
+    <div text-4xl font-bold mb-3 ml-1>
       <span>-- 仲間との出会い</span>
     </div>
-    <div text-4xl font-bold>
+    <div text-4xl font-bold ml-1>
       <span>-- 新しい自分との出会い</span>
     </div>
   </div>
@@ -133,28 +133,37 @@ layout: lm-plain
   <MemoryBackground/>
   <!-- マスク -->
   <div z-30 absolute top-0 left-0 size-full bg-black op-70></div>
-  <!-- キーワード -->
-  <div z-30 size-full flex flex-col justify-center pb-10 px-25>
+  <!-- CONTENTS -->
+  <div z-30 size-full flex flex-col pt-34 pb-10 px-25>
     <div text-4xl font-bold mb-14 relative flex items-end>
       <span font-en>KEYWORD</span>
       <span text-5xl font-bold ml-4 class="pb-[4px]">「出会い」</span>
       <!-- 飾り線 -->
       <span absolute op-80 :style="{ backgroundColor: '#5850a9' }" class="h-[14px] w-[202px] top-[42px] left-[198px]"></span>
     </div>
-    <div text-4xl font-bold mb-3>
-      <span>--  技術との出会い</span>
+    <div text-2xl font-bold mb-3 ml-1>
+      <span> CAPTURE. 1 - 技術を“手段”として扱う自分</span>
     </div>
-    <div text-4xl font-bold mb-3>
-      <span>-- 仲間との出会い</span>
+    <div text-2xl font-bold mb-3 ml-1>
+      <span> CAPTURE. 2 - 打算的な目的から始まったコミュニティ参加</span>
     </div>
-    <div text-4xl font-bold>
-      <span>-- 新しい自分との出会い</span>
+    <div text-2xl font-bold mb-3 ml-1>
+      <span> CAPTURE. 3 - 3つの出会い</span>
+    </div>
+    <div text-2xl font-bold ml-1>
+      <span>CAPTURE. 4 - 再び技術を“楽しむ”自分</span>
     </div>
   </div>
 </div>
 
 <!--
-本日はこちらの構成でお話します。
+はじめに、コミュニティに参加する前の、少しネガティブな話から入り、
+コミュニティに参加したことで、どのような出会いと変化があったかを話します。
+
+- CAPTURE. 1: 技術を“手段”として扱う自分
+- CAPTURE. 2: 打算的な目的から始まったコミュニティ参加
+- CAPTURE. 3: 3つの出会い
+- CAPTURE. 4: 再び技術を“楽しむ”自分
 -->
 
 ---
