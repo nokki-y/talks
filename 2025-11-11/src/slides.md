@@ -592,10 +592,10 @@ partNumber: '4'
 ---
 
 ::title::
-<span font-en>3 </span>年間やってみてよかったの？
+コミュニティに入って、今どう？
 
 ::sub-title::
-<span font-en>3 </span>年間の活動を簡単にお話します
+コミュニティへの初参加から今までの総括
 
 <!--
 aaa
