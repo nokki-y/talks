@@ -3,6 +3,7 @@
 
 .slidev-layout {
   --base-text-color: #ffffff;
+  --base-border-color: var(--base-text-color);
   --box-contents-background-color: rgb(var(--box-contents-background-color-rgb));
   --box-contents-background-color-rgb: 216, 221, 225;
   --box-contents-text-color: #1b1465;

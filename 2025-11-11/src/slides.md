@@ -59,7 +59,34 @@ layout: lm-profile
 ---
 
 <!--
-自己紹介は、割愛しますが、Vue Fes運営を3年やってきました。
+自己紹介は、割愛しますが、Vue Fes運営を3年やってきた人間が話すということだけ知っといて貰えればいいです。
+-->
+
+---
+layout: lm-message
+columnCount: 1
+---
+
+::title::
+今日お話しすること
+
+::message-content::
+「誰かのためが、自分のためになる。」
+
+::description::
+
+<div flex flex-col items-center justify-center mt-10>
+  <span>運営スタッフという誰かのためのボランティア活動は</span>
+  <span>結果的に自分のためになるという話</span>
+</div>
+
+<!--
+先に結論からお話すると、今日は「誰かのためが、自分のためになる。」というメッセージをお伝えしたいと思います。
+運営スタッフは一言でいえば「ボランティア」です。
+自身の労力をただ提供すると考える人もいるかもしれません。
+
+でも、そこから得られることもあります。
+本日は僕の経験から得たことをお話します。
 -->
 
 ---
@@ -95,7 +122,7 @@ columnCount: 1
 </div>
 
 <!--
-今日は、私がVue.jsコミュニティに参加して得た「3つの出会い」についてお話しします。
+キーワードは「出会い」です。
 技術との出会い、仲間との出会い、そして新しい自分との出会い。
 この3年間で経験した、かけがえのない出会いの話です。
 
@@ -624,45 +651,21 @@ Vue.jsコミュニティに入って、Vue.jsとの関係が変わりました�
 -->
 
 ---
-layout: lm-columns
+layout: lm-message
 columnCount: 1
 ---
 
 ::title::
-最後のメッセージ
+今日お話しすること
 
-::content-1::
+::message-content::
+「誰かのためが、自分のためになる。」
 
-<div flex flex-col justify-center h-full px-20>
-  <div box-contents py-12 px-14 rounded-lg mb-10>
-    <div text-4xl font-bold text-center text-gradient mb-12>
-      誰かのためが、自分のためになる。
-    </div>
+::description::
 
-    <div text-base space-y-4 mb-10>
-      <p>コミュニティに所属するということは、どこかボランティアであること。</p>
-      <p>自身の労力をただ提供すると考える人もいるかもしれません。</p>
-      <p font-bold text-lg>でも、そこから得られる個人としての良い変化というものもあります。</p>
-      <p>私の場合、それが今日お話しした3つの出会い――技術、仲間、そして新しい自分でした。</p>
-    </div>
-
-  </div>
-
-  <div box-contents py-8 px-10 rounded-lg>
-    <div text-lg mb-6>
-      <p mb-2>少し真面目な話をしすぎました。</p>
-      <p>Vue.jsコミュニティにはレベルの高いエンジニアがたくさんいます。</p>
-      <p mb-4>私のように少し熱い思いを持った人もいます。</p>
-      <p font-bold>でも「自分には少し違うかもしれない」と感じてもらう必要はありません。</p>
-    </div>
-
-    <div text-base space-y-3>
-      <p>途中に話したように、私がVue.jsコミュニティに入ったきっかけは、<span font-bold text-gradient>打算的なもの</span>でした。</p>
-      <p>それが様々な出会いを経て、結果的にこうなることができました。</p>
-      <p text-xl font-bold text-gradient mt-6>なので少しでも興味のある方は、<br>この後、懇親会もありますので、<br>たくさん参加している運営メンバーに話しかけてみてください。</p>
-    </div>
-
-  </div>
+<div flex flex-col items-center justify-center mt-10>
+  <span>運営スタッフという誰かのためのボランティア活動は</span>
+  <span>結果的に自分のためになるという話</span>
 </div>
 
 <!--
