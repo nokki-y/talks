@@ -179,8 +179,8 @@ captureNumber: '01'
 -->
 
 ---
-layout: lm-sub-cover
-columnCount: 1
+layout: lm-columns
+columnCount: 2
 ---
 
 ::title::
