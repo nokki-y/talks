@@ -410,6 +410,30 @@ aaa
 
 ---
 layout: lm-columns
+columnCount: 2
+---
+
+::title::
+得られた<span font-en text-3xl ml-1 mr-0.5>2</span>つのもの
+
+::content-1::
+
+<div flex flex-col justify-center items-center w-full h-300px border-2 border-white>
+  <span>変化できる環境</span>
+</div>
+
+::content-2::
+
+<div flex flex-col justify-center items-center w-full h-300px border-2 border-white>
+  <span>登壇機会</span>
+</div>
+
+<!--
+なので、活論、コアスタッフに入ると、チーム単位でVue Fesの準備推しながら、v-tokyoの運営をすることになります。
+-->
+
+---
+layout: lm-columns
 columnCount: 4
 ---
 
@@ -418,25 +442,25 @@ columnCount: 4
 
 ::content-1::
 
-<div flex flex-col justify-center items-center size-full>
+<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
   <span>環境が変わる</span>
 </div>
 
 ::content-2::
 
-<div flex flex-col justify-center items-center size-full>
+<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
   <span>入ってくる情報が変わる</span>
 </div>
 
 ::content-3::
 
-<div flex flex-col justify-center items-center size-full>
+<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
   <span>周囲からの見られ方が変わる</span>
 </div>
 
 ::content-4::
 
-<div flex flex-col justify-center items-center size-full>
+<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
   <span>行動が変わる</span>
 </div>
 
