@@ -90,33 +90,46 @@ columnCount: 1
 -->
 
 ---
-layout: lm-columns
-columnCount: 1
+layout: lm-plain
 ---
 
-::title::
-今日お話しすること
-
-::content-1::
-
-<div flex flex-col items-center justify-center h-full>
-  <div box-contents py-8 px-12 rounded-lg text-center mb-12>
-    <div text-4xl font-bold mb-6>Vue.jsコミュニティで得た</div>
-    <div text-5xl font-bold text-gradient>「3つの出会い」</div>
+<div relative size-full flex items-center justify-center>
+  <!-- 思い出画像 -->
+  <div size-full absolute top-0 left-0>
+    <div absolute top-0 left-0 w-70><img src="/memory-1.png" alt="memory" /></div>
+    <div absolute top-0 left-80 w-70><img src="/memory-4.jpg" alt="memory" /></div>
+    <div absolute bottom-0 left-80 w-90><img src="/memory-5.jpg" alt="memory" /></div>
+    <div absolute bottom-0 left-0 w-100><img src="/memory-7.jpg" alt="memory" /></div>
+    <div absolute bottom-0 right-0 w-80><img src="/memory-8.jpg" alt="memory" /></div>
+    <div absolute top-0 right-0 w-100><img src="/memory-9.jpg" alt="memory" /></div>
+    <div absolute top-30 right-50 w-70><img src="/memory-3.jpg" alt="memory" /></div>
+    <div absolute top-50 left-0 w-60><img src="/memory-2.jpg" alt="memory" /></div>
+    <div absolute top-40 left-50 w-60><img src="/memory-6.jpg" alt="memory" /></div>
+    <div absolute top-48 right-0 w-60><img src="/memory-10.jpg" alt="memory" /></div>
+    <div absolute top-70 right-48 w-40><img src="/memory-11.jpg" alt="memory" /></div>
+    <div absolute top-40 right-100 w-40><img src="/memory-12.jpg" alt="memory" /></div>
+    <div absolute top-0 left-60 w-40><img src="/memory-13.jpg" alt="memory" /></div>
+    <div absolute top-20 left-65 w-30><img src="/memory-14.jpg" alt="memory" /></div>
+    <div absolute top-60 left-98 w-40><img src="/memory-15.jpg" alt="memory" /></div>
   </div>
-
-  <div grid grid-cols-3 gap-8 w-full px-20>
-    <div box-contents py-6 px-8 rounded-lg text-center>
-      <div text-2xl font-bold mb-2>技術</div>
-      <div text-sm op70>との出会い</div>
+  <!-- マスク -->
+  <div z-30 absolute top-0 left-0 size-full bg-black op-70></div>
+  <!-- キーワード -->
+  <div z-30 size-full flex flex-col justify-center pb-10 px-25>
+    <div text-4xl font-bold mb-14 relative flex items-end>
+      <span font-en>KEYWORD</span>
+      <span text-5xl font-bold ml-4 class="pb-[4px]">「出会い」</span>
+      <!-- 飾り線 -->
+      <span absolute op-80 :style="{ backgroundColor: '#5850a9' }" class="h-[14px] w-[202px] top-[42px] left-[198px]"></span>
     </div>
-    <div box-contents py-6 px-8 rounded-lg text-center>
-      <div text-2xl font-bold mb-2>仲間</div>
-      <div text-sm op70>との出会い</div>
+    <div text-4xl font-bold mb-3>
+      <span>--  技術との出会い</span>
     </div>
-    <div box-contents py-6 px-8 rounded-lg text-center>
-      <div text-2xl font-bold mb-2>自分</div>
-      <div text-sm op70>との出会い</div>
+    <div text-4xl font-bold mb-3>
+      <span>-- 仲間との出会い</span>
+    </div>
+    <div text-4xl font-bold>
+      <span>-- 新しい自分との出会い</span>
     </div>
   </div>
 </div>
