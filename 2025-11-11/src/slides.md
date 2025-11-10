@@ -55,8 +55,7 @@ layout: lm-cover
 -->
 
 ---
-layout: lm-columns
-columnCount: 2
+layout: lm-profile
 ---
 
 ::content-1::
