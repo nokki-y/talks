@@ -2,6 +2,8 @@
   <div size-full px-41 py-44 relative flex flex-col class="slidev-layout lm-profile relative">
     <!-- 背景画像 -->
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
+    <!-- マスク -->
+    <div absolute top-0 left-0 size-full bg-black op-40></div>
 
     <!-- 右上のロゴ -->
     <div absolute h-30 w-30 class="top-[-16px] right-[-10px]">
