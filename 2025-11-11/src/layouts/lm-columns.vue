@@ -29,14 +29,7 @@
     </div>
 
     <!-- CONTENTエリア -->
-    <div
-      z-10
-      grid
-      gap-4
-      overflow-hidden
-      class="max-h-[320px]"
-      :style="{ gridTemplateColumns: `repeat(${columnCount}, minmax(0, 1fr))` }"
-    >
+    <div z-10 grid gap-4 overflow-hidden class="max-h-[320px]" :style="{ gridTemplateColumns }">
       <template v-for="i in columnCount" :key="i">
         <div rounded-md overflow-hidden>
           <slot :name="`content-${i}`">CONTENT {{ i }}</slot>
@@ -52,11 +45,23 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
 const props = defineProps({
   columnCount: {
     type: Number,
     required: true,
   },
+})
+
+const gridTemplateColumns = computed(() => {
+  switch (props.columnCount) {
+    // 4つ以上の場合は2行にする
+    case 4:
+      return `repeat(2, minmax(0, 1fr))`
+    default:
+      return `repeat(${props.columnCount}, minmax(0, 1fr))`
+  }
 })
 </script>
 

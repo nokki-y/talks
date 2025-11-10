@@ -360,11 +360,58 @@ columnCount: 2
 </div>
 
 <!--
-また、コアスタッフは月に1度実施されるv-tokyoの運営にも携わります。
-最近は、Vue Fes Japanの認知度が復活し、他イベントとの合同開催も多数実施されています。
+なので、活論、コアスタッフに入ると、チーム単位でVue Fesの準備推しながら、v-tokyoの運営をすることになります。
+-->
 
-2024年はYappliさんのオフィスでもTSKaigiとの合同開催を実施しました。
-いつもありがとうございます。
+---
+layout: lm-sub-cover
+partNumber: '2'
+---
+
+::title::
+なんか良いことあるの？
+
+::sub-title::
+活動をしていて得られたことを例に
+
+<!--
+aaa
+-->
+
+---
+layout: lm-columns
+columnCount: 4
+---
+
+::title::
+コアスタッフってなにするの？
+
+::content-1::
+
+<div flex flex-col justify-center items-center size-full>
+  <span>環境が変わる</span>
+</div>
+
+::content-2::
+
+<div flex flex-col justify-center items-center size-full>
+  <span>入ってくる情報が変わる</span>
+</div>
+
+::content-3::
+
+<div flex flex-col justify-center items-center size-full>
+  <span>周囲からの見られ方が変わる</span>
+</div>
+
+::content-4::
+
+<div flex flex-col justify-center items-center size-full>
+  <span>行動が変わる</span>
+</div>
+
+<!--
+なので、活論、コアスタッフに入ると、チーム単位でVue Fesの準備推しながら、v-tokyoの運営をすることになります。
 -->
 
 ---

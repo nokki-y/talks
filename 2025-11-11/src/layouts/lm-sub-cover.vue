@@ -48,9 +48,12 @@
 
     <!-- タイトル -->
     <div z-20 py-7 px-20 flex justify-center items-center flex-col border-2 border-white rounded-md>
-      <div text-3xl font-bold mb-4>
+      <div text-3xl font-bold>
         <slot name="title">TITLE</slot>
       </div>
+      <!-- 飾り線 -->
+      <div bg-white mt-6 mb-2 class="w-[20px] h-[1.5px]"></div>
+
       <div text-2xl font-bold>
         <slot name="sub-title">SUB TITLE</slot>
       </div>
