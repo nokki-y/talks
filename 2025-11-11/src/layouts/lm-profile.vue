@@ -1,5 +1,5 @@
 <template>
-  <div size-full px-30 py-44 relative flex flex-col class="slidev-layout lm-profile relative">
+  <div size-full px-41 py-44 relative flex flex-col class="slidev-layout lm-profile relative">
     <!-- 背景画像 -->
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
 
@@ -36,7 +36,7 @@
       <!-- プロフィール画像とSNSリンク -->
       <div flex flex-col items-center size-full>
         <!-- プロフィール画像 丸形にする -->
-        <div size-25 rounded-full overflow-hidden mt-5>
+        <div size-25 rounded-full overflow-hidden mt-6>
           <img src="/sns.jpg" alt="profile" />
         </div>
 

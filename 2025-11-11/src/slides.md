@@ -58,28 +58,8 @@ layout: lm-cover
 layout: lm-profile
 ---
 
-::content-1::
-
-<div class="pt-20 pl-10">
-  <h2 class="text-3xl font-bold mb-2">鵜木 義秀 (Yoshihide Unoki)</h2>
-  <div class="text-xl opacity-60 mb-8">nokki-y</div>
-  <div class="text-lg">
-    株式会社リンクアンドモチベーション<br>
-    SRE・イネーブリンググループ
-  </div>
-</div>
-
-::content-2::
-
-<div class="flex justify-center items-center h-full">
-  <div class="overflow-hidden rounded-full w-64 h-64">
-    <img src="/sns.jpg" alt="icon" />
-  </div>
-</div>
-
 <!--
-自己紹介
-名前、所属、経歴を簡潔に紹介
+自己紹介は、割愛しますが、Vue Fes運営を3年やってきました。
 -->
 
 ---
