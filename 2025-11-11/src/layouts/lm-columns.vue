@@ -21,10 +21,10 @@
       <span>© Link and Motivation Group</span>
     </div>
 
-    <!-- タイトル -->
-    <div z-10 mb-18 border-b-2 border-white pb-1>
+    <!-- タイトルエリア (デフォルトでは非表示。slotにtitleを追加すると表示される) -->
+    <div z-10 mb-18 border-b-2 border-white pb-1 v-if="$slots.title">
       <div text-2xl font-bold font-en flex justify-center>
-        <slot name="title">TITLE</slot>
+        <slot name="title" />
       </div>
     </div>
 

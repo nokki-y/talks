@@ -49,11 +49,14 @@ TODO:
 -->
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
+::content-1::
+
 <div grid h-full class="grid-cols-[1fr_320px]">
-  <div pl-20 pt-30>
+  <div pl-20 pt-20>
     <div mb-10>
       <div text-3xl >鵜木 義秀 <span font-en>(Yoshihide Unoki)</span></div>
       <div op50 tracking-wide text-xl mt1>nokki-y</div>
@@ -64,10 +67,8 @@ layout: lm-base
       </div>
     </div>
   </div>
-  <div flex justify-center pt-30>
+  <div flex justify-center pt-20>
     <div relative>
-      <!-- 影 -->
-      <div absolute rounded-full bg-white op30  w-20 h-20 blur-sm class="top-[100px] left-[100px]"></div>
       <div overflow-hidden rounded-full w-40 h-40 relative>
         <img src="/sns.jpg" alt="icon" />
       </div>
@@ -75,25 +76,54 @@ layout: lm-base
   </div>
 </div>
 
+::description::
+
+<br/>
+<br/>
+<div>[WIP]若手の頃はフロント領域を専門としていたが、最近は領域関係なくやっている。</div>
+<div>最近年下のメンバーも増えてきて、下からの見られ方も気にしなければ行けない年ですが、</div>
+<div>今年も年末調整は間に合わなかった、という話で程よく権威性を上げつつ、弛緩した雰囲気にする。</div>
+<br/>
+<div>忘れていたかのように、Vue Fes Japanの運営を3年やっていることをお伝えして、無理やり運営の話にする</div>
+
 <!--
 TODO: 自己紹介
 -->
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
-TODO: アイスブレイク
+::content-1::
 
-「技術の話はしません、運営の話をします。」という次の `今日話すこと`スライドにつながるアイスブレイクをする。
+TODO: 今日話すこと「技術の話はしません、運営の話をします」
+
+::description::
+
+<div>[WIP]「技術の話はしません、運営の話をします」</div>
+<br/>
+<div>一応、運営枠での登壇なので、本当に技術の話をしなくてよいのか、と心配になったが、</div>
+<div>（次スライドでサンボマスターの画像を出しながら、会場のようさんを見ながら）</div>
+<div>弊社の技術広報がOKと言ったので、良しとする。</div>
+<div>画像はようさんではなく、サンボマスターのボーカルです。で締める。滑ったらようさんのせいにする。</div>
+<div>（サンボマスターは別スライドにして、公開スライドから除く）</div>
+<br/>
+<div>（ここまで来ると会場との距離が近くなっている気がするので）</div>
+<div>「Vue Fes の運営に興味がある人、挙手」をする。</div>
+<div>（多い）かずぽんさんに来年も安泰ですね、的なことを言う。</div>
+<div>（少ない）来年は弊社の若手を全員召喚します、的なことを言う。</div>
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
-今日話すこと（期待値調整）
+::content-1::
 
-「技術の話はしません、運営の話をします」
+TODO: 今日話すこと聞き手への期待
+
+::description::
 
 丸3年、運営スタッフをやった結果、得られたものをお話するので
 <br>
@@ -101,7 +131,7 @@ layout: lm-base
 
 #### 運営を経験したことがない人は
 
-- コミュニティに所属することの良さを知ってください
+- コミュニティに所属することの良さを知ってください（興味がある人は、活動イメージを持てたら良いなと思います）
 
 #### 既にコミュニティメンバーの方は
 

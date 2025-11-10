@@ -16,7 +16,9 @@
 
 .slidev-layout.cover {
   background-image: url(/background-cover.png);
-  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 101%; /* 画像のアスペクト比を考慮して1%余分に設定。本来なら画像のアスペクト比を修正すべき。 */
 }
 
 .slidev-layout.cover p {
