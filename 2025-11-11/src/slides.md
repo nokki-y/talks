@@ -390,7 +390,7 @@ columnCount: 2
 </div>
 
 <!--
-なので、活論、コアスタッフに入ると、チーム単位でVue Fesの準備推しながら、v-tokyoの運営をすることになります。
+なので、結論、コアスタッフに入ると、チーム単位でVue Fesの準備推しながら、v-tokyoの運営をすることになります。
 -->
 
 ---
@@ -428,9 +428,8 @@ columnCount: 2
   <span>登壇機会</span>
 </div>
 
-<!--
-なので、活論、コアスタッフに入ると、チーム単位でVue Fesの準備推しながら、v-tokyoの運営をすることになります。
--->
+::description::
+結果的に登壇機会が得られた。
 
 ---
 layout: lm-columns
@@ -438,35 +437,42 @@ columnCount: 4
 ---
 
 ::title::
-コアスタッフってなにするの？
+登壇機会が得られるまで
 
 ::content-1::
 
 <div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
   <span>環境が変わる</span>
+  <span>（仲間・ネットワークの拡大）</span>
 </div>
 
 ::content-2::
 
 <div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
   <span>入ってくる情報が変わる</span>
+  <span>（新しい知識・技術の獲得）</span>
 </div>
 
 ::content-3::
 
 <div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
   <span>周囲からの見られ方が変わる</span>
+  <span>（登壇機会の獲得）</span>
 </div>
 
 ::content-4::
 
 <div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
   <span>行動が変わる</span>
+  <span>（業務内での発信が増える）</span>
 </div>
 
-<!--
-なので、活論、コアスタッフに入ると、チーム単位でVue Fesの準備推しながら、v-tokyoの運営をすることになります。
--->
+::description::
+
+<br/>
+<div>環境の変化が回り回って、結果的に登壇機会につながった。</div>
+<div>ミドル以上の年令になってくると、環境が固定されてしまうことが多い、また能動的に環境を変えられる手段も限られてくる。</div>
+<div>技術コミュニティは環境を変えられる手段の一つです。</div>
 
 ---
 layout: lm-base
