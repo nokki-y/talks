@@ -201,8 +201,8 @@ layout: lm-agenda
       <span font-bold text-gradient>4</span>
     </div>
     <div pl-2 flex-1 class="pt-[4px]">
-      <div mb-1 font-bold>3年間やってみてよかったの？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を簡単にお話しますを例に</div>
+      <div mb-1 font-bold>コミュニティに入って、今どう？</div>
+      <div op50 text-xs font-500 class="pl-[1px]">コミュニティへの初参加から今までの総括</div>
     </div>
     <!-- 線 -->
     <div background-gradient size-full></div>

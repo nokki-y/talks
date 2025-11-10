@@ -50,7 +50,7 @@
     </div>
 
     <!-- コンテンツエリア -->
-    <div z-10 rounded-md py-6 px-12 box-contents w-full>
+    <div z-10 rounded-md py-6 px-11 box-contents w-full>
       <slot>AGENDA</slot>
     </div>
   </div>
