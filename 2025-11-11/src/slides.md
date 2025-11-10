@@ -429,7 +429,7 @@ columnCount: 2
 </div>
 
 ::description::
-結果的に登壇機会が得られた。
+結論、結果的に登壇機会が得られた。
 
 ---
 layout: lm-columns
@@ -464,15 +464,59 @@ columnCount: 4
 
 <div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
   <span>行動が変わる</span>
-  <span>（業務内での発信が増える）</span>
+  <span>（業務内での発信増加）</span>
 </div>
 
 ::description::
 
 <br/>
 <div>環境の変化が回り回って、結果的に登壇機会につながった。</div>
-<div>ミドル以上の年令になってくると、環境が固定されてしまうことが多い、また能動的に環境を変えられる手段も限られてくる。</div>
-<div>技術コミュニティは環境を変えられる手段の一つです。</div>
+<div>特に僕の場合、社内の技術的な先輩、特にフロント面においては少なくなる年代なので、、、（次のスライド）</div>
+
+---
+layout: lm-columns
+columnCount: 1
+---
+
+::title::
+仲間・ネットワークの拡大
+
+::content-1::
+
+<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
+  <span>変わった環境のBefore/After</span>
+</div>
+
+::description::
+
+<br/>
+<div>新しい環境を得られたこと、ネットワークが拡大されたことが大きかった。</div>
+<div>特に、Vue.jsコミュニティには、日本在住のコアメンバーもいるので、</div>
+<div>刺激が多いので、新しい知識・技術の獲得がしやすい。</div>
+<div>またVue.jsの特性上、OSSに興味関心を持つ人が多いので、エンジニアとして楽しい話題も多い。</div>
+<div>Vue Fesに参加して楽しいと感じた人は、いい感じに輪に入れると基本的に楽しいと思います。</div>
+
+---
+layout: lm-columns
+columnCount: 1
+---
+
+::title::
+業務内での発信増加
+
+::content-1::
+
+<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
+  <span>変わった行動のBefore/After</span>
+</div>
+
+::description::
+
+<br/>
+<div>Vue Fes Japanのあと、高揚感があったと思います。新しく得た情報を話したい、試したいという欲求が出てきます。</div>
+<div>しかし、高揚感は時間が立つと薄れますが、運営スタッフは先程のメンバーとなんだかんだ毎月のように会うことになるので、</div>
+<div>高揚感が維持できる。社内でも発信も継続的に増える。</div>
+<div>発信はもちろん、Vite Confをライブビューイングしたり、リリースノートを読んで開発の背景を予想してみたり、していました。</div>
 
 ---
 layout: lm-base
