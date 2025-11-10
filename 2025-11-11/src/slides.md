@@ -554,6 +554,54 @@ columnCount: 2
 結果論で、一例に過ぎないが、変化できる環境を得ることで、登壇機会が得られた。
 
 ---
+layout: lm-sub-cover
+partNumber: '3'
+---
+
+::title::
+忙しくても大丈夫？
+
+::sub-title::
+忙しかった2025年の出来事を例に
+
+<!--
+aaa
+-->
+
+---
+layout: lm-columns
+columnCount: 1
+---
+
+::title::
+大丈夫
+
+::content-1::
+
+<div flex flex-col justify-center items-center w-full h-200px border-2 border-white>
+  <span>適当にいい感じのことを書く</span>
+</div>
+
+::description::
+大丈夫！「全然手伝ってくれない」と冗談で言われるがそれでも変わらず迎え入れてくれる。
+信頼できる人にリーダーを引き継いだ。
+
+---
+layout: lm-sub-cover
+partNumber: '4'
+---
+
+::title::
+<span font-en>3 </span>年間やってみてよかったの？
+
+::sub-title::
+<span font-en>3 </span>年間の活動を簡単にお話します
+
+<!--
+aaa
+-->
+
+---
 layout: lm-base
 ---
 
