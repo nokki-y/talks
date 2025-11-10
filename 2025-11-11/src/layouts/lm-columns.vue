@@ -2,6 +2,8 @@
   <div h-full w-full relative py-6 px-8 flex flex-col items-center class="slidev-layout lm-columns">
     <!-- 背景画像 -->
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
+    <!-- マスク -->
+    <div absolute top-0 left-0 size-full bg-black op-40></div>
 
     <div
       absolute
