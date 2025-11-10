@@ -475,7 +475,7 @@ columnCount: 4
 
 ---
 layout: lm-columns
-columnCount: 1
+columnCount: 2
 ---
 
 ::title::
@@ -484,7 +484,13 @@ columnCount: 1
 ::content-1::
 
 <div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>変わった環境のBefore/After</span>
+  <span>変わった環境のBefore</span>
+</div>
+
+::content-2::
+
+<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
+  <span>変わった環境のAfter</span>
 </div>
 
 ::description::
@@ -498,7 +504,7 @@ columnCount: 1
 
 ---
 layout: lm-columns
-columnCount: 1
+columnCount: 2
 ---
 
 ::title::
@@ -507,7 +513,13 @@ columnCount: 1
 ::content-1::
 
 <div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>変わった行動のBefore/After</span>
+  <span>変わった行動のBefore</span>
+</div>
+
+::content-2::
+
+<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
+  <span>変わった行動のAfter</span>
 </div>
 
 ::description::
@@ -517,6 +529,29 @@ columnCount: 1
 <div>しかし、高揚感は時間が立つと薄れますが、運営スタッフは先程のメンバーとなんだかんだ毎月のように会うことになるので、</div>
 <div>高揚感が維持できる。社内でも発信も継続的に増える。</div>
 <div>発信はもちろん、Vite Confをライブビューイングしたり、リリースノートを読んで開発の背景を予想してみたり、していました。</div>
+
+---
+layout: lm-columns
+columnCount: 2
+---
+
+::title::
+なんか良いことあるの？
+
+::content-1::
+
+<div flex flex-col justify-center items-center w-full h-300px border-2 border-white>
+  <span>変化できる環境</span>
+</div>
+
+::content-2::
+
+<div flex flex-col justify-center items-center w-full h-300px border-2 border-white>
+  <span>登壇機会</span>
+</div>
+
+::description::
+結果論で、一例に過ぎないが、変化できる環境を得ることで、登壇機会が得られた。
 
 ---
 layout: lm-base
