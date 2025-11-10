@@ -71,7 +71,7 @@ columnCount: 1
 今日お話しすること
 
 ::message-content::
-「誰かのためが、自分のためになる。」
+「 誰かのためが、自分のためになる。」
 
 ::description::
 
@@ -659,7 +659,7 @@ columnCount: 1
 今日お話しすること
 
 ::message-content::
-「誰かのためが、自分のためになる。」
+「 誰かのためが、自分のためになる。」
 
 ::description::
 
