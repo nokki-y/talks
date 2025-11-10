@@ -4,7 +4,7 @@
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
 
     <!-- 右上のロゴ -->
-    <div absolute h-20 w-20 class="top-[-16px] right-[-10px]">
+    <div absolute h-30 w-30 class="top-[-16px] right-[-10px]">
       <img src="/logo.png" alt="logo" />
     </div>
 
