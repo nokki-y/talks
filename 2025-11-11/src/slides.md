@@ -13,7 +13,7 @@ transition: fade
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 # duration of the presentation
-duration: 35min
+duration: 10min
 # color schema: light or dark
 colorSchema: light
 # custom css
@@ -45,7 +45,36 @@ layout: lm-cover
 </div>
 
 <!--
-TODO:
+プレゼンテーションのタイトルと登壇者名を表示
+-->
+
+---
+layout: lm-columns
+columnCount: 2
+---
+
+::content-1::
+
+<div class="pt-20 pl-10">
+  <h2 class="text-3xl font-bold mb-2">鵜木 義秀 (Yoshihide Unoki)</h2>
+  <div class="text-xl opacity-60 mb-8">nokki-y</div>
+  <div class="text-lg">
+    株式会社リンクアンドモチベーション<br>
+    SRE・イネーブリンググループ
+  </div>
+</div>
+
+::content-2::
+
+<div class="flex justify-center items-center h-full">
+  <div class="overflow-hidden rounded-full w-64 h-64">
+    <img src="/sns.jpg" alt="icon" />
+  </div>
+</div>
+
+<!--
+自己紹介
+名前、所属、経歴を簡潔に紹介
 -->
 
 ---
@@ -53,41 +82,135 @@ layout: lm-columns
 columnCount: 1
 ---
 
+::title::
+今日お話しすること
+
 ::content-1::
 
-<div grid h-full class="grid-cols-[1fr_320px]">
-  <div pl-20 pt-20>
-    <div mb-10>
-      <div text-3xl >鵜木 義秀 <span font-en>(Yoshihide Unoki)</span></div>
-      <div op50 tracking-wide text-xl mt1>nokki-y</div>
+<div flex flex-col items-center justify-center h-full>
+  <div box-contents py-8 px-12 rounded-lg text-center mb-12>
+    <div text-4xl font-bold mb-6>Vue.jsコミュニティで得た</div>
+    <div text-5xl font-bold text-gradient>「3つの出会い」</div>
+  </div>
+
+  <div grid grid-cols-3 gap-8 w-full px-20>
+    <div box-contents py-6 px-8 rounded-lg text-center>
+      <div text-2xl font-bold mb-2>技術</div>
+      <div text-sm op70>との出会い</div>
+    </div>
+    <div box-contents py-6 px-8 rounded-lg text-center>
+      <div text-2xl font-bold mb-2>仲間</div>
+      <div text-sm op70>との出会い</div>
+    </div>
+    <div box-contents py-6 px-8 rounded-lg text-center>
+      <div text-2xl font-bold mb-2>自分</div>
+      <div text-sm op70>との出会い</div>
+    </div>
+  </div>
+</div>
+
+<!--
+今日は、私がVue.jsコミュニティに参加して得た「3つの出会い」についてお話しします。
+技術との出会い、仲間との出会い、そして新しい自分との出会い。
+この3年間で経験した、かけがえのない出会いの話です。
+
+まずは、その始まりの話から。
+-->
+
+---
+layout: lm-columns
+columnCount: 1
+---
+
+::title::
+ビジネスとエンジニアリングの狭間
+
+::sub-title::
+コストパフォーマンスを追う日々の中で、忘れかけていた気持ち
+
+::content-1::
+
+<div flex flex-col justify-center h-full px-20>
+  <div grid grid-cols-2 gap-12 items-center>
+    <div>
+      <div box-contents py-6 px-8 rounded-lg mb-6>
+        <div text-xl font-bold mb-4>業務での現実</div>
+        <ul text-base space-y-2>
+          <li>効率や納期を優先</li>
+          <li>コストパフォーマンスを意識</li>
+          <li>技術を<span font-bold>"手段"</span>として扱う</li>
+        </ul>
+      </div>
     </div>
     <div>
-      <div>
-        株式会社リンクアンドモチベーション<br><span font-en>SRE</span>・イネーブリンググループ<br>
+      <div box-contents py-6 px-8 rounded-lg border-2 border-red-400>
+        <div text-xl font-bold mb-4 text-red-400>忘れかけていた気持ち</div>
+        <div text-base>
+          <p>"技術が好き"</p>
+          <p>という気持ちを</p>
+          <p>置き去りにしていた</p>
+        </div>
       </div>
     </div>
   </div>
-  <div flex justify-center pt-20>
-    <div relative>
-      <div overflow-hidden rounded-full w-40 h-40 relative>
-        <img src="/sns.jpg" alt="icon" />
+</div>
+
+<!--
+それでは、その始まりの話からお話しします。
+
+業務で開発をしていると、どうしても効率や納期を意識します。
+コストパフォーマンスを無視することはできません。
+技術を"目的"ではなく"手段"として使うことが増えていきました。
+気づけば"技術が好き"という気持ちを置き去りにしていたんです。
+
+そんな中、あるきっかけがありました。
+-->
+
+---
+layout: lm-columns
+columnCount: 1
+---
+
+::title::
+きっかけ
+
+::sub-title::
+v-tokyo #16 ― 打算的な目的から始まったコミュニティ参加
+
+::content-1::
+
+<div flex flex-col justify-center h-full px-20>
+  <div grid grid-cols-2 gap-12 items-center>
+    <div>
+      <div rounded-lg overflow-hidden>
+        <img src="/v-tokyo-16.png" alt="v-tokyo #16" />
+      </div>
+    </div>
+    <div>
+      <div box-contents py-6 px-8 rounded-lg mb-6>
+        <div text-xl font-bold mb-4>参加の目的</div>
+        <div text-base space-y-3>
+          <p>開発組織の認知を広げる</p>
+          <p font-bold text-gradient>打算的な目的のまま<br>コミュニティに参加</p>
+        </div>
+      </div>
+      <div text-sm op70 mt-8>
+        <p>※まだ「出会い」には至っていない</p>
+        <p>単なる「きっかけ」</p>
       </div>
     </div>
   </div>
 </div>
 
-::description::
-
-<br/>
-<br/>
-<div>[WIP]若手の頃はフロント領域を専門としていたが、最近は領域関係なくやっている。</div>
-<div>最近年下のメンバーも増えてきて、下からの見られ方も気にしなければ行けない年ですが、</div>
-<div>今年も年末調整は間に合わなかった、という話で程よく権威性を上げつつ、弛緩した雰囲気にする。</div>
-<br/>
-<div>忘れていたかのように、Vue Fes Japanの運営を3年やっていることをお伝えして、無理やり運営の話にする</div>
-
 <!--
-TODO: 自己紹介
+そのきっかけというのが、こちらです。
+
+私が最初にVue.jsコミュニティに関わったのは、v-tokyo #16というイベントでした。
+目的は正直、業務的でした。開発組織の認知を広げるための参加です。
+懇親会はなかったのですが、実は真面目な性格なので、業務遂行のために運営にアプローチしてそのまま、
+打算的な目的でコミュニティに参加しました。
+
+そこで、最初の出会いがありました。
 -->
 
 ---
@@ -95,477 +218,53 @@ layout: lm-columns
 columnCount: 1
 ---
 
-::content-1::
+::title::
+技術との出会い
 
-TODO: 今日話すこと「技術の話はしません、運営の話をします」
-
-::description::
-
-<div>[WIP]「技術の話はしません、運営の話をします」</div>
-<br/>
-<div>一応、運営枠での登壇なので、本当に技術の話をしなくてよいのか、と心配になったが、</div>
-<div>（次スライドでサンボマスターの画像を出しながら、会場のようさんを見ながら）</div>
-<div>弊社の技術広報がOKと言ったので、良しとする。</div>
-<div>画像はようさんではなく、サンボマスターのボーカルです。で締める。滑ったらようさんのせいにする。</div>
-<div>（サンボマスターは別スライドにして、公開スライドから除く）</div>
-<br/>
-<div>（ここまで来ると会場との距離が近くなっている気がするので）</div>
-<div>「Vue Fes の運営に興味がある人、挙手」をする。</div>
-<div>（多い）かずぽんさんに来年も安泰ですね、的なことを言う。</div>
-<div>（少ない）来年は弊社の若手を全員召喚します、的なことを言う。</div>
-
----
-layout: lm-columns
-columnCount: 1
----
+::sub-title::
+知っている技術の"知らなかった側面"に出会えた
 
 ::content-1::
 
-TODO: 今日話すこと聞き手への期待
-
-::description::
-
-丸3年、運営スタッフをやった結果、得られたものをお話するので
-<br>
-<br>
-
-#### 運営を経験したことがない人は
-
-- コミュニティに所属することの良さを知ってください（興味がある人は、活動イメージを持てたら良いなと思います）
-
-#### 既にコミュニティメンバーの方は
-
-- 自分たちの影響力を再認識してこれからの活動に活かしてほしいです
-
----
-layout: lm-agenda
----
-
-<div grid grid-cols-2 gap-10>
-  <div grid gap-4 items-center relative class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
-    <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
-      <span font-bold text-gradient>1</span>
-    </div>
-    <div pl-2 flex-1 class="pt-[4px]">
-      <div mb-1 font-bold>コアスタッフってなにするの？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">3年間の活動を例に</div>
-    </div>
-    <!-- 線 -->
-    <div background-gradient size-full></div>
-    <!-- 線 -->
-    <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-    <!-- ピリオド -->
-    <div absolute flex justify-between class="w-[4px] h-auto bottom-[-1px] right-[6px]">
-      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
+<div flex flex-col justify-center h-full px-20>
+  <div mb-12>
+    <div box-contents py-6 px-8 rounded-lg>
+      <div text-xl font-bold mb-4>業務では...</div>
+      <p text-base>Vue.jsを使っていたが、要件に必要な範囲のみの理解</p>
     </div>
   </div>
-  <div grid gap-4 items-center relative class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
-    <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
-      <span font-bold text-gradient>2</span>
-    </div>
-    <div pl-2 flex-1 class="pt-[4px]">
-      <div mb-1 font-bold>なにか良いことあるの？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">活動をしていて得られたことを例に</div>
-    </div>
-    <!-- 線 -->
-    <div background-gradient size-full></div>
-    <!-- 線 -->
-    <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-    <!-- ピリオド -->
-    <div absolute flex justify-between class="w-[4px] h-auto bottom-[-1px] right-[6px]">
-      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-    </div>
-  </div>
-  <div grid gap-4 items-center relative class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
-    <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
-      <span font-bold text-gradient>3</span>
-    </div>
-    <div pl-2 flex-1 class="pt-[4px]" >
-      <div mb-1 font-bold>忙しくても大丈夫？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">忙しかった2025年の出来事を例に</div>
-    </div>
-    <!-- 線 -->
-    <div background-gradient size-full></div>
-    <!-- 線 -->
-    <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-    <!-- ピリオド -->
-    <div absolute flex justify-between class="w-[4px] h-auto bottom-[-1px] right-[6px]">
-      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-    </div>
-  </div>
-  <div grid gap-4 items-center relative class="grid-cols-[4rem_1fr] grid-rows-[1fr_4px]">
-    <div font-en text-5xl text-center :style="{ transform: 'scale(1, 1.3)' }">
-      <span font-bold text-gradient>4</span>
-    </div>
-    <div pl-2 flex-1 class="pt-[4px]">
-      <div mb-1 font-bold>コミュニティに入って、今どう？</div>
-      <div op50 text-xs font-500 class="pl-[1px]">コミュニティへの初参加から今までの総括</div>
-    </div>
-    <!-- 線 -->
-    <div background-gradient size-full></div>
-    <!-- 線 -->
-    <div w-full op80 class="h-[0.5px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-    <!-- ピリオド -->
-    <div absolute flex justify-between class="w-[4px] h-auto bottom-[-1px] right-[6px]">
-      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-      <div rotate-38 class="w-[0.8px] h-[8px] blur-[0.25px]" :style="{ backgroundColor: 'var(--box-contents-border-color)' }"></div>
-    </div>
-  </div>
-</div>
 
----
-layout: lm-sub-cover
-partNumber: '1'
----
-
-::title::
-コアスタッフってなにするの？
-
-::sub-title::
-3年間の活動を例に
-
-<!--
-aaa
--->
-
----
-layout: lm-base
----
-
-::title::
-3年間の主な出来事
-
-::sub-title::
-Not contribution, just work.
-
-::left-content::
-
-<!-- 3年間の活動の一覧を時系列のリスト形式で表示 -->
-<History :position="{ bottom: '10px', left: '0px' }" />
-
-::right-content::
-
-<div>
-  <!-- 2023年のv-tokyo参加がきっかけだったことを指す線 -->
   <div>
-    <div bg-white absolute rounded-tl-xl rounded-bl-xl class="h-[2px] w-[54px] top-[146px] left-[-54px]"></div>
-    <div bg-white absolute rounded-tr-xl rounded-br-xl class="h-[1.5px] w-[45px] top-[128px] left-[-10px] rotate-[-55deg]"></div>
-  </div>
-  <!-- 企画運営チームを3年間やっていたことを指すための線 -->
-  <div>
-    <div bg-white absolute rounded-tl-xl rounded-bl-xl class="h-[1.5px] w-[32px] top-[206px] left-[-54px] rotate-[45deg]"></div>
-    <div bg-white absolute class="h-[1.5px] w-[156px] top-[295px] left-[-104.5px] rotate-[90deg]"></div>
-    <div bg-white absolute rounded-tl-xl rounded-bl-xl class="h-[1.5px] w-[32px] top-[384px] left-[-54px] rotate-[-45deg]"></div>
-    <div bg-white absolute rounded-tr-xl rounded-br-xl class="h-[2px] w-[13px] top-[294px] left-[-27px]"></div>
-  </div>
-  <!-- 2023年のv-tokyo参加がきっかけだったことの説明 -->
-  <div absolute flex flex-col box-contents py-2 px-4 rounded-md class="top-[36px] left-[0px]" :style="{ backgroundColor: 'rgba(var(--box-contents-background-color-rgb), 0.9)' }">
-    <span>コロナ禍の終わり頃</span>
-    <span>オフライン開催のv-tokyoに初参加</span>
-  </div>
-  <!-- 企画運営チームを3年間やっていたことの説明 -->
-  <div absolute flex flex-col box-contents py-2 px-4 rounded-md class="top-[260px] left-[-10px]" :style="{ backgroundColor: 'rgba(var(--box-contents-background-color-rgb), 0.9)' }">
-    <span>コアスタッフ参画後は</span>
-    <span>主に企画運営チームのリーダー役を担う</span>
-  </div>
-</div>
-
-<!--
-コロナ禍が終わりを迎えようとしていた2023年に、Vue.jsコミュニティでもオフラインイベントを再開。v-tokyo #16。
-私はこの時に初めてv-tokyoに参加しました。
-
-以降の3年間は、企画運営チームのリーダーロールを担ってきました。
--->
-
----
-layout: lm-columns
-columnCount: 3
----
-
-::title::
-企画運営チームのお仕事
-
-::content-1::
-
-<img src="/event-sticker-rally.jpg" alt="event-sticker-rally" />
-
-::content-2::
-
-<img src="/event-cocktail.jpg" alt="event-sticker-rally" />
-
-::content-3::
-
-<img src="/event-panel-discussion.jpg" alt="event-sticker-rally" />
-
-::description::
-
-<div w-full h-6rem flex justify-end items-end>
-  <div flex flex-col gap-1 text-sm items-end>
-    <span>「Vue.js クリニック」, 「Vue.jsコミュニティにようこそ！」</span>
-    <span>フリードリンク & スナック, フォトラリー, 縁日</span>
-    <span>..etc.</span>
-  </div>
-</div>
-
-<!--
-企画運営チームは2025年から一部のタスクが他チームに移管されたため、厳密には現状と異なりますが、
-私が関わってきた企画をご紹介すると、
-
-- スポンサーブースラリー
-- Vue cocktail
-- セッション系
-
-パネルディスカッションや知らない人もいるかもせ知れませんが、23年の「Vue.jsクリニック」24年の「Vue.jsコミュニティにようこそ！」。
-後は、今年の縁日なども企画運営チームの担当でした。
--->
-
----
-layout: lm-columns
-columnCount: 2
----
-
-::title::
-<span font-en>v-tokyo </span>の運営
-
-::content-1::
-
-<img src="/v-tokyo-events.png" alt="v-tokyo events" />
-
-::content-2::
-
-<div flex flex-col justify-between size-full pt-1 pl-4>
-  <div flex flex-col>
-    <span><span font-en>Vue Fes Japan</span>の準備が始まってから<span font-en>10月</span>まで</span>
-    <span mb-4>約月に一回の実施。</span>
-    <span><span font-en>2025</span>年は他イベントとの合同開催も多数。</span>
-    <span>コアスタッフは<span font-en> v-tokyo </span>の運営にも携わる。</span>
-  </div>
-  <div relative>
-    <span z-40 text-xs absolute class="top-[-20px] right-0">↓ <span font-en>2024</span>年は<span font-en>Yappli</span>さんのオフィスで合同開催も実施</span>
-    <div rounded-md overflow-hidden>
-      <img src="/v-tokyo-events-yappli.png" alt="v-tokyo events yappli" />
+    <div box-contents py-8 px-10 rounded-lg border-2 border-green-400>
+      <div text-2xl font-bold mb-6 text-green-400 text-center>コミュニティで得たもの</div>
+      <div grid grid-cols-2 gap-8>
+        <div>
+          <div text-lg font-bold mb-3>深い理解</div>
+          <ul text-sm space-y-2>
+            <li>Vuexの設計思想</li>
+            <li>Composition APIの意図</li>
+            <li>API誕生の背景</li>
+          </ul>
+        </div>
+        <div>
+          <div text-lg font-bold mb-3>視点の変化</div>
+          <p text-sm>「使う」から「読み解く」へ</p>
+          <p text-sm mt-4 font-bold text-gradient>ここにいれば常に<br>新しい視点を得られる</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <!--
-また、コアスタッフは月に1度実施されるv-tokyoの運営にも携わります。
-最近は、Vue Fes Japanの認知度が復活し、他イベントとの合同開催も多数実施されています。
+その最初の出会いが、技術との出会いでした。
 
-2024年はYappliさんのオフィスでもTSKaigiとの合同開催を実施しました。
-いつもありがとうございます。
--->
+Vue.jsコミュニティに入る前から、私は業務でVue.jsを使っていました。
+ただ、コミュニティに入って初めて「自分が知っていると思っていた技術の、知らなかった側面」に出会いました。
+Vuexの設計思想やComposition APIの背景など、普段の業務では聞けない話を聞けたんです。
+ここにいれば常に新しい視点を得られると確信しました。
 
----
-layout: lm-columns
-columnCount: 2
----
-
-::title::
-コアスタッフってなにするの？
-
-::content-1::
-
-<div flex flex-col justify-between items-center size-full>
-  <div rounded-md overflow-hidden h-full mb-5>
-    <img src="/vue-fes-japan-operation.jpg" alt="vue fes japan operation" />
-  </div>
-  <div box-contents py-1 px-4 rounded-md>
-    <span>チームで<span font-en font-bold> Vue Fes Japan </span>の準備</span>
-  </div>
-</div>
-
-::content-2::
-
-<div flex flex-col justify-between items-center size-full>
-  <div rounded-md overflow-hidden h-full mb-5>
-    <img h-full src="/v-tokyo-operation.png" alt="v-tokyo operation" />
-  </div>
-  <div box-contents py-1 px-4 rounded-md>
-    <span><span font-en font-bold>v-tokyo </span>の運営</span>
-  </div>
-</div>
-
-<!--
-なので、結論、コアスタッフに入ると、チーム単位でVue Fesの準備推しながら、v-tokyoの運営をすることになります。
--->
-
----
-layout: lm-sub-cover
-partNumber: '2'
----
-
-::title::
-なんか良いことあるの？
-
-::sub-title::
-活動をしていて得られたことを例に
-
-<!--
-aaa
--->
-
----
-layout: lm-columns
-columnCount: 2
----
-
-::title::
-得られた<span font-en text-3xl ml-1 mr-0.5>2</span>つのもの
-
-::content-1::
-
-<div flex flex-col justify-center items-center w-full h-300px border-2 border-white>
-  <span>変化できる環境</span>
-</div>
-
-::content-2::
-
-<div flex flex-col justify-center items-center w-full h-300px border-2 border-white>
-  <span>登壇機会</span>
-</div>
-
-::description::
-結論、結果的に登壇機会が得られた。
-
----
-layout: lm-columns
-columnCount: 4
----
-
-::title::
-登壇機会が得られるまで
-
-::content-1::
-
-<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>環境が変わる</span>
-  <span>（仲間・ネットワークの拡大）</span>
-</div>
-
-::content-2::
-
-<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>入ってくる情報が変わる</span>
-  <span>（新しい知識・技術の獲得）</span>
-</div>
-
-::content-3::
-
-<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>周囲からの見られ方が変わる</span>
-  <span>（登壇機会の獲得）</span>
-</div>
-
-::content-4::
-
-<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>行動が変わる</span>
-  <span>（業務内での発信増加）</span>
-</div>
-
-::description::
-
-<br/>
-<div>環境の変化が回り回って、結果的に登壇機会につながった。</div>
-<div>特に僕の場合、社内の技術的な先輩、特にフロント面においては少なくなる年代なので、、、（次のスライド）</div>
-
----
-layout: lm-columns
-columnCount: 2
----
-
-::title::
-仲間・ネットワークの拡大
-
-::content-1::
-
-<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>変わった環境のBefore</span>
-</div>
-
-::content-2::
-
-<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>変わった環境のAfter</span>
-</div>
-
-::description::
-
-<br/>
-<div>新しい環境を得られたこと、ネットワークが拡大されたことが大きかった。</div>
-<div>特に、Vue.jsコミュニティには、日本在住のコアメンバーもいるので、</div>
-<div>刺激が多いので、新しい知識・技術の獲得がしやすい。</div>
-<div>またVue.jsの特性上、OSSに興味関心を持つ人が多いので、エンジニアとして楽しい話題も多い。</div>
-<div>Vue Fesに参加して楽しいと感じた人は、いい感じに輪に入れると基本的に楽しいと思います。</div>
-
----
-layout: lm-columns
-columnCount: 2
----
-
-::title::
-業務内での発信増加
-
-::content-1::
-
-<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>変わった行動のBefore</span>
-</div>
-
-::content-2::
-
-<div flex flex-col justify-center items-center w-full h-100px border-2 border-white>
-  <span>変わった行動のAfter</span>
-</div>
-
-::description::
-
-<br/>
-<div>Vue Fes Japanのあと、高揚感があったと思います。新しく得た情報を話したい、試したいという欲求が出てきます。</div>
-<div>しかし、高揚感は時間が立つと薄れますが、運営スタッフは先程のメンバーとなんだかんだ毎月のように会うことになるので、</div>
-<div>高揚感が維持できる。社内でも発信も継続的に増える。</div>
-<div>発信はもちろん、Vite Confをライブビューイングしたり、リリースノートを読んで開発の背景を予想してみたり、していました。</div>
-
----
-layout: lm-columns
-columnCount: 2
----
-
-::title::
-なんか良いことあるの？
-
-::content-1::
-
-<div flex flex-col justify-center items-center w-full h-300px border-2 border-white>
-  <span>変化できる環境</span>
-</div>
-
-::content-2::
-
-<div flex flex-col justify-center items-center w-full h-300px border-2 border-white>
-  <span>登壇機会</span>
-</div>
-
-::description::
-結果論で、一例に過ぎないが、変化できる環境を得ることで、登壇機会が得られた。
-
----
-layout: lm-sub-cover
-partNumber: '3'
----
-
-::title::
-忙しくても大丈夫？
-
-::sub-title::
-忙しかった2025年の出来事を例に
-
-<!--
-aaa
+そして、技術だけでなく、仲間との出会いもありました。
 -->
 
 ---
@@ -574,395 +273,431 @@ columnCount: 1
 ---
 
 ::title::
-大丈夫
+仲間との出会い①
+
+::sub-title::
+経験豊富な人たちが、視野を広げてくれた
 
 ::content-1::
 
-<div flex flex-col justify-center items-center w-full h-200px border-2 border-white>
-  <span>適当にいい感じのことを書く</span>
-</div>
-
-::description::
-大丈夫！「全然手伝ってくれない」と冗談で言われるがそれでも変わらず迎え入れてくれる。
-信頼できる人にリーダーを引き継いだ。
-
----
-layout: lm-sub-cover
-partNumber: '4'
----
-
-::title::
-コミュニティに入って、今どう？
-
-::sub-title::
-コミュニティへの初参加から今までの総括
-
-<!--
-aaa
--->
-
----
-layout: lm-base
----
-
-<!-- 白線 -->
-<!-- <div absolute top-0 h-full bg-white class="w-[12px] left-[50px]"></div> -->
-
-<!-- 影 -->
-<!-- <div absolute top-0 h-full bg-white op20 class="w-[12px] left-[70px]"></div> -->
-
-<!-- ポイント -->
-<!-- <div absolute rounded-full bg-white class="top-[270px] left-[41px] w-[24px] h-[10px]"></div> -->
-
-<!-- タイトル -->
-<div class="h1-container">
-  <h1>打算的な理由から始まったコミュニティ活動</h1>
-</div>
-
-<!-- v-tokyo #16　画像 -->
-<div class="image-container top-[180px] right-[0px] w-[500px]">
-  <img src="/v-tokyo-16.png" alt="v-tokyo #16" />
-  <!-- 色彩が強いのでさりげない白マスク -->
-  <div absolute top-0 left-0 w-full h-full bg-white op15></div>
-</div>
-
-<div absolute text-xs class="top-[0px] right-[20px]" >
-  <span> ↓ 打算と本音のあいだで生まれた投稿たち。</span>
-</div>
-
-<!-- 詳細 -->
-<div class="detail-container top-[80px] left-[20px] w-[420px]">
-  <!-- <div class="detail-title bottom-[-40px] left-[-40px]">「外部へのプライオリティを高める」という目的で <span font-en>`v-tokyo Meetup #16`</span></div> -->
-  <div class="detail-content">
-    <div>「外部へのプライオリティを高める」</div>
-    <div mb-4>という目的で参加した <a href="https://vuejs-meetup.connpass.com/event/271298/" target="_blank" font-en>`v-tokyo Meetup #16`</a> 。</div>
-    <div>イベント終了後、運営スタッフに相談。</div>
-    <div>後日、正式にコアスタッフに参加することに。</div>
+<div flex flex-col justify-center h-full px-20>
+  <div grid grid-cols-2 gap-12 items-center>
+    <div>
+      <div box-contents py-6 px-8 rounded-lg mb-6>
+        <div text-lg font-bold mb-4>コミュニティに入る前</div>
+        <div text-base space-y-2>
+          <p>2018年から業務でプログラム</p>
+          <p>今年で8年目のミドルエンジニア</p>
+          <p>社内ではVue.jsの専門家</p>
+          <p font-bold text-red-400>少し天狗になっていた</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div box-contents py-6 px-8 rounded-lg border-2 border-blue-400>
+        <div text-lg font-bold mb-4 text-blue-400>コミュニティで気づいたこと</div>
+        <div text-base space-y-3>
+          <p>コアメンバーも多数在籍</p>
+          <p>自分より深い知識を持つ人が多数</p>
+          <p font-bold text-gradient mt-4>天狗気味だった自己評価は<br>すぐに改めざるを得なかった</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- v-tokyo #16　画像-x 1 -->
-<div class="image-container bottom-[278px] right-[25px] w-[280px]">
-  <img src="/v-tokyo-16-x-1.png" alt="v-tokyo #16" />
-  <!-- 色彩が強いのでさりげない白マスク -->
-  <div absolute top-0 left-0 w-full h-full bg-white op10></div>
-</div>
-
-<!-- v-tokyo #16　画像-x 2 -->
-<div class="image-container bottom-[176px] right-[14px] w-[280px]">
-  <img src="/v-tokyo-16-x-2.png" alt="v-tokyo #16" />
-  <!-- 色彩が強いのでさりげない白マスク -->
-  <div absolute top-0 left-0 w-full h-full bg-white op10></div>
-</div>
-
-<!-- v-tokyo #16　画像-x 3 -->
-<div class="image-container bottom-[83px] right-[40px] w-[280px]">
-  <img src="/v-tokyo-16-x-3.png" alt="v-tokyo #16" />
-  <!-- 色彩が強いのでさりげない白マスク -->
-  <div absolute top-0 left-0 w-full h-full bg-white op10></div>
-</div>
-
-<!-- v-tokyo #16　画像-x 4 -->
-<div class="image-container bottom-[-10px] right-[10px] w-[280px]">
-  <img src="/v-tokyo-16-x-4.png" alt="v-tokyo #16" />
-  <!-- 色彩が強いのでさりげない白マスク -->
-  <div absolute top-0 left-0 w-full h-full bg-white op10></div>
-</div>
-
-<!-- サブタイトル -->
-<div class="sub-title-container bottom-[30px] right-[260px]">
-  <span font-en class="sub-title">"Not contribution, just work."</span>
-</div>
-
 <!--
-まずは、運営スタッフ3年間での出来事を簡単に話します。
+仲間との出会い、1つ目です。
+
+私は2018年頃から業務でプログラムを書くようになり、今年で8年目です。
+社内では自分がVue.jsの専門家だと、正直少し天狗になっていました。
+でもVue.jsコミュニティにはコアメンバーも多数在籍していて、
+天狗気味だった自己評価はすぐに改めざるを得ませんでした。
+話を聞くたびに「そういう視点もあるのか」と気づかされました。
+
+そして、また別の刺激もありました。
 -->
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
 ::title::
-運営スタッフ 3年間での出来事
+仲間との出会い②
 
-::content::
+::sub-title::
+若くても優秀な人たちから受けた刺激
 
-<!-- 時系列棒 -->
-<!-- <div bg-black absolute class="w-[662px] h-[10px] top-[100px] left-[100px]"></div> -->
+::content-1::
 
-<!-- <Bar
-  absolute
-  class="top-[100px] left-[420px]"
-  height="60px" />
+<div flex flex-col justify-center h-full px-20>
+  <div box-contents py-8 px-10 rounded-lg>
+    <div text-xl font-bold mb-6 text-center>自分より若くても知識も経験も豊富な人が多かった</div>
 
-<ArrowLabel
-  class="top-[80px] left-[320px]"
-  absolute
-  fontSize="1.5rem"
-  borderWidth="4">
+    <div grid grid-cols-3 gap-8 mb-8>
+      <div text-center>
+        <div text-4xl mb-2>😰</div>
+        <div text-sm>最初は落ち込んだ</div>
+      </div>
+      <div text-center>
+        <div text-4xl mb-2>💭</div>
+        <div text-sm>でも技術が好き</div>
+      </div>
+      <div text-center>
+        <div text-4xl mb-2>😊</div>
+        <div text-sm>楽しい時間だった</div>
+      </div>
+    </div>
 
-  <div>運営スタッフになったきっかけ</div>
-</ArrowLabel> -->
-<!-- 1. 2023年1月: 開発組織のプレゼンス向上という打算的な目的で外部コミュニティへの参加を開始
-   - Frontend領域を専門としていたので、最も理解のあるVue.jsコミュニティに参加することにした
-2. 2023年2月: [Vue.js v-tokyo Meetup #16](https://vuejs-meetup.connpass.com/event/271298/) に参加
-   - 懇親会で当時の運営メンバーに声をかけて頂き、運営スタッフになる -->
+    <div text-center>
+      <p text-lg font-bold text-gradient>落ち込み以上に<br>技術の話をする時間がとても楽しかった</p>
+    </div>
+
+  </div>
+</div>
 
 <!--
-そもそも、僕が運営に入ったきっかけは結構打算的でした。
+別の刺激、それは若手エンジニアたちとの出会いでした。
+
+コミュニティには、自分より若くても驚くほど優秀な人がたくさんいます。
+私よりも社会人歴が何年も短いエンジニアも少なくありませんでした。
+最初は正直、落ち込む瞬間もありました。実際に落ち込みました。
+でも私もエンジニアです。技術がとても好きなので、
+落ち込み以上に技術の話をする時間がとても楽しかったです。
+
+そうなんです。技術の話をする時間が、とても楽しかったんです。
 -->
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
 ::title::
-運営スタッフ 3年間での出来事
+仲間との出会い③
 
-::content::
-時系列（時系列に沿って話すので全体感を示す）
+::sub-title::
+技術を純粋に語れる仲間との時間
 
-→　図にする想定
+::content-1::
 
-1. 2023年3月: Vue Fes Japan 2023 コアフタッフに参画
-   - 募集は終わっていたが企画運営チームの人が足りていなかったこともあり、このタイミングで参画
-   - 企画運営チームのリーダーとなる
-1. 2023年10月: Vue Fes Japan 2023 のスポンサー枠で登壇
-   - コアスタッフをやったことと、登壇できたことの関係性は後述
-1. 2024年2月: Vue Fes Japan 2024 のコアスタッフに再び参画
-   - 前回のコアスタッフであったこともあり、再び参画
-   - 引き続き企画運営チームのリーダーを担う
-1. 2025年2月: Vue Fes Japan 2025 のコアスタッフに参画
-   - 業務が忙しく企画運営チームのリーダーを引き継ぐ
+<div flex flex-col justify-center h-full px-20>
+  <div box-contents py-8 px-10 rounded-lg mb-8>
+    <div text-lg font-bold mb-4>業務での制約</div>
+    <div text-base space-y-2>
+      <p>コストパフォーマンスを無視できない</p>
+      <p>純粋に技術の話を楽しめない時間もある</p>
+      <p op70 text-sm mt-4>※弊社は技術愛を大事にしているが...</p>
+    </div>
+  </div>
+
+  <div box-contents py-8 px-10 rounded-lg border-2 border-purple-400>
+    <div text-xl font-bold mb-4 text-purple-400 text-center>コミュニティでの時間</div>
+    <div text-base text-center space-y-3>
+      <p>Vue.jsの新機能、新しいライブラリ</p>
+      <p>コミュニティの将来について</p>
+      <p font-bold text-gradient mt-6>ビジネスとは切り離されたところで行う<br>技術の話は、とても楽しい時間</p>
+    </div>
+  </div>
+</div>
 
 <!--
-僕はコロナ禍が開ける頃の2023年2月にv-tokyoに参加しました。
-そこで、今年は当時のスタッフメンバーに声をかけていただいて、スタッフに参画しました。
+なぜ技術の話をする時間が楽しいのか。それには理由があります。
 
-例年1-2月頃にスタッフの募集をします。
-このときも例外ではなく、既にスタッフ募集は終わっていたのですが、企画運営チームの人数が足りていなかったこともあり、途中から参画する運びとなりました。
+業務においては、どうしてもコストパフォーマンスを無視することはできません。
+そういった前提があるが故に、純粋に技術の話を楽しめない時間もあります。
+でもコミュニティでは、技術の思想や美しさについて語り合えるんです。
+Vue.jsの新機能、新しいライブラリ、コミュニティの将来。
+ビジネスとは切り離されたところで行う技術の話は、とても楽しい時間でした。
 
-そして後述しますが、この年2023年のVue Fesでスポンサー枠で登壇します。
-
-
-また、運営は複数のチーム単位で動いているのですが、2025年は業務が忙しくリーダーを引き継ぐなどして事なきを得ました。
+こうして、技術との出会い、そして仲間との出会いを経て、特別なつながりが生まれました。
 -->
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
-時系列のサマリ（きっかけから今まで）
+::title::
+そして、特別なつながりが生まれた
 
-→　先に出した時系列の図を再掲してまとめにする想定
+::sub-title::
+技術と仲間、2つの出会いがもたらしたもの
 
-- 打算的なきっかけから活動開始
-- 無計画にチームのリーダーとなる
-- 業務が忙し時期もあったが、周りに支えられて3年間やってきた
+::content-1::
 
----
-layout: lm-base
----
+<div flex flex-col justify-center h-full px-20>
+  <div box-contents py-10 px-12 rounded-lg>
+    <div text-2xl font-bold mb-8 text-center text-gradient>2つの出会いが重なり合って</div>
 
-コミュニティに入ったことで得たこと
+    <div grid grid-cols-2 gap-12 mb-8>
+      <div text-center>
+        <div text-5xl mb-3>🔧</div>
+        <div text-lg font-bold mb-2>技術との出会い</div>
+        <div text-sm op70>Vue.jsへの理解が深まった</div>
+      </div>
+      <div text-center>
+        <div text-5xl mb-3>👥</div>
+        <div text-lg font-bold mb-2>仲間との出会い</div>
+        <div text-sm op70>経験豊富な人や若手<br>純粋に技術を語れる仲間</div>
+      </div>
+    </div>
+
+    <div text-center text-xl font-bold>
+      <p>↓</p>
+      <p text-2xl text-gradient mt-4>特別なつながりが生まれた</p>
+    </div>
+
+  </div>
+
+  <div text-center mt-8 op70>
+    <p>そして、この2つの出会いが、実は3つ目の出会いを生むことになります。</p>
+    <p mt-2>その前に、少しだけ私の過去の話をさせてください。</p>
+  </div>
+</div>
 
 <!--
-このような3年間の中で得たことを先にお伝えします。
+技術との出会い、そして仲間との出会い。この2つの出会いを振り返ってみます。
+
+技術との出会いで、Vue.jsへの理解が深まりました。
+仲間との出会いで、経験豊富な人や若手、純粋に技術を語れる仲間に出会えました。
+この2つの出会いが重なり合って、特別なつながりが生まれたんです。
+
+そして、この2つの出会いが、実は3つ目の出会いを生むことになります。
+その前に、少しだけ私の過去の話をさせてください。
 -->
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
-✅️　技術へのモチベーションアップ
+::title::
+営業からエンジニアへ
 
-✅️　社内での技術発信量アップ
+::sub-title::
+書店でPythonの本を手に取ったところから始まった
 
-✅️　Vue Fes Japan 2023に登壇
+::content-1::
 
----
-layout: lm-base
----
+<div flex flex-col justify-center h-full px-20>
+  <div box-contents py-10 px-12 rounded-lg>
+    <div grid grid-cols-4 gap-8 items-center>
+      <div text-center>
+        <div text-4xl mb-3>🏢</div>
+        <div text-base font-bold>新卒で営業</div>
+      </div>
+      <div text-center>
+        <div text-4xl mb-3>📚</div>
+        <div text-base font-bold>書店で<br>Python本を<br>手に取る</div>
+      </div>
+      <div text-center>
+        <div text-4xl mb-3>💻</div>
+        <div text-base font-bold>プログラミングが<br>すごく楽しい</div>
+      </div>
+      <div text-center>
+        <div text-4xl mb-3>👨‍💻</div>
+        <div text-base font-bold>第二新卒で<br>エンジニアへ</div>
+      </div>
+    </div>
 
-✅️　技術へのモチベーションアップ
+    <div text-center mt-12>
+      <div text-2xl font-bold text-gradient>
+        この「プログラミングが楽しい」という気持ちが
+      </div>
+      <div text-3xl font-bold text-gradient mt-4>
+        私の初心
+      </div>
+    </div>
 
-なぜ？　→　Vue FesコミュニティにはVuejs関連のコアメンバーが多く集まっている
+  </div>
+</div>
 
 <!--
-コロナ禍が開けた時期ということもあり、オフラインで集まる機会があると毎回飲みに行った。
+では、私の過去の話です。
 
-他イベントの運営には参加したことがありませんが、Vue運営にも飲みに行くのが好きなメンバーがちゃんといます。
+実は、私は新卒で営業をやっていました。
+ある日、書店でPythonの本を手に取ったところから、私のエンジニア人生は始まっています。
+家に帰ってコードを書き始めたところ、プログラミングがすごく楽しいと感じて、
+第二新卒でエンジニアになりました。
+この「プログラミングが楽しい」という気持ちが、私の初心でした。
 
-Vueで集まったメンバーなので、だいたいいつもVue.jsの話が中心です。
-社内ではフロント開発経験が豊富な方の僕ですが、このコミュニティにおいては知らないことが多い側の人間なので、いつも学びが多い。
-
-ただ、圧倒的にできる年下に度々遭遇すると、たまに凹みます。
-それでも、社外の人間と技術の話する機会が多いと、新しい情報が入るし、シンプルに超楽しいので技術的な意欲が上がります。
-
-Vue Fesに参加した後の高揚感みたいなものを、僕は毎回味わってました。
+でも、8年もエンジニアをやっていると...
 -->
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
-✅️　社内での技術発信量アップ
+::title::
+初心を思い出した
 
-なぜ？　→　モチベーションが上がると技術的な話をしたくなる
+::sub-title::
+3年間の経験を通じて、忘れかけていた気持ちを取り戻した
+
+::content-1::
+
+<div flex flex-col justify-center h-full px-20>
+  <div grid grid-cols-2 gap-12 mb-10>
+    <div box-contents py-6 px-8 rounded-lg>
+      <div text-lg font-bold mb-4>8年間で...</div>
+      <div text-base space-y-2>
+        <p>技術を手段として割り切る</p>
+        <p>ビジネスを優先せざるを得ない</p>
+        <p font-bold text-red-400 mt-4>技術が好きだという気持ちを<br>忘れがちになる</p>
+      </div>
+    </div>
+    <div box-contents py-6 px-8 rounded-lg border-2 border-green-400>
+      <div text-lg font-bold mb-4 text-green-400>3年間で...</div>
+      <div text-base space-y-2>
+        <p>技術を語り合い刺激を受ける</p>
+        <p>純粋に技術を楽しむ</p>
+        <p font-bold text-gradient mt-4>初心を思い出すことができた</p>
+      </div>
+    </div>
+  </div>
+
+  <div box-contents py-8 px-10 rounded-lg text-center>
+    <div text-2xl font-bold mb-4 text-gradient>厳密に言うと</div>
+    <div text-xl>
+      <p>新しい自分との出会い、ではなく</p>
+      <p font-bold text-2xl mt-4 text-gradient>「初心を思い出した」</p>
+      <p mt-2>という表現の方が正しい</p>
+    </div>
+  </div>
+</div>
 
 <!--
-高揚感を抱えたまま仕事に戻ると、社内でもつい
-「これおもしろい」「ここ変わりそうだね」って話が増える。
-雑談や定例の小ネタが増えて、共有会のネタも尽きない。
-その結果、発信の「量」も「質」もじわじわ上がった。
+そう、8年もエンジニアをやっていると...
 
-具体的には：
-- 海外カンファレンスを一緒に観て、気づきをサクッとメモ
-- Vue.jsエコシステムのリリース情報の背景（誰のどんな課題を解くか）を話す
-- 触ったことないライブラリを小さく試して、社内LTで共有
-- 社内ブログ/Confluenceに短文メモ（週1の小ネタでもOK）
+8年もエンジニアをやっていると、技術を手段として割り切る、
+ビジネスを優先せざる得ない場面に何度も出会います。
+そういった場面が増えると、技術が好きだという気持ちを忘れがちになります。
+
+でも、Vue.jsコミュニティで過ごした3年間で、少しずつその初心を取り戻していきました。
+コードを書くのが楽しくてエンジニアになった、その気持ちを思い出すことができたんです。
+
+厳密に言うと、新しい自分との出会いではありません。
+初心を思い出したという表現の方が正しいです。
+
+ここまでお話しした、技術・仲間・自分という3つの出会いを、改めてまとめます。
 -->
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
-✅️　Vue Fes Japan 2023に登壇
+::title::
+まとめ
 
-なぜ？　→　Vue.jsコミュニティに向き合う姿勢を汲み取ってもらえた
+::sub-title::
+3つの出会いがくれた変化
+
+::content-1::
+
+<div flex flex-col justify-center h-full px-20>
+  <div box-contents py-10 px-12 rounded-lg>
+    <div grid grid-cols-3 gap-8 mb-12>
+      <div text-center>
+        <div text-5xl mb-4>🔧</div>
+        <div text-lg font-bold mb-2>技術との出会い</div>
+        <div text-sm op70>知らなかった側面<br>深い理解</div>
+      </div>
+      <div text-center>
+        <div text-5xl mb-4>👥</div>
+        <div text-lg font-bold mb-2>仲間との出会い</div>
+        <div text-sm op70>視野を広げる<br>刺激と楽しさ</div>
+      </div>
+      <div text-center>
+        <div text-5xl mb-4>💡</div>
+        <div text-lg font-bold mb-2>自分との出会い</div>
+        <div text-sm op70>初心を思い出した</div>
+      </div>
+    </div>
+
+    <div border-t-2 border-white pt-8>
+      <div text-center space-y-4>
+        <p text-xl>Vue.jsを"使う側"から"育てる側"へ</p>
+        <p text-2xl font-bold text-gradient>技術を"手段"から"原動力"へ</p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <!--
-きっかけ：
-- 企画〜当日運営でのやり取りを通じて、継続的な姿勢と責任感を見てもらえた
-- 社内外に活動ログを出し続けた（X / 社内ブログ / 小さな登壇）
-- 「まず出して磨く」を回していたので、声をかけやすかった
+では、改めて3つの出会いをまとめます。
 
-準備で得た学び：
-- 骨子→レビュー→磨き込み、のループを何周も回す
-- 伝わる構成（Why→What→How→So what）を意識する
-- リハ複数回・タイムキープ徹底・デモは録画保険を用意
+Vue.jsコミュニティに入って、Vue.jsとの関係が変わりました。
+ただ使う立場から、一緒に育てる一員になれた。
+そして、技術を"手段"ではなく"原動力"として感じられるようになりました。
 
-結果：
-- 次の機会につながるお声がけをいただけた
-- 自分の基準が一段上がった実感があった
-
-このあと：
-- 「社内での技術発信が増えた（詳細）」→「登壇機会の詳細」へと続きます
+最後に、皆さんにお伝えしたいメッセージがあります。
 -->
 
 ---
-layout: lm-base
+layout: lm-columns
+columnCount: 1
 ---
 
-得たことのまとめ
+::title::
+最後のメッセージ
 
-- 技術の楽しさがブーストされた
-- 社内発信が増え、チームの知が貯まった
-- 外の基準に触れ、視座が上がった
-- チャンスは行動量に比例する、を体感した
+::content-1::
+
+<div flex flex-col justify-center h-full px-20>
+  <div box-contents py-12 px-14 rounded-lg mb-10>
+    <div text-4xl font-bold text-center text-gradient mb-12>
+      誰かのためが、自分のためになる。
+    </div>
+
+    <div text-base space-y-4 mb-10>
+      <p>コミュニティに所属するということは、どこかボランティアであること。</p>
+      <p>自身の労力をただ提供すると考える人もいるかもしれません。</p>
+      <p font-bold text-lg>でも、そこから得られる個人としての良い変化というものもあります。</p>
+      <p>私の場合、それが今日お話しした3つの出会い――技術、仲間、そして新しい自分でした。</p>
+    </div>
+
+  </div>
+
+  <div box-contents py-8 px-10 rounded-lg>
+    <div text-lg mb-6>
+      <p mb-2>少し真面目な話をしすぎました。</p>
+      <p>Vue.jsコミュニティにはレベルの高いエンジニアがたくさんいます。</p>
+      <p mb-4>私のように少し熱い思いを持った人もいます。</p>
+      <p font-bold>でも「自分には少し違うかもしれない」と感じてもらう必要はありません。</p>
+    </div>
+
+    <div text-base space-y-3>
+      <p>途中に話したように、私がVue.jsコミュニティに入ったきっかけは、<span font-bold text-gradient>打算的なもの</span>でした。</p>
+      <p>それが様々な出会いを経て、結果的にこうなることができました。</p>
+      <p text-xl font-bold text-gradient mt-6>なので少しでも興味のある方は、<br>この後、懇親会もありますので、<br>たくさん参加している運営メンバーに話しかけてみてください。</p>
+    </div>
+
+  </div>
+</div>
 
 <!--
-4つを一言ずつ：
-- 楽しさブースト → 自発的に手が動くようになった
-- 社内発信 → 知の貯金がたまって、参照できる資産が増えた
-- 外の基準 → 目線が上がると、やるべきことの解像度も上がる
-- 行動量とチャンス → 露出が増えるほど、声をかけてもらえる確率も上がる
-このあと：「とは言え、忙しかった」に続けて、リアルな運用面の話に寄せます。
--->
+そのメッセージとは、「誰かのためが、自分のためになる」ということです。
 
----
-layout: lm-base
----
+コミュニティに所属するということは、どこかボランティアであること。
+自身の労力をただ提供すると考える人もいるかもしれません。
+でも、そこから得られる個人としての良い変化というものもあります。
+私の場合、それが今日お話しした3つの出会い――技術、仲間、そして新しい自分でした。
 
-とは言え、忙しかった
+少し真面目な話をしすぎました。
+Vue.jsコミュニティにはレベルの高いエンジニアがたくさんいます。
+私のように少し熱い思いを持った人もいます。
+でも「自分には少し違うかもしれない」と感じてもらう必要はありません。
 
-- でも大丈夫！
-- 「全然手伝ってくれない」と冗談を言われつつ、変わらず迎え入れてくれる
-- 信頼できる人にリーダーを引き継いだ（任せる勇気）
+途中に話したように、私がVue.jsコミュニティに入ったきっかけは、打算的なものでした。
+それが様々な出会いを経て、結果的にこうなることができました。
 
-<!--
-忙しい時期の付き合い方：
-- やれる範囲でタスクを持つ、非同期中心で無理しない
-- 状況はオープンに共有。透明性があれば、周りも動きやすい
-- 「冗談でイジる/受け止める」空気感があって、心理的安全性が高い
-引き継ぎ：
-- 役割を人に固定しない。仕組み・手順・ドキュメントに落とす
-- 定例/タスクボード/連絡先を整えて、自然に回る状態を作る
-このあと：「温かいコミュニティ」の具体例につなぎます。
--->
-
----
-layout: lm-base
----
-
-Vue Fes Japanコミュニティは温かい
-
-- 初参加でも溶け込みやすい空気
-- 失敗も「ナイスチャレンジ」で受け止めてくれる
-- 貢献の形はいろいろ、どれも尊い
-
-<!--
-具体例：
-- 初参加でも、XやSlackで気軽に拾ってもらえる/紹介してもらえる
-- うまくいかなかったことも、次に生かす前提で受け止めてもらえる
-- 企画・受付・翻訳・ノベルティ・撮影・レポート・発信…関わり方は無限
-次へ：「3年間でわかった性格」を箇条書きで整理します。
--->
-
----
-layout: lm-base
----
-
-3年間やってわかった、Vue Fes Japanはこんなコミュニティ
-
-- ウェルカムムード
-- 理解がある（事情に寄り添う）
-- コミュニケーション好き（飲みも好きな人が多い）
-
-<!--
-補足：
-- ウェルカム → 新しい人に役割を提案し、無理なく入れるよう伴走
-- 理解がある → 仕事/家庭の都合に柔軟。時期ごとの関わり方を尊重
-- コミュニケーション好き → 日頃から会話が多いので、認識ズレが溜まりにくい（飲みは任意）
-次へ：「心境の変化」に橋渡しします。
--->
-
----
-layout: lm-base
----
-
-コミュニティに入ったことでの心境の変化
-
-- Vue.jsとの向き合い方の変化
-  - ただの「使う側」から、コミュニティの一員として良い循環を作る側へ
-- 技術との向き合い方の変化
-  - コードが楽しくて始めた気持ちを思い出す。ビジネスライク一辺倒から脱却して、また強くなれた
-
-<!--
-Vue.jsとの向き合い：
-- エコシステムのリリース背景まで追い、社内外にわかりやすく伝える役回りへ
-技術との向き合い：
-- 小さく作る→共有する→フィードバックをもらう、の循環が戻った
-- 伝える力/巻き込む力が伸び、結果的にアウトプットが増えた
-次へ：最後のメッセージ（参加の一歩）へ。
--->
-
----
-layout: lm-base
----
-
-最後に
-
-- コミュニティ参加は個人としても得られるものが多い
-- やったほうがいい理由が思いつかないなら、一度飛び込んでみて
-- 迷ったら、まずはイベントに来て声をかけてください
-
-<!--
-ファーストステップ案：
-- 次回イベントに参加する / Xで運営をフォローする
-- Discord/Slackに入ってみる / 当日ボランティアに手を挙げる
-- 「一緒にやりたいです」と一言伝えるだけでも十分
-締め：ご清聴ありがとうございました！ 会場/オンラインでも気軽に話しかけてください。
+なので少しでも興味のある方は、この後、懇親会もありますので、
+たくさん参加している運営メンバーに話しかけてみてください。
 -->
 
 ---
