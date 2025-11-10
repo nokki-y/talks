@@ -142,16 +142,16 @@ layout: lm-plain
       <span absolute op-80 :style="{ backgroundColor: '#5850a9' }" class="h-[14px] w-[202px] top-[42px] left-[198px]"></span>
     </div>
     <div text-2xl font-bold mb-3 ml-1>
-      <span> CAPTURE. 1 - 技術を“手段”として扱う自分</span>
+      <span><span font-en>CAPTURE.01</span> - 技術を“手段”として扱う自分</span>
     </div>
     <div text-2xl font-bold mb-3 ml-1>
-      <span> CAPTURE. 2 - 打算的な目的から始まったコミュニティ参加</span>
+      <span><span font-en>CAPTURE.02</span> - 打算的な目的から始まったコミュニティ参加</span>
     </div>
     <div text-2xl font-bold mb-3 ml-1>
-      <span> CAPTURE. 3 - 3つの出会い</span>
+      <span><span font-en>CAPTURE.03</span> - 3つの出会い</span>
     </div>
     <div text-2xl font-bold ml-1>
-      <span>CAPTURE. 4 - 再び技術を“楽しむ”自分</span>
+      <span><span font-en>CAPTURE.04</span> - 再び技術を“楽しむ”自分</span>
     </div>
   </div>
 </div>
@@ -160,14 +160,33 @@ layout: lm-plain
 はじめに、コミュニティに参加する前の、少しネガティブな話から入り、
 コミュニティに参加したことで、どのような出会いと変化があったかを話します。
 
-- CAPTURE. 1: 技術を“手段”として扱う自分
-- CAPTURE. 2: 打算的な目的から始まったコミュニティ参加
-- CAPTURE. 3: 3つの出会い
-- CAPTURE. 4: 再び技術を“楽しむ”自分
+- CAPTURE. 01: 技術を“手段”として扱う自分
+- CAPTURE. 02: 打算的な目的から始まったコミュニティ参加
+- CAPTURE. 03: 3つの出会い
+- CAPTURE. 04: 再び技術を“楽しむ”自分
 -->
 
 ---
-layout: lm-columns
+layout: lm-sub-cover
+captureNumber: '01'
+---
+
+::title::
+技術を“手段”として扱う自分
+
+<!--
+それでは、その始まりの話からお話しします。
+
+業務で開発をしていると、どうしても効率や納期を意識します。
+コストパフォーマンスを無視することはできません。
+技術を"目的"ではなく"手段"として使うことが増えていきました。
+気づけば"技術が好き"という気持ちを置き去りにしていたんです。
+
+そんな中、あるきっかけがありました。
+-->
+
+---
+layout: lm-sub-cover
 columnCount: 1
 ---
 

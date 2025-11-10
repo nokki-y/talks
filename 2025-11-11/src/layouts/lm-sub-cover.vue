@@ -12,6 +12,8 @@
   >
     <!-- 背景画像 -->
     <img src="/background.png" alt="background" absolute top-0 left-0 bottom-0 right-0 size-full />
+    <!-- マスク -->
+    <div absolute top-0 left-0 size-full bg-black op-40></div>
 
     <div
       absolute
@@ -41,8 +43,8 @@
 
     <!-- パート番号 -->
     <div z-10 mb-24 border-b-2 border-white>
-      <div text-4xl font-bold font-en flex justify-center>
-        <span>PART. {{ partNumber }}</span>
+      <div text-4xl font-bold flex justify-center>
+        <span font-en>CAPTURE.{{ captureNumber }}</span>
       </div>
     </div>
 
@@ -51,19 +53,13 @@
       <div text-3xl font-bold>
         <slot name="title">TITLE</slot>
       </div>
-      <!-- 飾り線 -->
-      <div bg-white mt-6 mb-2 class="w-[20px] h-[1.5px]"></div>
-
-      <div text-2xl font-bold>
-        <slot name="sub-title">SUB TITLE</slot>
-      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-  partNumber: {
+  captureNumber: {
     type: String,
     required: true,
   },
