@@ -557,6 +557,46 @@ columnCount: 1
 -->
 
 ---
+layout: lm-columns
+columnCount: 2
+---
+
+::title::
+新しい自分との出会い
+
+::content-1::
+
+<div flex justify-start items-center relative pt-10>
+  <div flex justify-center items-center flex-col p-8 border-2 border-white rounded-md w-100 ml-4>
+    <span text-xl mb-6>[外的刺激]</span>
+    <span text-xl mb-3>技術との出会い</span>
+    <span text-xl>仲間との出会い</span>
+  </div>
+  <!-- 矢印代わりの三角図形 -->
+  <div absolute h-10 w-8 rotate-270 bg-white class="top-[70px] right-[-34px]" :style="{ clipPath: 'polygon(0px 0px, 100% 0px, 50% 60%)' }"></div>
+</div>
+
+::content-2::
+
+<div flex justify-end items-center pt-10>
+  <div flex justify-center items-center flex-col p-8 border-2 border-white rounded-md w-100 mr-4>
+    <span text-xl mb-6>[内省]</span>
+    <span text-xl>新しい自分との出会い</span>
+    <span text-xl></span>
+  </div>
+</div>
+
+::description::
+
+<div flex justify-center items-center pt-24 text-2xl>
+  TODO
+</div>
+
+<!--
+新たな自分との出会いにつながります。
+-->
+
+---
 layout: lm-sub-cover
 captureNumber: '03'
 ---
