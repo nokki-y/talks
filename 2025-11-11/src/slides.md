@@ -180,51 +180,53 @@ captureNumber: '01'
 
 ---
 layout: lm-columns
-columnCount: 2
+columnCount: 4
 ---
 
 ::title::
-ビジネスとエンジニアリングの狭間
-
-::sub-title::
-コストパフォーマンスを追う日々の中で、忘れかけていた気持ち
+<span font-en>ROI</span> - 投資対効果
 
 ::content-1::
 
-<div flex flex-col justify-center h-full px-20>
-  <div grid grid-cols-2 gap-12 items-center>
-    <div>
-      <div box-contents py-6 px-8 rounded-lg mb-6>
-        <div text-xl font-bold mb-4>業務での現実</div>
-        <ul text-base space-y-2>
-          <li>効率や納期を優先</li>
-          <li>コストパフォーマンスを意識</li>
-          <li>技術を<span font-bold>"手段"</span>として扱う</li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <div box-contents py-6 px-8 rounded-lg border-2 border-red-400>
-        <div text-xl font-bold mb-4 text-red-400>忘れかけていた気持ち</div>
-        <div text-base>
-          <p>"技術が好き"</p>
-          <p>という気持ちを</p>
-          <p>置き去りにしていた</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div flex flex-col justify-center items-center h-fit px-10 py-5 border-2 border-white rounded-md>
+  <span text-bold mb-5>[拡張性の壁]</span>
+  <span mb-1>将来を見据えた設計にしたい</span>
+  <span><span font-en>⇔ </span><span border-b-2 border-white>金銭的コストが合わない</span></span>
+</div>
+
+::content-2::
+
+<div flex flex-col justify-center items-center h-fit px-10 py-5 border-2 border-white rounded-md>
+  <span text-bold mb-5>[堅牢性の壁]</span>
+  <span mb-1>品質を上げたい</span>
+  <span><span font-en>⇔ </span><span border-b-2 border-white>納期が迫っている</span></span>
+</div>
+
+::content-3::
+
+<div flex flex-col justify-center items-center h-fit px-10 py-5 border-2 border-white rounded-md>
+  <span text-bold mb-5>[先進性の壁]</span>
+  <span mb-1>新技術を導入したい</span>
+  <span><span font-en>⇔ </span><span border-b-2 border-white>学習コストがかかりすぎる</span></span>
+</div>
+
+::content-4::
+
+<div flex flex-col justify-center items-center h-fit px-10 py-5 border-2 border-white rounded-md>
+  <span text-bold mb-5>[運用性の壁]</span>
+  <span mb-1>自動化したい</span>
+  <span><span font-en>⇔ </span><span border-b-2 border-white>維持コストが増える</span></span>
 </div>
 
 <!--
-それでは、その始まりの話からお話しします。
+みなさんもあるのではないでしょうか？
+あれこれ試したいと思っても、コストや納期が合わないという葛藤を持った経験が。
 
-業務で開発をしていると、どうしても効率や納期を意識します。
-コストパフォーマンスを無視することはできません。
-技術を"目的"ではなく"手段"として使うことが増えていきました。
-気づけば"技術が好き"という気持ちを置き去りにしていたんです。
+前提として、弊社は社名にモチベーションが入っているくらいなので、エンジニアのモチベーションをとても大事にして、
+先行的な投資を惜しまない企業体質です。
 
-そんな中、あるきっかけがありました。
+しかし、それでも経験が長くなると、このような壁にぶつかってしまうこともあります。
+実際に僕はこの壁によくぶつかっていました。
 -->
 
 ---
