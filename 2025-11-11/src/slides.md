@@ -433,28 +433,64 @@ columnCount: 1
 ::content-1::
 
 <div flex justify-center items-center relative h-60 w-full px-2>
-  <div flex justify-center items-center relative size-full rounded-md mx-20>
-    <div absolute left-5 size-30 class="top-[-30px]">
+  <div flex justify-center items-center relative size-full>
+    <!-- 狭い世界を示す円 （破線）-->
+    <div size-45 rounded-full border-2 border-white absolute class="bottom-[-40px] left-[325px]" :style="{ border: '3px dashed #ffffff' }"></div>
+    <!-- 人型アイコン（自分） -->
+    <div absolute size-20 class="bottom-[10px] left-[350px]">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="white" d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
     </div>
-    <div absolute right-3 size-30 class="top-[-30px]">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Pro v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.--><path fill="white" d="M320 80C377.4 80 424 126.6 424 184C424 241.4 377.4 288 320 288C262.6 288 216 241.4 216 184C216 126.6 262.6 80 320 80zM96 152C135.8 152 168 184.2 168 224C168 263.8 135.8 296 96 296C56.2 296 24 263.8 24 224C24 184.2 56.2 152 96 152zM0 480C0 409.3 57.3 352 128 352C140.8 352 153.2 353.9 164.9 357.4C132 394.2 112 442.8 112 496L112 512C112 523.4 114.4 534.2 118.7 544L32 544C14.3 544 0 529.7 0 512L0 480zM521.3 544C525.6 534.2 528 523.4 528 512L528 496C528 442.8 508 394.2 475.1 357.4C486.8 353.9 499.2 352 512 352C582.7 352 640 409.3 640 480L640 512C640 529.7 625.7 544 608 544L521.3 544zM472 224C472 184.2 504.2 152 544 152C583.8 152 616 184.2 616 224C616 263.8 583.8 296 544 296C504.2 296 472 263.8 472 224zM160 496C160 407.6 231.6 336 320 336C408.4 336 480 407.6 480 496L480 512C480 529.7 465.7 544 448 544L192 544C174.3 544 160 529.7 160 512L160 496z"/></svg>
-    </div>
-    <!-- 技術への矢印 私から技術-->
-    <div class="absolute top-29.3 left-55 bg-white rotate-200 h-[5px] w-[40px] rounded-full"></div>
-    <div class="absolute top-34 left-30 bg-white rotate-170 h-[5px] w-[140px] rounded-full"></div>
-    <div class="absolute top-34 left-56 bg-white rotate-140 h-[5px] w-[40px] rounded-full"></div>
-    <!-- 技術への矢印 他者から技術-->
-    <div class="absolute top-29.3 right-55 bg-white rotate-[-200deg] h-[5px] w-[40px] rounded-full"></div>
-    <div class="absolute top-34 right-32 bg-white rotate-[-170deg] h-[5px] w-[130px] rounded-full"></div>
-    <div class="absolute top-34 right-56 bg-white rotate-[-140deg] h-[5px] w-[40px] rounded-full"></div>
   </div>
 </div>
 
 ::description::
 
-<div flex justify-center items-center pt-10 text-2xl>
-  成長の方向性に悩む
+<div flex justify-center items-center pt-18 text-2xl>
+  狭い世界で天狗だった自分
+</div>
+
+<!--
+仲間との出会い、1つ目です。
+
+私は2018年頃から業務でプログラムを書くようになり、今年で8年目です。
+社内では自分がVue.jsの専門家だと、正直少し天狗になっていました。
+でもVue.jsコミュニティにはコアメンバーも多数在籍していて、
+天狗気味だった自己評価はすぐに改めざるを得ませんでした。
+話を聞くたびに「そういう視点もあるのか」と気づかされました。
+
+そして、また別の刺激もありました。
+-->
+
+---
+layout: lm-columns
+columnCount: 1
+---
+
+::title::
+仲間との出会い
+
+::content-1::
+
+<div flex justify-center items-center relative h-60 w-full px-2>
+  <div flex justify-center items-center relative size-full>
+    <!-- 狭い世界を示す円 （破線）-->
+    <div size-45 rounded-full border-2 border-white absolute class="bottom-[-40px] left-[325px]" :style="{ border: '3px dashed #ffffff' }"></div>
+    <!-- 広い世界を示す円 （実線）-->
+    <div size-80 rounded-full border-2 border-white absolute class="bottom-[-40px] left-[260px]"></div>
+    <!-- 人型アイコン（自分） -->
+    <div absolute size-20 class="bottom-[10px] left-[350px]">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="white" d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
+    </div>
+    <div absolute size-20 class="bottom-[180px] left-[440px]">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Pro v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.--><path fill="white" d="M320 80C377.4 80 424 126.6 424 184C424 241.4 377.4 288 320 288C262.6 288 216 241.4 216 184C216 126.6 262.6 80 320 80zM96 152C135.8 152 168 184.2 168 224C168 263.8 135.8 296 96 296C56.2 296 24 263.8 24 224C24 184.2 56.2 152 96 152zM0 480C0 409.3 57.3 352 128 352C140.8 352 153.2 353.9 164.9 357.4C132 394.2 112 442.8 112 496L112 512C112 523.4 114.4 534.2 118.7 544L32 544C14.3 544 0 529.7 0 512L0 480zM521.3 544C525.6 534.2 528 523.4 528 512L528 496C528 442.8 508 394.2 475.1 357.4C486.8 353.9 499.2 352 512 352C582.7 352 640 409.3 640 480L640 512C640 529.7 625.7 544 608 544L521.3 544zM472 224C472 184.2 504.2 152 544 152C583.8 152 616 184.2 616 224C616 263.8 583.8 296 544 296C504.2 296 472 263.8 472 224zM160 496C160 407.6 231.6 336 320 336C408.4 336 480 407.6 480 496L480 512C480 529.7 465.7 544 448 544L192 544C174.3 544 160 529.7 160 512L160 496z"/></svg>
+    </div>
+  </div>
+</div>
+
+::description::
+
+<div flex justify-center items-center pt-18 text-2xl>
+  広い世界で伸びしろを見つけた
 </div>
 
 <!--
