@@ -142,13 +142,13 @@ layout: lm-plain
       <span absolute op-80 :style="{ backgroundColor: '#5850a9' }" class="h-[14px] w-[202px] top-[42px] left-[198px]"></span>
     </div>
     <div text-4xl font-bold mb-3 ml-1>
-      <span><span font-en>CAPTURE.01</span> - 技術を“手段”として扱う自分</span>
+      <span><span font-en>CAPTURE.01</span> - 技術を“手段”として扱う</span>
     </div>
     <div text-4xl font-bold mb-3 ml-1>
       <span><span font-en>CAPTURE.02</span> - 3つの出会い</span>
     </div>
     <div text-4xl font-bold ml-1>
-      <span><span font-en>CAPTURE.03</span> - 再び技術を“楽しむ”自分</span>
+      <span><span font-en>CAPTURE.03</span> - 再び技術を“楽しむ”</span>
     </div>
   </div>
 </div>
@@ -170,7 +170,7 @@ captureNumber: '01'
 ::title::
 
 <div class="w-[420px] text-center">
-  <span>技術を“手段”として扱う自分</span>
+  <span>技術を“手段”として扱う</span>
 </div>
 
 <!--
@@ -586,6 +586,17 @@ columnCount: 1
 そして、この2つの出会いが、実は3つ目の出会いを生むことになります。
 その前に、少しだけ私の過去の話をさせてください。
 -->
+
+---
+layout: lm-sub-cover
+captureNumber: '03'
+---
+
+::title::
+
+<div class="w-[420px] text-center">
+  <span>再び技術を“楽しむ”</span>
+</div>
 
 ---
 layout: lm-columns
