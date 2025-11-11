@@ -107,7 +107,7 @@ layout: lm-plain
       <span absolute op-80 :style="{ backgroundColor: '#5850a9' }" class="h-[14px] w-[202px] top-[42px] left-[198px]"></span>
     </div>
     <div text-4xl font-bold mb-3 ml-1>
-      <span>--  技術との出会い</span>
+      <span>-- 技術との出会い</span>
     </div>
     <div text-4xl font-bold mb-3 ml-1>
       <span>-- 仲間との出会い</span>
@@ -141,17 +141,14 @@ layout: lm-plain
       <!-- 飾り線 -->
       <span absolute op-80 :style="{ backgroundColor: '#5850a9' }" class="h-[14px] w-[202px] top-[42px] left-[198px]"></span>
     </div>
-    <div text-2xl font-bold mb-3 ml-1>
+    <div text-4xl font-bold mb-3 ml-1>
       <span><span font-en>CAPTURE.01</span> - 技術を“手段”として扱う自分</span>
     </div>
-    <div text-2xl font-bold mb-3 ml-1>
-      <span><span font-en>CAPTURE.02</span> - 打算的な目的から始まったコミュニティ参加</span>
+    <div text-4xl font-bold mb-3 ml-1>
+      <span><span font-en>CAPTURE.02</span> - 3つの出会い</span>
     </div>
-    <div text-2xl font-bold mb-3 ml-1>
-      <span><span font-en>CAPTURE.03</span> - 3つの出会い</span>
-    </div>
-    <div text-2xl font-bold ml-1>
-      <span><span font-en>CAPTURE.04</span> - 再び技術を“楽しむ”自分</span>
+    <div text-4xl font-bold ml-1>
+      <span><span font-en>CAPTURE.03</span> - 再び技術を“楽しむ”自分</span>
     </div>
   </div>
 </div>
@@ -161,9 +158,8 @@ layout: lm-plain
 コミュニティに参加したことで、どのような出会いと変化があったかを話します。
 
 - CAPTURE. 01: 技術を“手段”として扱う自分
-- CAPTURE. 02: 打算的な目的から始まったコミュニティ参加
-- CAPTURE. 03: 3つの出会い
-- CAPTURE. 04: 再び技術を“楽しむ”自分
+- CAPTURE. 02: 3つの出会い
+- CAPTURE. 03: 再び技術を“楽しむ”自分
 -->
 
 ---
@@ -172,7 +168,10 @@ captureNumber: '01'
 ---
 
 ::title::
-技術を“手段”として扱う自分
+
+<div class="w-[420px] text-center">
+  <span>技術を“手段”として扱う自分</span>
+</div>
 
 <!--
 まず、コミュニティに入る前の頃、技術を“手段”として扱っていると感じた時期です。
@@ -316,6 +315,21 @@ CAPTURE. 01: 技術を“手段”として扱う自分
 当時の状況をまとめると、業務での葛藤から技術を楽しむことを忘れている状況でした。
 ただ、幸運だったのが、存在感を出すという業務的な使命があったがゆえに、この時のv-tokyoは懇親会がなかったのですが、
 自ら声をかけ、23年のコアスタッフに参加することができました。
+-->
+
+---
+layout: lm-sub-cover
+captureNumber: '02'
+---
+
+::title::
+
+<div class="w-[420px] text-center">
+  <span>3つの出会い</span>
+</div>
+
+<!--
+まず、コミュニティに入る前の頃、技術を“手段”として扱っていると感じた時期です。
 -->
 
 ---
