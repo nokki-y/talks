@@ -673,8 +673,9 @@ columnCount: 3
 </div>
 
 <!--
-余談ですが、Vueコミュニティのメンバーは話しかけるといつも親切に対応してくれるし
-みんな忙しいのに、飲みに誘ったら快く来てくれます。
+初心を思い出しましたが、時間は戻りません。
+なので、今は葛藤した経験とコミュニティのおかげで思い出した初心を持って、
+再び純粋に技術を楽しむ新しい自分を探している最中です。
 -->
 
 ---
@@ -706,10 +707,15 @@ columnCount: 1
 </div>
 
 <!--
+打算から始まったコミュニティ活動でしたが、
 僕はこの技術を中心としたこの空間で、技術のことから他愛もない話まで
 3年間、色々な話をしました。
 
-そこでの経験を経て
+余談ですが、Vueコミュニティのメンバーは話しかけるといつも親切に対応してくれるし
+みんな忙しいのに、飲みに誘ったら快く来てくれます。
+
+僕は酒を飲みながら技術の話をするのがすごく好きです。
+そういった、これまでのかけがえのない経験を経て、
 -->
 
 ---
@@ -747,179 +753,8 @@ columnCount: 1
 Vue.jsへの理解が深まり、
 そして優秀な人達に自身のまだ見ぬ可能性を見つけることができました。
 
-打算的な目的から参画した自分にこのような機会を与えてくれたことに
 あまり言ってないですけど、実は結構感謝しています。
--->
-
----
-layout: lm-columns
-columnCount: 1
----
-
-::title::
-そして、特別なつながりが生まれた
-
-::sub-title::
-技術と仲間、2つの出会いがもたらしたもの
-
-::content-1::
-
-<div flex flex-col justify-center h-full px-20>
-  <div box-contents py-10 px-12 rounded-lg>
-    <div text-2xl font-bold mb-8 text-center text-gradient>2つの出会いが重なり合って</div>
-
-    <div grid grid-cols-2 gap-12 mb-8>
-      <div text-center>
-        <div text-5xl mb-3>🔧</div>
-        <div text-lg font-bold mb-2>技術との出会い</div>
-        <div text-sm op70>Vue.jsへの理解が深まった</div>
-      </div>
-      <div text-center>
-        <div text-5xl mb-3>👥</div>
-        <div text-lg font-bold mb-2>仲間との出会い</div>
-        <div text-sm op70>経験豊富な人や若手<br>純粋に技術を語れる仲間</div>
-      </div>
-    </div>
-
-    <div text-center text-xl font-bold>
-      <p>↓</p>
-      <p text-2xl text-gradient mt-4>特別なつながりが生まれた</p>
-    </div>
-
-  </div>
-
-  <div text-center mt-8 op70>
-    <p>そして、この2つの出会いが、実は3つ目の出会いを生むことになります。</p>
-    <p mt-2>その前に、少しだけ私の過去の話をさせてください。</p>
-  </div>
-</div>
-
-<!--
-技術との出会い、そして仲間との出会い。この2つの出会いを振り返ってみます。
-
-技術との出会いで、Vue.jsへの理解が深まりました。
-仲間との出会いで、経験豊富な人や若手、純粋に技術を語れる仲間に出会えました。
-この2つの出会いが重なり合って、特別なつながりが生まれたんです。
-
-そして、この2つの出会いが、実は3つ目の出会いを生むことになります。
-その前に、少しだけ私の過去の話をさせてください。
--->
-
----
-layout: lm-columns
-columnCount: 1
----
-
-::title::
-営業からエンジニアへ
-
-::sub-title::
-書店でPythonの本を手に取ったところから始まった
-
-::content-1::
-
-<div flex flex-col justify-center h-full px-20>
-  <div box-contents py-10 px-12 rounded-lg>
-    <div grid grid-cols-4 gap-8 items-center>
-      <div text-center>
-        <div text-4xl mb-3>🏢</div>
-        <div text-base font-bold>新卒で営業</div>
-      </div>
-      <div text-center>
-        <div text-4xl mb-3>📚</div>
-        <div text-base font-bold>書店で<br>Python本を<br>手に取る</div>
-      </div>
-      <div text-center>
-        <div text-4xl mb-3>💻</div>
-        <div text-base font-bold>プログラミングが<br>すごく楽しい</div>
-      </div>
-      <div text-center>
-        <div text-4xl mb-3>👨‍💻</div>
-        <div text-base font-bold>第二新卒で<br>エンジニアへ</div>
-      </div>
-    </div>
-
-    <div text-center mt-12>
-      <div text-2xl font-bold text-gradient>
-        この「プログラミングが楽しい」という気持ちが
-      </div>
-      <div text-3xl font-bold text-gradient mt-4>
-        私の初心
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!--
-では、私の過去の話です。
-
-実は、私は新卒で営業をやっていました。
-ある日、書店でPythonの本を手に取ったところから、私のエンジニア人生は始まっています。
-家に帰ってコードを書き始めたところ、プログラミングがすごく楽しいと感じて、
-第二新卒でエンジニアになりました。
-この「プログラミングが楽しい」という気持ちが、私の初心でした。
-
-でも、8年もエンジニアをやっていると...
--->
-
----
-layout: lm-columns
-columnCount: 1
----
-
-::title::
-初心を思い出した
-
-::sub-title::
-3年間の経験を通じて、忘れかけていた気持ちを取り戻した
-
-::content-1::
-
-<div flex flex-col justify-center h-full px-20>
-  <div grid grid-cols-2 gap-12 mb-10>
-    <div box-contents py-6 px-8 rounded-lg>
-      <div text-lg font-bold mb-4>8年間で...</div>
-      <div text-base space-y-2>
-        <p>技術を手段として割り切る</p>
-        <p>ビジネスを優先せざるを得ない</p>
-        <p font-bold text-red-400 mt-4>技術が好きだという気持ちを<br>忘れがちになる</p>
-      </div>
-    </div>
-    <div box-contents py-6 px-8 rounded-lg border-2 border-green-400>
-      <div text-lg font-bold mb-4 text-green-400>3年間で...</div>
-      <div text-base space-y-2>
-        <p>技術を語り合い刺激を受ける</p>
-        <p>純粋に技術を楽しむ</p>
-        <p font-bold text-gradient mt-4>初心を思い出すことができた</p>
-      </div>
-    </div>
-  </div>
-
-  <div box-contents py-8 px-10 rounded-lg text-center>
-    <div text-2xl font-bold mb-4 text-gradient>厳密に言うと</div>
-    <div text-xl>
-      <p>新しい自分との出会い、ではなく</p>
-      <p font-bold text-2xl mt-4 text-gradient>「初心を思い出した」</p>
-      <p mt-2>という表現の方が正しい</p>
-    </div>
-  </div>
-</div>
-
-<!--
-そう、8年もエンジニアをやっていると...
-
-8年もエンジニアをやっていると、技術を手段として割り切る、
-ビジネスを優先せざる得ない場面に何度も出会います。
-そういった場面が増えると、技術が好きだという気持ちを忘れがちになります。
-
-でも、Vue.jsコミュニティで過ごした3年間で、少しずつその初心を取り戻していきました。
-コードを書くのが楽しくてエンジニアになった、その気持ちを思い出すことができたんです。
-
-厳密に言うと、新しい自分との出会いではありません。
-初心を思い出したという表現の方が正しいです。
-
-ここまでお話しした、技術・仲間・自分という3つの出会いを、改めてまとめます。
+本当にありがとうございます。
 -->
 
 ---
@@ -952,13 +787,7 @@ layout: lm-plain
 </div>
 
 <!--
-では、改めて3つの出会いをまとめます。
-
-Vue.jsコミュニティに入って、Vue.jsとの関係が変わりました。
-ただ使う立場から、一緒に育てる一員になれた。
-そして、技術を"手段"ではなく"原動力"として感じられるようになりました。
-
-最後に、皆さんにお伝えしたいメッセージがあります。
+改めて僕はこの3つの出会いをコミュニティ活動から得ました。
 -->
 
 ---
@@ -980,23 +809,30 @@ columnCount: 1
 </div>
 
 <!--
-そのメッセージとは、「誰かのためが、自分のためになる」ということです。
+これが、僕の誰かのためが、自分のためになった経験です。
+コミュニティは業務の中では得られない経験を得られる可能性を秘めている可能性があるので、
+-->
 
-コミュニティに所属するということは、どこかボランティアであること。
-自身の労力をただ提供すると考える人もいるかもしれません。
-でも、そこから得られる個人としての良い変化というものもあります。
-私の場合、それが今日お話しした3つの出会い――技術、仲間、そして新しい自分でした。
+---
+layout: lm-message
+columnCount: 1
+---
 
-少し真面目な話をしすぎました。
-Vue.jsコミュニティにはレベルの高いエンジニアがたくさんいます。
-私のように少し熱い思いを持った人もいます。
-でも「自分には少し違うかもしれない」と感じてもらう必要はありません。
+::title::
+今日お話しすること
 
-途中に話したように、私がVue.jsコミュニティに入ったきっかけは、打算的なものでした。
-それが様々な出会いを経て、結果的にこうなることができました。
+::message-content::
+「 誰かのためが、自分のためになる。」
 
-なので少しでも興味のある方は、この後、懇親会もありますので、
-たくさん参加している運営メンバーに話しかけてみてください。
+::description::
+
+<div flex flex-col items-center justify-center mt-10>
+  <span>興味のある方は</span>
+  <span>懇親会で運営に話しかけてみてください</span>
+</div>
+
+<!--
+興味のある方は懇親会で運営に話しかけてみてください
 -->
 
 ---
@@ -1049,6 +885,12 @@ Vue.jsコミュニティにはレベルの高いエンジニアがたくさん�
   </div>
 </div>
 
+<!--
+さいご、採用は、、いいや。
+それよりも、自分語りのような発表を最後まで聞いた頂いた皆様と
+このよう場を作っていただいたスポンサー企業の皆様、ありがとうございました。
+-->
+
 ---
 
 <div h-full w-full relative p-0 flex flex-col>
@@ -1065,3 +907,7 @@ Vue.jsコミュニティにはレベルの高いエンジニアがたくさん�
     <LmSplash />
   </div>
 </div>
+
+<!--
+以上、ありがとうございました。
+-->
