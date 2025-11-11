@@ -552,8 +552,7 @@ columnCount: 1
 
 <!--
 でも、同時にそこにあるまだ見ぬ自身の伸びしろにワクワクする自分がいました。
-
-このワクワク感が
+このワクワク感が、
 -->
 
 ---
@@ -566,10 +565,10 @@ columnCount: 2
 
 ::content-1::
 
-<div flex justify-start items-center relative pt-10>
-  <div flex justify-center items-center flex-col p-8 border-2 border-white rounded-md w-100 ml-4>
-    <span text-xl mb-6>[外的刺激]</span>
-    <span text-xl mb-3>技術との出会い</span>
+<div flex justify-start items-center relative>
+  <div h-55 flex items-center flex-col p-8 border-2 border-white rounded-md w-100 ml-4>
+    <span text-xl mb-5>[外的刺激]</span>
+    <span text-xl mb-2>技術との出会い</span>
     <span text-xl>仲間との出会い</span>
   </div>
   <!-- 矢印代わりの三角図形 -->
@@ -578,22 +577,26 @@ columnCount: 2
 
 ::content-2::
 
-<div flex justify-end items-center pt-10>
-  <div flex justify-center items-center flex-col p-8 border-2 border-white rounded-md w-100 mr-4>
-    <span text-xl mb-6>[内省]</span>
-    <span text-xl>新しい自分との出会い</span>
-    <span text-xl></span>
+<div flex justify-end items-center relative>
+  <div h-55 flex items-center flex-col p-8 border-2 border-white rounded-md w-100 mr-4>
+    <span text-xl mb-5>[内省]</span>
+    <span text-xl mb-13>新しい自分との出会い</span>
+    <span text-xl>初心を思い出す</span>
   </div>
+  <!-- イコール線 -->
+  <div absolute h-1 w-5 rotate-270 bg-white rotate-90 class="top-[130px] right-[213px]"></div>
+  <div absolute h-1 w-5 rotate-270 bg-white rotate-90 class="top-[130px] right-[203px]"></div>
 </div>
 
 ::description::
 
-<div flex justify-center items-center pt-24 text-2xl>
-  TODO
+<div flex justify-center items-center pt-11 text-2xl>
+  新しい自分、それは初心との再開
 </div>
 
 <!--
-新たな自分との出会いにつながります。
+純粋に技術が好きでエンジニアになった頃の自分を思い出すことにつながりました。
+純粋に技術が好きで、その可能性にワクワクしていた頃の自分を思い出し
 -->
 
 ---
@@ -608,39 +611,65 @@ captureNumber: '03'
 </div>
 
 <!--
-最後、再び技術を楽しむにつながります。
+再び技術を楽しめるようになりました。
 -->
 
 ---
 layout: lm-columns
-columnCount: 2
+columnCount: 3
 ---
 
 ::title::
-新しい自分との出会い
+新しい自分との出会い - 未来
 
 ::content-1::
 
-<div flex justify-start items-center relative pt-10>
-  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 ml-4>
-    <span>TODO</span>
+<div flex justify-start items-center relative pt-3>
+  <div flex justify-center items-center rounded-md w-full>
+    <div flex justify-center items-center p-8 border-2 border-white rounded-md w-50>
+      <span>葛藤する自分</span>
+    </div>
   </div>
-  <!-- 矢印代わりの三角図形 -->
-  <div absolute h-10 w-8 rotate-270 bg-white class="top-[70px] right-[-34px]" :style="{ clipPath: 'polygon(0px 0px, 100% 0px, 50% 60%)' }"></div>
+  <!-- 四則演算のプラス -->  
+  <div absolute h-10 w-8 class="top-[41px] right-[-24px]">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="white" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+  </div>
+  <div rotate-90 absolute h-10 w-8 class="top-[38px] right-[-22.5px]">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="white" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+  </div>
 </div>
 
 ::content-2::
 
-<div flex justify-end items-center pt-10>
-  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 mr-4>
-    <span>TODO</span>
+<div flex justify-end items-center relative pt-3>
+  <div flex justify-center items-center rounded-md w-full>
+    <div flex justify-center items-center p-8 border-2 border-white rounded-md w-50>
+      <span>初心</span>
+    </div>
+  </div>
+  <!-- 四則演算のイコール -->  
+  <div absolute h-10 w-8 class="top-[47px] right-[-24px]">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="white" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+  </div>
+  <div absolute h-10 w-8 class="top-[34px] right-[-24px]">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="white" d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+  </div>
+</div>
+
+::content-3::
+
+<div flex justify-end items-center pt-3>
+  <div flex justify-center items-center rounded-md w-full>
+    <div flex justify-center items-center py-8 px-6 border-2 border-white rounded-md w-50>
+      <span>未来の新しい自分</span>
+    </div>
   </div>
 </div>
 
 ::description::
 
 <div flex justify-center items-center pt-24 text-2xl>
-  TODO
+  再び技術を"楽しむ"新しい自分との出会い
 </div>
 
 <!--
