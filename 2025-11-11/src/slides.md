@@ -553,6 +553,57 @@ columnCount: 1
 <!--
 でも、同時にそこにあるまだ見ぬ自身の伸びしろにワクワクする自分がいました。
 
+このワクワク感が
+-->
+
+---
+layout: lm-sub-cover
+captureNumber: '03'
+---
+
+::title::
+
+<div class="w-[420px] text-center">
+  <span>再び技術を“楽しむ”</span>
+</div>
+
+<!--
+最後、再び技術を楽しむにつながります。
+-->
+
+---
+layout: lm-columns
+columnCount: 2
+---
+
+::title::
+新しい自分との出会い
+
+::content-1::
+
+<div flex justify-start items-center relative pt-10>
+  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 ml-4>
+    <span>TODO</span>
+  </div>
+  <!-- 矢印代わりの三角図形 -->
+  <div absolute h-10 w-8 rotate-270 bg-white class="top-[70px] right-[-34px]" :style="{ clipPath: 'polygon(0px 0px, 100% 0px, 50% 60%)' }"></div>
+</div>
+
+::content-2::
+
+<div flex justify-end items-center pt-10>
+  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 mr-4>
+    <span>TODO</span>
+  </div>
+</div>
+
+::description::
+
+<div flex justify-center items-center pt-24 text-2xl>
+  TODO
+</div>
+
+<!--
 余談ですが、Vueコミュニティのメンバーは話しかけるといつも親切に対応してくれるし
 みんな忙しいのに、飲みに誘ったら快く来てくれます。
 -->
@@ -586,7 +637,7 @@ columnCount: 1
 </div>
 
 <!--
-僕は技術を中心としたこの空間で、技術のことから他愛もない話まで
+僕はこの技術を中心としたこの空間で、技術のことから他愛もない話まで
 3年間、色々な話をしました。
 
 そこでの経験を経て
@@ -629,47 +680,6 @@ Vue.jsへの理解が深まり、
 
 打算的な目的から参画した自分にこのような機会を与えてくれたことに
 あまり言ってないですけど、実は結構感謝しています。
--->
-
----
-layout: lm-columns
-columnCount: 2
----
-
-::title::
-新しい自分との出会い
-
-::content-1::
-
-<div flex justify-start items-center relative pt-10>
-  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 ml-4>
-    <span>ビジネスとの葛藤に悩む</span>
-  </div>
-  <!-- 矢印代わりの三角図形 -->
-  <div absolute h-10 w-8 rotate-270 bg-white class="top-[70px] right-[-34px]" :style="{ clipPath: 'polygon(0px 0px, 100% 0px, 50% 60%)' }"></div>
-</div>
-
-::content-2::
-
-<div flex justify-end items-center pt-10>
-  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 mr-4>
-    <span>業務目的でイベントに参加</span>
-  </div>
-</div>
-
-::description::
-
-<div flex justify-center items-center pt-24 text-2xl>
-  技術を楽しめていない状況
-</div>
-
-<!--
-技術を手段として割り切ることが悪いと言いたいわけではないですが、
-僕にとって当時のこういった状況は健全ではありませんでした。
-
-ただ、幸運だったのが、存在感を出すという業務的な使命があったがゆえに、
-この時のv-tokyoは懇親会がなかったのですが、
-スタッフに声をかけ、23年のコアスタッフに参加することができました。
 -->
 
 ---
@@ -725,17 +735,6 @@ columnCount: 1
 そして、この2つの出会いが、実は3つ目の出会いを生むことになります。
 その前に、少しだけ私の過去の話をさせてください。
 -->
-
----
-layout: lm-sub-cover
-captureNumber: '03'
----
-
-::title::
-
-<div class="w-[420px] text-center">
-  <span>再び技術を“楽しむ”</span>
-</div>
 
 ---
 layout: lm-columns
