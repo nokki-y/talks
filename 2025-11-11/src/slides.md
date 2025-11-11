@@ -282,6 +282,43 @@ columnCount: 1
 
 ---
 layout: lm-columns
+columnCount: 2
+---
+
+::title::
+CAPTURE. 01: 技術を“手段”として扱う自分
+
+::content-1::
+
+<div flex justify-start items-center relative pt-10>
+  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100>
+    <span>ビジネスとの葛藤に悩む</span>
+  </div>
+  <!-- 矢印代わりの三角図形 -->
+  <div absolute h-10 w-8 rotate-270 bg-white class="top-[70px] right-[-34px]" :style="{ clipPath: 'polygon(0px 0px, 100% 0px, 50% 60%)' }"></div>
+</div>
+
+::content-2::
+
+<div flex justify-end items-center pt-10>
+  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100>
+    <span>業務目的でイベントに参加</span>
+  </div>
+</div>
+
+::description::
+
+<div flex justify-center items-center pt-24>
+  技術を事業成果として割り切り"手段"として扱う状況
+</div>
+
+<!--
+当時のX投稿を遡ったら大量に投稿していました。
+もちろん、素直な感想を投稿したものも多々ありますが、認知拡大のために存在感を出すために投稿していた記憶があります。
+-->
+
+---
+layout: lm-columns
 columnCount: 1
 ---
 
