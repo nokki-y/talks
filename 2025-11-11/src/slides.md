@@ -155,7 +155,7 @@ layout: lm-plain
 
 <!--
 はじめに、コミュニティに参加する前の、少しネガティブな話から入り、
-コミュニティに参加したことで、どのような出会いと変化があったかを話します。
+それがコミュニティに参加したことで、どのような出会いと変化があったかを話す流れです。
 
 - CAPTURE. 01: 技術を“手段”として扱う自分
 - CAPTURE. 02: 3つの出会い
@@ -218,8 +218,7 @@ columnCount: 4
 </div>
 
 <!--
-みなさんもあるのではないでしょうか？
-あれこれ試したいと思っても、コストや納期が合わないという葛藤を持った経験が。
+エンジニアをしていると、あれこれ試したいと思っても、コストや納期に悩むのがあるあるです。
 
 前提として、弊社は社名にモチベーションが入っているくらいなので、
 エンジニアのモチベーションをとても大事にして、先行的な投資を惜しまない企業体質です。
@@ -290,7 +289,7 @@ CAPTURE. 01: 技術を“手段”として扱う自分
 ::content-1::
 
 <div flex justify-start items-center relative pt-10>
-  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100>
+  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 ml-4>
     <span>ビジネスとの葛藤に悩む</span>
   </div>
   <!-- 矢印代わりの三角図形 -->
@@ -300,7 +299,7 @@ CAPTURE. 01: 技術を“手段”として扱う自分
 ::content-2::
 
 <div flex justify-end items-center pt-10>
-  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100>
+  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 mr-4>
     <span>業務目的でイベントに参加</span>
   </div>
 </div>
@@ -312,9 +311,12 @@ CAPTURE. 01: 技術を“手段”として扱う自分
 </div>
 
 <!--
-当時の状況をまとめると、業務での葛藤から技術を楽しむことを忘れている状況でした。
-ただ、幸運だったのが、存在感を出すという業務的な使命があったがゆえに、この時のv-tokyoは懇親会がなかったのですが、
-自ら声をかけ、23年のコアスタッフに参加することができました。
+技術を手段として割り切ることが悪いと言いたいわけではないですが、
+僕にとって当時のこういった状況は健全ではありませんでした。
+
+ただ、幸運だったのが、存在感を出すという業務的な使命があったがゆえに、
+この時のv-tokyoは懇親会がなかったのですが、
+スタッフに声をかけ、23年のコアスタッフに参加することができました。
 -->
 
 ---
