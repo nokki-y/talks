@@ -308,8 +308,8 @@ CAPTURE. 01: 技術を“手段”として扱う自分
 
 ::description::
 
-<div flex justify-center items-center pt-24>
-  技術を事業成果として割り切り"手段"として扱う状況
+<div flex justify-center items-center pt-24 text-2xl>
+  技術を楽しめていない状況
 </div>
 
 <!--
