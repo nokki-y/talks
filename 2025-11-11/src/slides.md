@@ -633,6 +633,47 @@ Vue.jsへの理解が深まり、
 
 ---
 layout: lm-columns
+columnCount: 2
+---
+
+::title::
+新しい自分との出会い
+
+::content-1::
+
+<div flex justify-start items-center relative pt-10>
+  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 ml-4>
+    <span>ビジネスとの葛藤に悩む</span>
+  </div>
+  <!-- 矢印代わりの三角図形 -->
+  <div absolute h-10 w-8 rotate-270 bg-white class="top-[70px] right-[-34px]" :style="{ clipPath: 'polygon(0px 0px, 100% 0px, 50% 60%)' }"></div>
+</div>
+
+::content-2::
+
+<div flex justify-end items-center pt-10>
+  <div flex justify-center items-center p-8 border-2 border-white rounded-md w-100 mr-4>
+    <span>業務目的でイベントに参加</span>
+  </div>
+</div>
+
+::description::
+
+<div flex justify-center items-center pt-24 text-2xl>
+  技術を楽しめていない状況
+</div>
+
+<!--
+技術を手段として割り切ることが悪いと言いたいわけではないですが、
+僕にとって当時のこういった状況は健全ではありませんでした。
+
+ただ、幸運だったのが、存在感を出すという業務的な使命があったがゆえに、
+この時のv-tokyoは懇親会がなかったのですが、
+スタッフに声をかけ、23年のコアスタッフに参加することができました。
+-->
+
+---
+layout: lm-columns
 columnCount: 1
 ---
 
@@ -814,45 +855,31 @@ columnCount: 1
 -->
 
 ---
-layout: lm-columns
-columnCount: 1
+layout: lm-plain
 ---
 
-::title::
-まとめ
-
-::sub-title::
-3つの出会いがくれた変化
-
-::content-1::
-
-<div flex flex-col justify-center h-full px-20>
-  <div box-contents py-10 px-12 rounded-lg>
-    <div grid grid-cols-3 gap-8 mb-12>
-      <div text-center>
-        <div text-5xl mb-4>🔧</div>
-        <div text-lg font-bold mb-2>技術との出会い</div>
-        <div text-sm op70>知らなかった側面<br>深い理解</div>
-      </div>
-      <div text-center>
-        <div text-5xl mb-4>👥</div>
-        <div text-lg font-bold mb-2>仲間との出会い</div>
-        <div text-sm op70>視野を広げる<br>刺激と楽しさ</div>
-      </div>
-      <div text-center>
-        <div text-5xl mb-4>💡</div>
-        <div text-lg font-bold mb-2>自分との出会い</div>
-        <div text-sm op70>初心を思い出した</div>
-      </div>
+<div relative size-full flex items-center justify-center>
+  <!-- 思い出画像 -->
+  <MemoryBackground/>
+  <!-- マスク -->
+  <div z-30 absolute top-0 left-0 size-full bg-black op-70></div>
+  <!-- キーワード -->
+  <div z-30 size-full flex flex-col pt-34 pb-10 px-25>
+    <div text-4xl font-bold mb-14 relative flex items-end>
+      <span font-en>KEYWORD</span>
+      <span text-5xl font-bold ml-4 class="pb-[4px]">「出会い」</span>
+      <!-- 飾り線 -->
+      <span absolute op-80 :style="{ backgroundColor: '#5850a9' }" class="h-[14px] w-[202px] top-[42px] left-[198px]"></span>
     </div>
-
-    <div border-t-2 border-white pt-8>
-      <div text-center space-y-4>
-        <p text-xl>Vue.jsを"使う側"から"育てる側"へ</p>
-        <p text-2xl font-bold text-gradient>技術を"手段"から"原動力"へ</p>
-      </div>
+    <div text-4xl font-bold mb-3 ml-1>
+      <span>-- 技術との出会い</span>
     </div>
-
+    <div text-4xl font-bold mb-3 ml-1>
+      <span>-- 仲間との出会い</span>
+    </div>
+    <div text-4xl font-bold ml-1>
+      <span>-- 新しい自分との出会い</span>
+    </div>
   </div>
 </div>
 
