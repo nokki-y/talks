@@ -483,15 +483,39 @@ columnCount: 1
 </div>
 
 <!--
-仲間との出会い、1つ目です。
+手前味噌ながら、外部に認知拡大に動く係を担うくらいなので、
+フロント領域の開発に関しては、少し、いや完全に天狗になっていました。
+-->
 
-私は2018年頃から業務でプログラムを書くようになり、今年で8年目です。
-社内では自分がVue.jsの専門家だと、正直少し天狗になっていました。
-でもVue.jsコミュニティにはコアメンバーも多数在籍していて、
-天狗気味だった自己評価はすぐに改めざるを得ませんでした。
-話を聞くたびに「そういう視点もあるのか」と気づかされました。
+---
+layout: lm-columns
+columnCount: 1
+---
 
-そして、また別の刺激もありました。
+::title::
+仲間との出会い
+
+::content-1::
+
+<div flex justify-center items-center relative h-60 w-full px-2>
+  <div flex justify-center items-center relative size-full>
+    <!-- 狭い世界を示す円 （破線）-->
+    <div size-45 rounded-full border-2 border-white absolute class="bottom-[-40px] left-[325px]" :style="{ border: '3px dashed #ffffff' }"></div>
+    <!-- 広い世界を示す円 （実線）-->
+    <div size-80 rounded-full border-2 border-white absolute class="bottom-[-40px] left-[260px]"></div>
+    <!-- 人型アイコン（自分） -->
+    <div absolute size-20 class="bottom-[10px] left-[350px]">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="white" d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
+    </div>
+    <div absolute size-20 class="bottom-[180px] left-[440px]">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Pro v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc.--><path fill="white" d="M320 80C377.4 80 424 126.6 424 184C424 241.4 377.4 288 320 288C262.6 288 216 241.4 216 184C216 126.6 262.6 80 320 80zM96 152C135.8 152 168 184.2 168 224C168 263.8 135.8 296 96 296C56.2 296 24 263.8 24 224C24 184.2 56.2 152 96 152zM0 480C0 409.3 57.3 352 128 352C140.8 352 153.2 353.9 164.9 357.4C132 394.2 112 442.8 112 496L112 512C112 523.4 114.4 534.2 118.7 544L32 544C14.3 544 0 529.7 0 512L0 480zM521.3 544C525.6 534.2 528 523.4 528 512L528 496C528 442.8 508 394.2 475.1 357.4C486.8 353.9 499.2 352 512 352C582.7 352 640 409.3 640 480L640 512C640 529.7 625.7 544 608 544L521.3 544zM472 224C472 184.2 504.2 152 544 152C583.8 152 616 184.2 616 224C616 263.8 583.8 296 544 296C504.2 296 472 263.8 472 224zM160 496C160 407.6 231.6 336 320 336C408.4 336 480 407.6 480 496L480 512C480 529.7 465.7 544 448 544L192 544C174.3 544 160 529.7 160 512L160 496z"/></svg>
+    </div>
+  </div>
+</div>
+
+<!--
+しかし、コアメンバーはもちろん、年下でも自分よりも圧倒的に優秀な人に多数出会い、
+完全に天狗の鼻は折られました。
 -->
 
 ---
@@ -527,111 +551,75 @@ columnCount: 1
 </div>
 
 <!--
-仲間との出会い、1つ目です。
-
-私は2018年頃から業務でプログラムを書くようになり、今年で8年目です。
-社内では自分がVue.jsの専門家だと、正直少し天狗になっていました。
-でもVue.jsコミュニティにはコアメンバーも多数在籍していて、
-天狗気味だった自己評価はすぐに改めざるを得ませんでした。
-話を聞くたびに「そういう視点もあるのか」と気づかされました。
-
-そして、また別の刺激もありました。
+でも、同時にそこにあるまだ見ぬ自身の伸びしろにワクワクする自分がいました。
 -->
 
 ---
-layout: lm-columns
+layout: lm-plain
 columnCount: 1
 ---
 
-::title::
-仲間との出会い②
-
-::sub-title::
-若くても優秀な人たちから受けた刺激
-
-::content-1::
-
-<div flex flex-col justify-center h-full px-20>
-  <div box-contents py-8 px-10 rounded-lg>
-    <div text-xl font-bold mb-6 text-center>自分より若くても知識も経験も豊富な人が多かった</div>
-
-    <div grid grid-cols-3 gap-8 mb-8>
-      <div text-center>
-        <div text-4xl mb-2>😰</div>
-        <div text-sm>最初は落ち込んだ</div>
-      </div>
-      <div text-center>
-        <div text-4xl mb-2>💭</div>
-        <div text-sm>でも技術が好き</div>
-      </div>
-      <div text-center>
-        <div text-4xl mb-2>😊</div>
-        <div text-sm>楽しい時間だった</div>
-      </div>
+<div relative size-full flex flex-col items-center justify-center>
+  <!-- 思い出画像 -->
+  <MemoryBackground/>
+  <!-- マスク -->
+  <div z-30 absolute top-0 left-0 size-full bg-black op-70></div>
+  <!-- CONTENTS -->
+  <div z-30 h-30 w-full flex flex-col items-center justify-center>
+    <!-- <div text-4xl font-bold mb-3 ml-1>
+      <span><span font-en>CAPTURE.01</span> - 技術を“手段”として扱う</span>
     </div>
-
-    <div text-center>
-      <p text-lg font-bold text-gradient>落ち込み以上に<br>技術の話をする時間がとても楽しかった</p>
-    </div>
-
+    <div text-4xl font-bold ml-1>
+      <span><span font-en>CAPTURE.02</span> - 3つの出会い</span>
+    </div> -->
   </div>
-</div>
-
-<!--
-別の刺激、それは若手エンジニアたちとの出会いでした。
-
-コミュニティには、自分より若くても驚くほど優秀な人がたくさんいます。
-私よりも社会人歴が何年も短いエンジニアも少なくありませんでした。
-最初は正直、落ち込む瞬間もありました。実際に落ち込みました。
-でも私もエンジニアです。技術がとても好きなので、
-落ち込み以上に技術の話をする時間がとても楽しかったです。
-
-そうなんです。技術の話をする時間が、とても楽しかったんです。
--->
-
----
-layout: lm-columns
-columnCount: 1
----
-
-::title::
-仲間との出会い③
-
-::sub-title::
-技術を純粋に語れる仲間との時間
-
-::content-1::
-
-<div flex flex-col justify-center h-full px-20>
-  <div box-contents py-8 px-10 rounded-lg mb-8>
-    <div text-lg font-bold mb-4>業務での制約</div>
-    <div text-base space-y-2>
-      <p>コストパフォーマンスを無視できない</p>
-      <p>純粋に技術の話を楽しめない時間もある</p>
-      <p op70 text-sm mt-4>※弊社は技術愛を大事にしているが...</p>
-    </div>
-  </div>
-
-  <div box-contents py-8 px-10 rounded-lg border-2 border-purple-400>
-    <div text-xl font-bold mb-4 text-purple-400 text-center>コミュニティでの時間</div>
-    <div text-base text-center space-y-3>
-      <p>Vue.jsの新機能、新しいライブラリ</p>
-      <p>コミュニティの将来について</p>
-      <p font-bold text-gradient mt-6>ビジネスとは切り離されたところで行う<br>技術の話は、とても楽しい時間</p>
+  <div z-50 flex justify-center items-center relative h-60 w-full rounded-md mx-20>
+    <div size-45 overflow-hidden rounded-full relative box-contents>
+      <img src="/vue-logo.svg" alt="Vue.js" class="w-16 h-auto object-cover absolute top-4 left-[58px]" />
+      <img src="/vite-logo.svg" alt="Vite" class="w-16 h-auto object-cover absolute bottom-8 left-[16px]" />
+      <img src="/nuxt-logo.svg" alt="Nuxt" class="w-20 h-auto object-cover absolute bottom-5 right-[17px]" />
     </div>
   </div>
 </div>
 
 <!--
-なぜ技術の話をする時間が楽しいのか。それには理由があります。
+技術を中心としたより広い世界で、
+-->
 
-業務においては、どうしてもコストパフォーマンスを無視することはできません。
-そういった前提があるが故に、純粋に技術の話を楽しめない時間もあります。
-でもコミュニティでは、技術の思想や美しさについて語り合えるんです。
-Vue.jsの新機能、新しいライブラリ、コミュニティの将来。
-ビジネスとは切り離されたところで行う技術の話は、とても楽しい時間でした。
+---
+layout: lm-plain
+columnCount: 1
+---
 
-こうして、技術との出会い、そして仲間との出会いを経て、特別なつながりが生まれました。
+<div relative size-full flex flex-col items-center justify-center>
+  <!-- 思い出画像 -->
+  <MemoryBackground/>
+  <!-- マスク -->
+  <div z-30 absolute top-0 left-0 size-full bg-black op-70></div>
+  <!-- CONTENTS -->
+  <div z-30 h-60 w-full flex flex-col items-center justify-center>
+    <div text-4xl font-bold mb-3 ml-1>
+      <span>魅力的な人達との関わりから</span>
+    </div>
+    <div text-4xl font-bold mb-3 ml-1>
+      <span>技術への理解が深まり</span>
+    </div>
+    <div text-4xl font-bold ml-1>
+      <span>新たな可能性を見つけた</span>
+    </div>
+  </div>
+  <div z-50 flex justify-center items-center relative h-60 w-full rounded-md mx-20>
+    <div size-45 overflow-hidden rounded-full relative box-contents>
+      <img src="/vue-logo.svg" alt="Vue.js" class="w-16 h-auto object-cover absolute top-4 left-[58px]" />
+      <img src="/vite-logo.svg" alt="Vite" class="w-16 h-auto object-cover absolute bottom-8 left-[16px]" />
+      <img src="/nuxt-logo.svg" alt="Nuxt" class="w-20 h-auto object-cover absolute bottom-5 right-[17px]" />
+    </div>
+  </div>
+</div>
+
+<!--
+Vue.jsへの理解が深まり、
+そして優秀な人達に自身のまだ見ぬ可能性を見つけることができました。
 -->
 
 ---
