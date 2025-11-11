@@ -31,17 +31,9 @@
     </div>
 
     <!-- CONTENTエリア -->
-    <div
-      z-10
-      grid
-      gap-4
-      overflow-hidden
-      w-full
-      class="max-h-[320px]"
-      :style="{ gridTemplateColumns }"
-    >
+    <div z-10 grid gap-4 w-full class="max-h-[320px]" :style="{ gridTemplateColumns }">
       <template v-for="i in columnCount" :key="i">
-        <div rounded-md overflow-hidden>
+        <div>
           <slot :name="`content-${i}`">CONTENT {{ i }}</slot>
         </div>
       </template>

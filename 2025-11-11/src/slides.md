@@ -238,34 +238,41 @@ columnCount: 1
 ---
 
 ::title::
-きっかけ
-
-::sub-title::
-v-tokyo #16 ― 打算的な目的から始まったコミュニティ参加
+打算的な目的でイベントに参加
 
 ::content-1::
 
-<div flex flex-col justify-center h-full px-20>
-  <div grid grid-cols-2 gap-12 items-center>
-    <div>
-      <div rounded-lg overflow-hidden>
-        <img src="/v-tokyo-16.png" alt="v-tokyo #16" />
-      </div>
-    </div>
-    <div>
-      <div box-contents py-6 px-8 rounded-lg mb-6>
-        <div text-xl font-bold mb-4>参加の目的</div>
-        <div text-base space-y-3>
-          <p>開発組織の認知を広げる</p>
-          <p font-bold text-gradient>打算的な目的のまま<br>コミュニティに参加</p>
-        </div>
-      </div>
-      <div text-sm op70 mt-8>
-        <p>※まだ「出会い」には至っていない</p>
-        <p>単なる「きっかけ」</p>
-      </div>
-    </div>
+<div flex justify-center items-center relative pt-8>
+  <div h-40 overflow-hidden rounded-md>
+    <img src="/v-tokyo-16.png" alt="v-tokyo #16" class="w-full h-full object-cover" />
   </div>
+
+  <!-- 投稿画像: 3列2行のグリッドレイアウト -->
+  <div absolute rounded-md overflow-hidden class="top-[87px] right-[-10px]">
+    <img src="/v-tokyo-16-x-1.png" alt="v-tokyo #16 X投稿-1" class="w-64 h-auto object-contain" />
+  </div>
+  <div absolute rounded-md overflow-hidden class="top-[-20px] left-[-10px]">
+    <!-- 比率: 1198 × 440 -->
+    <img src="/v-tokyo-16-x-2.png" alt="v-tokyo #16 X投稿-2" class="w-64 h-auto object-contain" />
+  </div>
+  <div absolute rounded-md overflow-hidden class="top-[-20px] right-[-10px]">
+    <img src="/v-tokyo-16-x-3.png" alt="v-tokyo #16 X投稿-3" class="w-64 h-auto object-contain" />
+  </div>
+  <div absolute rounded-md overflow-hidden class="top-[170px] left-[-10px]">
+    <img src="/v-tokyo-16-x-4.png" alt="v-tokyo #16 X投稿-4" class="w-64 h-auto object-contain" />
+  </div>
+  <div absolute rounded-md overflow-hidden class="top-[168px] right-[-10px]">
+    <img src="/v-tokyo-16-x-5.png" alt="v-tokyo #16 X投稿-5" class="w-64 h-auto object-contain" />
+  </div>
+  <div absolute rounded-md overflow-hidden class="top-[91.5px] left-[-10px]">
+    <img src="/v-tokyo-16-x-6.png" alt="v-tokyo #16 X投稿-6" class="w-64 h-auto object-contain" />
+  </div>
+</div>
+
+::description::
+
+<div flex justify-center items-center pt-26>
+  打算と本音打算と本音のあいだで生まれた投稿たち
 </div>
 
 <!--
