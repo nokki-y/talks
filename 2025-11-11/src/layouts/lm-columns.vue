@@ -5,8 +5,17 @@
     <!-- マスク -->
     <div absolute top-0 left-0 size-full bg-black op-40></div>
 
-    <div absolute h-30 w-30 z-20 flex items-center justify-center class="top-[462px] right-[-5px]">
-      <img src="/logo.png" alt="logo" />
+    <div
+      absolute
+      h-20
+      w-30
+      z-20
+      flex
+      items-center
+      justify-center
+      class="bottom-[12px] right-[-5px]"
+    >
+      <img src="/logo-trim.png" alt="logo" />
     </div>
 
     <!-- 左下のコピーライト -->

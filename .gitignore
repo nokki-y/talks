@@ -7,10 +7,6 @@ dist
 components.d.ts
 tmp
 
-# Slidev exports
-**/slides-export.pdf
-**/slides-export*.pdf
-
 # Claude Code
 .claude/settings.local.json
 .claude/local-instructions.md
