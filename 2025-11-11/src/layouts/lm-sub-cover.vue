@@ -15,16 +15,7 @@
     <!-- マスク -->
     <div absolute top-0 left-0 size-full bg-black op-40></div>
 
-    <div
-      absolute
-      h-30
-      w-30
-      z-20
-      flex
-      items-center
-      justify-center
-      class="bottom-[-25px] left-[540px]"
-    >
+    <div absolute h-30 w-30 z-20 flex items-center justify-center class="top-[457px] left-[540px]">
       <img src="/logo.png" alt="logo" />
     </div>
 
